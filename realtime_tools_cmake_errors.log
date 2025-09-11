@@ -1,0 +1,16 @@
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+CMake Error at /opt/ros/noetic_src/share/catkin/cmake/catkin_package.cmake:183 (message):
+  catkin_package() CATKIN_DEPENDS on 'roscpp', which has been found in
+  '/opt/ros/noetic/share/roscpp/cmake/roscppConfig.cmake', but it is not a
+  catkin package
+Call Stack (most recent call first):
+  /opt/ros/noetic_src/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  CMakeLists.txt:11 (catkin_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/root/ros_catkin_ws/src/realtime_tools/.obj-aarch64-linux-gnu/CMakeFiles/CMakeOutput.log".
