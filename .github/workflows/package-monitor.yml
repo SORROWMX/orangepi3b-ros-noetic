@@ -22,9 +22,9 @@ jobs:
         fetch-depth: 0
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.9'
+        python-version: '3.11'
 
     - name: Analyze .deb packages
       id: analyze
@@ -108,7 +108,7 @@ jobs:
         echo "Total packages: ${{ steps.analyze.outputs.deb_count }}" >> artifacts/package_list.txt
 
     - name: Upload package list
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: package-list-${{ github.run_number }}
