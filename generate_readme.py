@@ -8,8 +8,8 @@ import glob
 from datetime import datetime
 
 def count_deb_files():
-    """Подсчитывает количество .deb файлов в текущей директории"""
-    deb_files = glob.glob("*.deb")
+    """Подсчитывает количество .deb файлов в debian/pool/main/arm64/"""
+    deb_files = glob.glob("debian/pool/main/arm64/*.deb")
     return len(deb_files), deb_files
 
 def categorize_packages(deb_files):
@@ -27,25 +27,25 @@ def categorize_packages(deb_files):
     }
     
     for file in deb_files:
-        filename = file.lower()
+        filename = os.path.basename(file).lower()  # Получаем только имя файла
         if 'ros-core' in filename or 'ros-base' in filename or 'ros-comm' in filename or 'ros_' in filename:
-            categories['core'].append(file)
+            categories['core'].append(os.path.basename(file))
         elif 'roscpp' in filename or 'rospy' in filename or 'rosgraph' in filename or 'rosmaster' in filename:
-            categories['communication'].append(file)
+            categories['communication'].append(os.path.basename(file))
         elif 'catkin' in filename or 'cmake' in filename or 'rospack' in filename or 'rosbuild' in filename:
-            categories['build_system'].append(file)
+            categories['build_system'].append(os.path.basename(file))
         elif 'msgs' in filename and 'dbgsym' not in filename:
-            categories['messages'].append(file)
+            categories['messages'].append(os.path.basename(file))
         elif 'tf' in filename and 'dbgsym' not in filename:
-            categories['tf'].append(file)
+            categories['tf'].append(os.path.basename(file))
         elif 'image' in filename or 'camera' in filename or 'opencv' in filename:
-            categories['image'].append(file)
+            categories['image'].append(os.path.basename(file))
         elif 'rosbag' in filename or 'roslaunch' in filename or 'roswtf' in filename:
-            categories['utilities'].append(file)
+            categories['utilities'].append(os.path.basename(file))
         elif 'dbgsym' in filename:
-            categories['debug'].append(file)
+            categories['debug'].append(os.path.basename(file))
         else:
-            categories['other'].append(file)
+            categories['other'].append(os.path.basename(file))
     
     return categories
 
