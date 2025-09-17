@@ -30,7 +30,7 @@ jobs:
     - name: Check for focal packages
       id: check-focal
       run: |
-        FOCAL_COUNT=$(ls *-0focal*.deb 2>/dev/null | wc -l)
+        FOCAL_COUNT=$(find debian/pool/main/arm64 -name "*-0focal*.deb" 2>/dev/null | wc -l)
         echo "focal_count=$FOCAL_COUNT" >> $GITHUB_OUTPUT
         echo "Found $FOCAL_COUNT packages with -0focal suffix"
 
@@ -39,7 +39,7 @@ jobs:
       run: |
         echo "📁 Creating backup of original packages..."
         mkdir -p backup_original
-        cp *.deb backup_original/
+        cp debian/pool/main/arm64/*.deb backup_original/ 2>/dev/null || true
         echo "✅ Backup created in backup_original/"
 
     - name: Make scripts executable
@@ -117,8 +117,15 @@ jobs:
     - name: Force commit if no changes detected
       if: steps.verify-changes.outputs.changed == 'false' && steps.verify-changes.outputs.repo_changed == 'false'
       run: |
-        echo "🔄 No changes detected, but running force commit to ensure consistency..."
-        ./force_commit.sh || echo "ℹ️ Force commit completed or no changes to commit"
+        echo "🔄 No changes detected, but ensuring repository consistency..."
+        git add .
+        if [ -n "$(git status --porcelain)" ]; then
+          git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d %H:%M:%S') - Repository consistency check"
+          git pull --rebase origin main || git pull --rebase origin master
+          git push
+        else
+          echo "ℹ️ No changes to commit"
+        fi
 
     - name: Create summary
       run: |
@@ -126,9 +133,9 @@ jobs:
         echo "" >> $GITHUB_STEP_SUMMARY
         
         # Подсчитываем файлы
-        TOTAL_DEB=$(ls -1 *.deb 2>/dev/null | wc -l)
-        BOOKWORM_DEB=$(ls -1 *-0bookworm*.deb 2>/dev/null | wc -l)
-        FOCAL_DEB=$(ls -1 *-0focal*.deb 2>/dev/null | wc -l)
+        TOTAL_DEB=$(find debian/pool/main/arm64 -name "*.deb" 2>/dev/null | wc -l)
+        BOOKWORM_DEB=$(find debian/pool/main/arm64 -name "*-0bookworm*.deb" 2>/dev/null | wc -l)
+        FOCAL_DEB=$(find debian/pool/main/arm64 -name "*-0focal*.deb" 2>/dev/null | wc -l)
         
         echo "**Total .deb files:** $TOTAL_DEB" >> $GITHUB_STEP_SUMMARY
         echo "**Packages with -0bookworm:** $BOOKWORM_DEB" >> $GITHUB_STEP_SUMMARY
