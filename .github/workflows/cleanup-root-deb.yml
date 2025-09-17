@@ -1,4 +1,4 @@
-name: Cleanup Root .deb Files
+name: 🧹 Cleanup Root .deb Files
 
 on:
   push:
