@@ -62,8 +62,8 @@ jobs:
       if: steps.check-focal.outputs.focal_count > 0
       run: |
         echo "🧹 Cleaning up duplicate packages..."
-        # Автоматически удаляем focal файлы без подтверждения
-        echo "y" | ./cleanup_duplicates.sh || true
+        # Используем автоматический скрипт без подтверждения
+        ./cleanup_duplicates_auto.sh
         echo "✅ Duplicate cleanup completed"
 
     - name: Final package check
