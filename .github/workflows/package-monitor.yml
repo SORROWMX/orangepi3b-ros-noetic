@@ -51,6 +51,16 @@ jobs:
         ARCHITECTURE=$(file *.deb | head -1 | grep -o 'arm64\|amd64\|i386' | head -1)
         echo "architecture=$ARCHITECTURE" >> $GITHUB_OUTPUT
 
+    - name: Make scripts executable
+      run: |
+        chmod +x *.sh
+        echo "✅ Scripts made executable"
+
+    - name: Check package status
+      run: |
+        echo "📊 Checking package status..."
+        ./check_packages.sh
+
     - name: Generate README
       run: |
         python3 generate_readme.py
