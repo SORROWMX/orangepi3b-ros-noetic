@@ -52,7 +52,7 @@ jobs:
       if: steps.check-focal.outputs.focal_count > 0
       run: |
         echo "🗑️ Removing old -0focal packages..."
-        FOCAL_FILES=$(ls *-0focal*.deb 2>/dev/null)
+        FOCAL_FILES=$(ls *-0focal*.deb 2>/dev/null || true)
         if [ -n "$FOCAL_FILES" ]; then
           echo "Removing files:"
           echo "$FOCAL_FILES"
