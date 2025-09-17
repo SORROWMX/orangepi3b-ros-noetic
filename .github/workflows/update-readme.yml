@@ -40,18 +40,17 @@ jobs:
           echo "changed=false" >> $GITHUB_OUTPUT
         fi
 
-    - name: Commit and push changes
+    - name: Safe push changes
       if: steps.verify-changed-files.outputs.changed == 'true'
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add README.md
-        git commit -m "🤖 Auto-update README with package statistics
-
-        - Updated package count
-        - Refreshed package categories
-        - Updated timestamp: $(date)"
-        git push
+      uses: ./.github/workflows/safe-push.yml
+      with:
+        commit_message: |
+          🤖 Auto-update README with package statistics
+          
+          - Updated package count
+          - Refreshed package categories
+          - Updated timestamp: $(date)
+        files_to_add: "README.md"
 
     - name: Create summary
       run: |
