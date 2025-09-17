@@ -1,0 +1,71 @@
+name: Auto-update README
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '*.deb'
+  workflow_dispatch: # Позволяет запускать вручную
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Generate README
+      run: |
+        python3 generate_readme.py
+
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain README.md)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        git commit -m "🤖 Auto-update README with package statistics
+
+        - Updated package count
+        - Refreshed package categories
+        - Updated timestamp: $(date)"
+        git push
+
+    - name: Create summary
+      run: |
+        echo "## 📊 README Update Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        # Подсчитываем файлы
+        DEB_COUNT=$(ls -1 *.deb 2>/dev/null | wc -l)
+        echo "**Total .deb files:** $DEB_COUNT" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        # Показываем размер репозитория
+        REPO_SIZE=$(du -sh . | cut -f1)
+        echo "**Repository size:** $REPO_SIZE" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ steps.verify-changed-files.outputs.changed }}" == "true" ]; then
+          echo "✅ README.md was updated and committed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "ℹ️ No changes needed in README.md" >> $GITHUB_STEP_SUMMARY
+        fi
