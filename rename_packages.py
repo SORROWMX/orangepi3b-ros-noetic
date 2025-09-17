@@ -12,10 +12,11 @@ from datetime import datetime
 def main():
     print("🔄 Переименование пакетов для Debian Bookworm...")
     
-    # Проверяем наличие .deb файлов
-    deb_files = glob.glob("*.deb")
+    # Проверяем наличие .deb файлов в pool
+    deb_files = glob.glob("debian/pool/main/arm64/*.deb")
     if not deb_files:
-        print("❌ Не найдено .deb файлов в текущей директории")
+        print("❌ Не найдено .deb файлов в debian/pool/main/arm64/")
+        print("💡 Запустите ./setup_debian_repo.sh для настройки структуры")
         return 1
     
     # Фильтруем файлы с -0focal
