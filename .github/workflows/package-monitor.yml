@@ -76,6 +76,9 @@ jobs:
         📏 Repository size: ${{ steps.analyze.outputs.total_size }}
         🏗️ Architecture: ${{ steps.analyze.outputs.architecture }}
         ⏰ Updated: $(date)"
+        
+        # Pull latest changes before pushing
+        git pull --rebase origin main || git pull --rebase origin master
         git push
 
     - name: Create detailed summary
