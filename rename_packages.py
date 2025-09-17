@@ -40,6 +40,7 @@ def main():
     print("🔄 Начинаем переименование...")
     renamed_count = 0
     errors = []
+    renamed_files = []
     
     for file in focal_files:
         new_name = file.replace("-0focal", "-0bookworm")
@@ -53,10 +54,25 @@ def main():
             os.rename(file, new_name)
             print(f"✅ Renamed: {file} -> {new_name}")
             renamed_count += 1
+            renamed_files.append((file, new_name))
         except Exception as e:
             error_msg = f"❌ Ошибка переименования {file}: {e}"
             print(error_msg)
             errors.append(error_msg)
+    
+    # Удаляем старые focal файлы (если они остались)
+    print("\n🗑️ Проверяем наличие старых focal файлов...")
+    remaining_focal = glob.glob("*-0focal*.deb")
+    if remaining_focal:
+        print(f"Найдено {len(remaining_focal)} старых focal файлов для удаления:")
+        for file in remaining_focal:
+            try:
+                os.remove(file)
+                print(f"🗑️ Удален: {file}")
+            except Exception as e:
+                print(f"⚠️ Не удалось удалить {file}: {e}")
+    else:
+        print("ℹ️ Старых focal файлов не найдено")
     
     # Статистика
     print("\n🎉 Переименование завершено!")
