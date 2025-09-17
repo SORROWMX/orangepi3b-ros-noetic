@@ -48,12 +48,16 @@ jobs:
         # Импортируем приватный ключ
         echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
         
-        # Настраиваем gpg-agent
+        # Настраиваем gpg-agent для headless режима
         echo "use-agent" >> ~/.gnupg/gpg.conf
         echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+        echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
         
-        # Настраиваем passphrase
-        echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --local-user ${{ secrets.GPG_KEY_ID }} /dev/null
+        # Перезапускаем gpg-agent
+        gpg-connect-agent reloadagent /bye
+        
+        # Тестируем подпись
+        echo "test" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --local-user ${{ secrets.GPG_KEY_ID }} --output /dev/null
 
     - name: Create repository structure
       run: |
@@ -107,7 +111,10 @@ jobs:
         # Подписываем Release файл
         echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --clearsign --local-user ${{ secrets.GPG_KEY_ID }} Release
         
-        # Создаем InRelease файл
+        # Создаем InRelease файл (переименовываем Release.asc в InRelease)
+        mv Release.asc InRelease
+        
+        # Создаем Release.gpg файл
         echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --detach-sign --armor --local-user ${{ secrets.GPG_KEY_ID }} Release
         
         echo "🔐 Release file signed with GPG key: ${{ secrets.GPG_KEY_ID }}"
