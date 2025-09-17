@@ -44,8 +44,12 @@ jobs:
         mkdir -p debian/pool/main/arm64
         mkdir -p debian/dists/bookworm/main/binary-arm64
         
-        # Копируем .deb файлы в pool
-        cp *.deb debian/pool/main/arm64/ 2>/dev/null || echo "No .deb files found"
+        # Перемещаем .deb файлы из корня в pool (если есть)
+        if ls *.deb 1> /dev/null 2>&1; then
+          echo "📦 Moving .deb files from root to pool..."
+          mv *.deb debian/pool/main/arm64/
+          echo "✅ Moved $(ls debian/pool/main/arm64/*.deb | wc -l) packages to pool"
+        fi
         
         echo "📁 Repository structure created"
 
@@ -129,7 +133,7 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-      environment:
+      env:
         name: github-pages
         url: ${{ steps.deployment.outputs.page_url }}
 
