@@ -39,7 +39,7 @@ jobs:
         sudo apt-get install -y dpkg-dev apt-utils gnupg2
 
     - name: Setup GPG (if secrets available)
-      if: ${{ secrets.GPG_PRIVATE_KEY != '' }}
+      if: secrets.GPG_PRIVATE_KEY != ''
       run: |
         # Импортируем приватный ключ
         echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
@@ -96,7 +96,7 @@ jobs:
         echo "📋 Release file generated"
 
     - name: Sign Release file (if GPG available)
-      if: ${{ secrets.GPG_PRIVATE_KEY != '' }}
+      if: secrets.GPG_PRIVATE_KEY != ''
       run: |
         cd debian/dists/bookworm
         
@@ -155,9 +155,6 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-      environment:
-        name: github-pages
-        url: ${{ steps.deployment.outputs.page_url }}
 
     - name: Create summary
       run: |
