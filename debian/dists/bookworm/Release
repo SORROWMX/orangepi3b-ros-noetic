@@ -1,0 +1,11 @@
+Origin: Orange Pi 3B ROS Noetic Repository
+Label: Orange Pi 3B ROS Noetic
+Suite: bookworm
+Version: 12
+Codename: bookworm
+Date: Thu, 01 Jan 1970 00:00:00 UTC
+Architectures: arm64
+Components: main
+Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
+MD5Sum:
+ SHA256:
