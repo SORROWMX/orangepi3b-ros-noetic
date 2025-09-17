@@ -48,6 +48,20 @@ jobs:
         echo "🔄 Renaming packages from -0focal to -0bookworm..."
         python3 rename_packages.py
 
+    - name: Remove old focal packages
+      if: steps.check-focal.outputs.focal_count > 0
+      run: |
+        echo "🗑️ Removing old -0focal packages..."
+        FOCAL_FILES=$(ls *-0focal*.deb 2>/dev/null)
+        if [ -n "$FOCAL_FILES" ]; then
+          echo "Removing files:"
+          echo "$FOCAL_FILES"
+          rm *-0focal*.deb
+          echo "✅ Old focal packages removed"
+        else
+          echo "ℹ️ No focal packages to remove"
+        fi
+
     - name: Check for changes
       id: verify-changes
       run: |
