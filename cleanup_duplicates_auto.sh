@@ -5,16 +5,17 @@
 
 echo "🧹 Автоматическая очистка дублирующихся пакетов..."
 
-# Проверяем наличие .deb файлов
-if [ ! -f *.deb 2>/dev/null ]; then
-    echo "❌ Не найдено .deb файлов в текущей директории"
+# Проверяем наличие .deb файлов в pool
+if [ ! -f debian/pool/main/arm64/*.deb 2>/dev/null ]; then
+    echo "❌ Не найдено .deb файлов в debian/pool/main/arm64/"
+    echo "💡 Запустите ./setup_debian_repo.sh для настройки структуры"
     exit 1
 fi
 
 # Подсчитываем файлы
-total_deb=$(ls *.deb 2>/dev/null | wc -l)
-focal_deb=$(ls *-0focal*.deb 2>/dev/null | wc -l || echo "0")
-bookworm_deb=$(ls *-0bookworm*.deb 2>/dev/null | wc -l || echo "0")
+total_deb=$(ls debian/pool/main/arm64/*.deb 2>/dev/null | wc -l)
+focal_deb=$(ls debian/pool/main/arm64/*-0focal*.deb 2>/dev/null | wc -l || echo "0")
+bookworm_deb=$(ls debian/pool/main/arm64/*-0bookworm*.deb 2>/dev/null | wc -l || echo "0")
 
 echo "📊 Текущая статистика:"
 echo "   - Всего .deb файлов: $total_deb"
@@ -31,7 +32,7 @@ echo ""
 echo "📁 Создание резервной копии focal файлов..."
 backup_dir="backup_focal_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$backup_dir"
-cp *-0focal*.deb "$backup_dir"/ 2>/dev/null
+cp debian/pool/main/arm64/*-0focal*.deb "$backup_dir"/ 2>/dev/null
 echo "✅ Резервная копия создана в $backup_dir/"
 
 # Показываем файлы для удаления
@@ -41,10 +42,10 @@ echo "🗑️ Удаляем $focal_deb focal файлов..."
 # Удаляем focal файлы
 deleted_count=0
 
-for file in *-0focal*.deb; do
+for file in debian/pool/main/arm64/*-0focal*.deb; do
     if [ -f "$file" ]; then
         rm "$file"
-        echo "🗑️ Удален: $file"
+        echo "🗑️ Удален: $(basename "$file")"
         ((deleted_count++))
     fi
 done
@@ -52,14 +53,14 @@ done
 # Дополнительная проверка на все файлы с 'focal'
 echo ""
 echo "🔍 Дополнительная проверка на файлы с 'focal'..."
-all_focal=$(ls *focal*.deb 2>/dev/null || true)
+all_focal=$(ls debian/pool/main/arm64/*focal*.deb 2>/dev/null || true)
 if [ -n "$all_focal" ]; then
     echo "Найдены дополнительные focal файлы:"
     echo "$all_focal"
-    for file in *focal*.deb; do
+    for file in debian/pool/main/arm64/*focal*.deb; do
         if [ -f "$file" ]; then
             rm "$file"
-            echo "🗑️ Удален: $file"
+            echo "🗑️ Удален: $(basename "$file")"
             ((deleted_count++))
         fi
     done
@@ -73,9 +74,9 @@ echo "🎉 Очистка завершена!"
 echo "📊 Удалено файлов: $deleted_count"
 
 # Проверяем результат
-remaining_focal=$(ls *-0focal*.deb 2>/dev/null | wc -l || echo "0")
-final_bookworm=$(ls *-0bookworm*.deb 2>/dev/null | wc -l || echo "0")
-final_total=$(ls *.deb 2>/dev/null | wc -l)
+remaining_focal=$(ls debian/pool/main/arm64/*-0focal*.deb 2>/dev/null | wc -l || echo "0")
+final_bookworm=$(ls debian/pool/main/arm64/*-0bookworm*.deb 2>/dev/null | wc -l || echo "0")
+final_total=$(ls debian/pool/main/arm64/*.deb 2>/dev/null | wc -l)
 
 echo ""
 echo "📋 Финальная статистика:"
