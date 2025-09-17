@@ -49,7 +49,7 @@ done
 # Удаляем оставшиеся focal файлы (если есть)
 echo ""
 echo "🗑️ Проверяем наличие старых focal файлов..."
-remaining_focal=$(ls *-0focal*.deb 2>/dev/null | wc -l)
+remaining_focal=$(ls *-0focal*.deb 2>/dev/null | wc -l || echo "0")
 if [ $remaining_focal -gt 0 ]; then
     echo "Найдено $remaining_focal старых focal файлов для удаления:"
     for file in *-0focal*.deb; do
