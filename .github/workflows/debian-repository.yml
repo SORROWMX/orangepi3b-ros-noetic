@@ -42,22 +42,14 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y dpkg-dev apt-utils gnupg2
 
-    - name: Setup GPG (if secrets available)
+    - name: Import GPG key
       if: env.GPG_PRIVATE_KEY != ''
-      run: |
-        # Импортируем приватный ключ
-        echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
-        
-        # Настраиваем gpg-agent для headless режима
-        echo "use-agent" >> ~/.gnupg/gpg.conf
-        echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-        echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-        
-        # Перезапускаем gpg-agent
-        gpg-connect-agent reloadagent /bye
-        
-        # Тестируем подпись
-        echo "test" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --local-user ${{ secrets.GPG_KEY_ID }} --output /dev/null
+      uses: crazy-max/ghaction-import-gpg@v6
+      with:
+        gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+        passphrase: ${{ secrets.GPG_PASSPHRASE }}
+        git_user_signingkey: ${{ secrets.GPG_KEY_ID }}
+        git_commit_gpgsign: true
 
     - name: Create repository structure
       run: |
@@ -109,13 +101,13 @@ jobs:
         cd debian/dists/bookworm
         
         # Подписываем Release файл
-        echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --clearsign --local-user ${{ secrets.GPG_KEY_ID }} Release
+        gpg --batch --yes --clearsign --local-user ${{ secrets.GPG_KEY_ID }} Release
         
         # Создаем InRelease файл (переименовываем Release.asc в InRelease)
         mv Release.asc InRelease
         
         # Создаем Release.gpg файл
-        echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --detach-sign --armor --local-user ${{ secrets.GPG_KEY_ID }} Release
+        gpg --batch --yes --detach-sign --armor --local-user ${{ secrets.GPG_KEY_ID }} Release
         
         echo "🔐 Release file signed with GPG key: ${{ secrets.GPG_KEY_ID }}"
 
