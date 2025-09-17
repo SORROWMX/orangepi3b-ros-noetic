@@ -1,0 +1,125 @@
+name: Safe Push Helper
+
+on:
+  workflow_call:
+    inputs:
+      commit_message:
+        required: true
+        type: string
+      files_to_add:
+        required: true
+        type: string
+        default: "."
+    outputs:
+      push_success:
+        description: "Whether push was successful"
+        value: ${{ jobs.safe-push.outputs.push_success }}
+
+jobs:
+  safe-push:
+    runs-on: ubuntu-latest
+    outputs:
+      push_success: ${{ steps.push.outcome }}
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Configure git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+    - name: Add files
+      run: |
+        git add ${{ inputs.files_to_add }}
+
+    - name: Check for changes
+      id: check-changes
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit changes
+      if: steps.check-changes.outputs.changed == 'true'
+      run: |
+        git commit -m "${{ inputs.commit_message }}"
+
+    - name: Safe push with retry
+      id: push
+      if: steps.check-changes.outputs.changed == 'true'
+      run: |
+        # Function to attempt push with pull
+        attempt_push() {
+          echo "🔄 Attempting to push changes..."
+          
+          # Try to pull latest changes
+          echo "📥 Pulling latest changes..."
+          if git pull --rebase origin main 2>/dev/null; then
+            echo "✅ Pulled from main branch"
+          elif git pull --rebase origin master 2>/dev/null; then
+            echo "✅ Pulled from master branch"
+          else
+            echo "⚠️ Could not pull, trying to push anyway"
+          fi
+          
+          # Attempt to push
+          if git push origin HEAD:main 2>/dev/null; then
+            echo "✅ Successfully pushed to main"
+            return 0
+          elif git push origin HEAD:master 2>/dev/null; then
+            echo "✅ Successfully pushed to master"
+            return 0
+          else
+            echo "❌ Push failed"
+            return 1
+          fi
+        }
+        
+        # Retry logic
+        max_attempts=3
+        attempt=1
+        
+        while [ $attempt -le $max_attempts ]; do
+          echo "🔄 Attempt $attempt of $max_attempts"
+          
+          if attempt_push; then
+            echo "✅ Push successful on attempt $attempt"
+            echo "success=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          echo "❌ Attempt $attempt failed, waiting 10 seconds..."
+          sleep 10
+          attempt=$((attempt + 1))
+        done
+        
+        echo "❌ All push attempts failed"
+        echo "success=false" >> $GITHUB_OUTPUT
+        exit 1
+
+    - name: Create summary
+      if: always()
+      run: |
+        echo "## 📤 Safe Push Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ steps.check-changes.outputs.changed }}" == "true" ]; then
+          if [ "${{ steps.push.outcome }}" == "success" ]; then
+            echo "✅ **Status**: Changes committed and pushed successfully" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Status**: Push failed after multiple attempts" >> $GITHUB_STEP_SUMMARY
+          fi
+        else
+          echo "ℹ️ **Status**: No changes to commit" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Commit message**: ${{ inputs.commit_message }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Files added**: ${{ inputs.files_to_add }}" >> $GITHUB_STEP_SUMMARY
