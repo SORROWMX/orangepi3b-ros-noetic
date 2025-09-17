@@ -1,0 +1,2528 @@
+Package: hddtemp
+Version: 0.3-beta15-54
+Architecture: arm64
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Installed-Size: 204
+Depends: libc6 (>= 2.34), debconf (>= 0.5) | debconf-2.0, lsb-base (>= 3.0-3)
+Filename: pool/main/arm64/hddtemp_0.3-beta15-54_arm64.deb
+Size: 47744
+MD5sum: a3a3b21779e912f6384fe15a7c84644b
+SHA1: 12aeb124d39436d78d96965a6dc66aa361123fce
+SHA256: c6446ab55ba19f96a18ed4434777ee194d08ea5fccf838c8a8aeab0fe202306a
+Section: utils
+Priority: optional
+Homepage: http://www.guzu.net/linux/hddtemp.php
+Description: hard drive temperature monitoring utility
+ The hddtemp program monitors and reports the temperature of PATA, SATA
+ or SCSI hard drives by reading Self-Monitoring Analysis and Reporting
+ Technology (S.M.A.R.T.) information on drives that support this feature.
+
+Package: libboost-filesystem1.71.0
+Source: boost1.71
+Version: 1.71.0-6ubuntu6
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 2061
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Filename: pool/main/arm64/libboost-filesystem1.71.0_1.71.0-6ubuntu6_arm64.deb
+Size: 237608
+MD5sum: 1cae00079dbcacc082dfcd21ef6e24ee
+SHA1: c2a462ab1d2dca713666bfa65597a6315d14836b
+SHA256: c63392aec84b766e158c53bf925da862ae780d8d5b44f2f97ad4a40196354d69
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://boost.org/libs/filesystem/
+Description: filesystem operations (portable paths, iteration over directories, etc) in C++
+ This package forms part of the Boost C++ Libraries collection.
+ .
+ The Boost Filesystem Library provides portable facilities to query and
+ manipulate paths, files, and directories.  The goal is to
+ facilitate portable script-like operations from within C++ programs.
+Original-Maintainer: Debian Boost Team <team+boost@tracker.debian.org>
+
+Package: libboost-system1.71.0
+Source: boost1.71
+Version: 1.71.0-6ubuntu6
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1965
+Filename: pool/main/arm64/libboost-system1.71.0_1.71.0-6ubuntu6_arm64.deb
+Size: 205184
+MD5sum: c7c3c6a045f8316c59e6ba1e72b654b5
+SHA1: 7d9d44302bab7cb1d1f4731f567b6453fb6f207e
+SHA256: a1fd8032a87c9f370c9e8fbe1003384e4fed2ea01ae02358c2f4535157d16db4
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.boost.org/libs/system/
+Description: Operating system (e.g. diagnostics support) library
+ This package forms part of the Boost C++ Libraries collection.
+ .
+ The Boost System library provides simple, light-weight error_code
+ objects that encapsulate system-specific error code values, yet also
+ provide access to more abstract and portable error conditions via
+ error_condition objects. Because error_code objects can represent
+ errors from sources other than the operating system, including
+ user-defined sources, each error_code and error_condition has an
+ associated error_category.
+Original-Maintainer: Debian Boost Team <team+boost@tracker.debian.org>
+
+Package: libboost-thread1.71.0
+Source: boost1.71
+Version: 1.71.0-6ubuntu6
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 2129
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)
+Filename: pool/main/arm64/libboost-thread1.71.0_1.71.0-6ubuntu6_arm64.deb
+Size: 245280
+MD5sum: e0dc6a1edbfa2a8ad54fbb79165b5216
+SHA1: 46e269de09e0859313c1296e98350e1b7299a76c
+SHA256: cb49106a9f33950bdbab23f72ef2b3f610db4bbf42933e876b57efcba92cc055
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.boost.org/libs/thread/
+Description: portable C++ multi-threading
+ This package forms part of the Boost C++ Libraries collection.
+ .
+ Toolkit for writing C++ programs that execute as multiple,
+ asynchronous, independent, threads-of-execution. Each thread has its
+ own machine state including program instruction counter and
+ registers.
+Original-Maintainer: Debian Boost Team <team+boost@tracker.debian.org>
+
+Package: ros-noetic-actionlib
+Version: 1.14.3-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 1871
+Depends: libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libboost-dev, libboost-thread-dev, ros-noetic-actionlib-msgs, ros-noetic-message-runtime, ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-rostest, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-actionlib_1.14.3-0bookworm_arm64.deb
+Size: 150296
+MD5sum: 0afa3bd9a41d0b5fdc246ae73a586907
+SHA1: 4268ec81233a10d7ff210e4dc773449f3ee9de10
+SHA256: 0c02c089b7c69765c28dd40376eb783d968012e79ec9eed64a3c5f8437c988f4
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/actionlib
+Description: The actionlib stack provides a standardized interface for interfacing with preemptable tasks.
+ Examples of this include moving the base to a target location, performing a laser scan and returning the resulting point cloud, detecting the handle of a door, etc.
+
+Package: ros-noetic-actionlib-dbgsym
+Source: ros-noetic-actionlib
+Version: 1.14.3-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 476
+Depends: ros-noetic-actionlib (= 1.14.3-0focal)
+Filename: pool/main/arm64/ros-noetic-actionlib-dbgsym_1.14.3-0bookworm_arm64.deb
+Size: 448884
+MD5sum: edcd61ba89c7251a347a58ba37c894d4
+SHA1: 224060c8fa35c560bf157d19349713b8f66a551c
+SHA256: 6fe3f4e960e828a067a3b3a45c6265d85641bb55885be1253d87f0d4677305a6
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-actionlib
+Build-Ids: 4333b2290552c13551328965de5d1308557fdbae
+
+Package: ros-noetic-actionlib-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 239
+Depends: ros-noetic-message-generation, ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-actionlib-msgs_1.13.2-0bookworm_arm64.deb
+Size: 29804
+MD5sum: 3c37ccc0b266ce568a105868cc937272
+SHA1: 002a3b191393cb7eb2e91143f953bbeb827d1007
+SHA256: 0a95abfb80ba8e21bc4f6f36fa4675e7961d561910ebca26277081b5eb8c0b53
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/actionlib_msgs
+Description: actionlib_msgs defines the common messages to interact with an action server and an action client.
+ For full documentation of the actionlib API see the actionlib package.
+
+Package: ros-noetic-bond
+Version: 1.8.7-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 151
+Depends: ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-bond_1.8.7-0bookworm_arm64.deb
+Size: 20580
+MD5sum: fb219bfb26b41e03ccc377986e468493
+SHA1: df4404d64732a5b54694897543103743c3e7a499
+SHA256: ce7b7fe49af440ce70991656581e0b415f5b58627ea47359b2a76d5deaee980b
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/bond
+Description: A bond allows two processes, A and B, to know when the other has terminated, either cleanly or by crashing.
+ The bond remains connected until it is either broken explicitly or until a heartbeat times out.
+
+Package: ros-noetic-bond-core
+Version: 1.8.7-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 16
+Depends: ros-noetic-bond, ros-noetic-bondcpp, ros-noetic-bondpy, ros-noetic-smclib
+Filename: pool/main/arm64/ros-noetic-bond-core_1.8.7-0bookworm_arm64.deb
+Size: 3028
+MD5sum: 81951ed872acc6b9fba59464a4a4a18d
+SHA1: cd67b4ab2c1a7208c7c49a9f1abc216237bc48ec
+SHA256: 91700004ed94952e5b668c817379faf3d37a9a03853f685dac675c00c1b628c7
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/bond_core
+Description: A bond allows two processes, A and B, to know when the other has terminated, either cleanly or by crashing.
+ The bond remains connected until it is either broken explicitly or until a heartbeat times out.
+
+Package: ros-noetic-bondcpp
+Version: 1.8.7-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 244
+Depends: libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libuuid1 (>= 2.16), libboost-date-time-dev, libboost-dev, libboost-thread-dev, ros-noetic-bond, ros-noetic-roscpp, ros-noetic-smclib, uuid-dev
+Filename: pool/main/arm64/ros-noetic-bondcpp_1.8.7-0bookworm_arm64.deb
+Size: 52352
+MD5sum: 6e0993497e8ba3385b1e2c807b7f4fb5
+SHA1: 871ac84caa6f73d57edd7bbb97d436f54870ab7d
+SHA256: 6b45aa57a670f3f04a48fc839737ffa757d289522984db6b9e4121f93b3831bf
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/bondcpp
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
+
+Package: ros-noetic-bondcpp-dbgsym
+Source: ros-noetic-bondcpp
+Version: 1.8.7-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 769
+Depends: ros-noetic-bondcpp (= 1.8.7-0focal)
+Filename: pool/main/arm64/ros-noetic-bondcpp-dbgsym_1.8.7-0bookworm_arm64.deb
+Size: 726860
+MD5sum: b18f216e277d88a4c67b28f7002a6fa8
+SHA1: 51499c9b33a6f10a776876f85702be1e9e21f980
+SHA256: 67b29372500477258e055453dbcf95b7ae64c3cc6a147043c5174deac620b60f
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-bondcpp
+Build-Ids: 914f6409d0d9efa0dfe9f0e2cf011194bf25d18c
+
+Package: ros-noetic-bondpy
+Version: 1.8.7-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 99
+Depends: ros-noetic-rospy, ros-noetic-smclib, uuid-dev
+Filename: pool/main/arm64/ros-noetic-bondpy_1.8.7-0bookworm_arm64.deb
+Size: 19972
+MD5sum: 4546770e6c603032c59b2837b8aa130f
+SHA1: 3bf78a1d93713ccfa2de0a4d2efaf016af3aad2e
+SHA256: ac9f33cf2bd48157b3d59c0952461d37e1d7cdfbf90f8d32e79ee114af2f1c2e
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/bondpy
+Description: Python implementation of bond, a mechanism for checking when another process has terminated.
+
+Package: ros-noetic-camera-calibration-parsers
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 392
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-python1.74.0 (>= 1.74.0+ds1), libboost-python1.74.0-py311, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libpython3.11 (>= 3.11.0), libstdc++6 (>= 9), libyaml-cpp0.7 (>= 0.7.0), libboost-all-dev, libyaml-cpp-dev, ros-noetic-roscpp, ros-noetic-roscpp-serialization, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-camera-calibration-parsers_1.12.1-0bookworm_arm64.deb
+Size: 67860
+MD5sum: 9a4995c1ab31da48551a8da040004110
+SHA1: 7e7d2e0ac5eab0bf037f22df17e893ba6678869c
+SHA256: 87d14ce1589b70d390011acfa296e362575e18d6ec4d6b665c34d24c3f4e2e7c
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/camera_calibration_parsers
+Description: camera_calibration_parsers contains routines for reading and writing camera calibration parameters.
+
+Package: ros-noetic-camera-calibration-parsers-dbgsym
+Source: ros-noetic-camera-calibration-parsers
+Version: 1.12.1-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 1322
+Depends: ros-noetic-camera-calibration-parsers (= 1.12.1-0focal)
+Filename: pool/main/arm64/ros-noetic-camera-calibration-parsers-dbgsym_1.12.1-0bookworm_arm64.deb
+Size: 1259196
+MD5sum: b9a1cf08702891af5ffd5f6427d2002a
+SHA1: 60d797e7aa0726680926e4afdfe0ffb90e167832
+SHA256: 8b6d7db18b7e680c3587a6582faf75346c80064af686f703312896ec4b5a9837
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-camera-calibration-parsers
+Build-Ids: 5ed09de4d43ccdeb9e5e77ac13a9354bac543b33 622d8bca7d2267cf5b02efaf0c7bbd0c5c736ab2 c997e5ccaadb11e274ddf7fcd57697bc335133e6
+
+Package: ros-noetic-camera-info-manager
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 178
+Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libboost-all-dev, ros-noetic-camera-calibration-parsers, ros-noetic-image-transport, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-camera-info-manager_1.12.1-0bookworm_arm64.deb
+Size: 42948
+MD5sum: a48ad2b52282b8466c62190a2798e444
+SHA1: 57e267c78e16fb6468433791b75e2665fe70ba57
+SHA256: 713ea6a3d6249de65166d61f75ca8cfc4621ca60cd76c2c330a65b13e75d27ec
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/camera_info_manager
+Description: This package provides a C++ interface for camera calibration information.
+ It provides CameraInfo, and handles SetCameraInfo service requests, saving and restoring the camera calibration data.
+
+Package: ros-noetic-camera-info-manager-dbgsym
+Source: ros-noetic-camera-info-manager
+Version: 1.12.1-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 466
+Depends: ros-noetic-camera-info-manager (= 1.12.1-0focal)
+Filename: pool/main/arm64/ros-noetic-camera-info-manager-dbgsym_1.12.1-0bookworm_arm64.deb
+Size: 426304
+MD5sum: 0481b0ef9ee4a1230c3c3014fa82c84c
+SHA1: 61a348965173a6fe341247018ade205062b75697
+SHA256: 1c9b7705c8d1b8a12c2869c2f5b18b14098933287532073d12135a33246820fe
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-camera-info-manager
+Build-Ids: 7bdced1bc9cd57ba805cfb4a6304a1020b7ebe00
+
+Package: ros-noetic-catkin
+Version: 0.8.12-0focal
+Architecture: arm64
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Installed-Size: 669
+Depends: cmake, google-mock, libgtest-dev, python3-catkin-pkg (>> 0.4.3), python3-empy, python3-nose, python3-setuptools
+Filename: pool/main/arm64/ros-noetic-catkin_0.8.12-0bookworm_arm64.deb
+Size: 141492
+MD5sum: 9be45c0ec37c1d00c9fe98697ac2cbbe
+SHA1: ac29c04559c56e9100ba84736dd8595d91ac5f06
+SHA256: b937cf6e806228bd79538a607a404ea7d7ef51a0276c3abe2eee4a318241d087
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/catkin
+Description: Low-level build system macros and infrastructure for ROS.
+
+Package: ros-noetic-class-loader
+Version: 0.5.2-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 322
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libpocofoundation80 (>= 1.11.0), libstdc++6 (>= 11), libboost-filesystem-dev, libboost-system-dev, libboost-thread-dev, libconsole-bridge-dev, libpoco-dev
+Filename: pool/main/arm64/ros-noetic-class-loader_0.5.2-0bookworm_arm64.deb
+Size: 61964
+MD5sum: cc66c029ca32905e61e0630a238988f0
+SHA1: 2f8eb5630cd23f193d13e2d39977da9e45d51e4d
+SHA256: 1ce5e65398817be51a877769bd66948d9b9acec672539d9515555e242cdb6079
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/class_loader
+Description: The class_loader package is a ROS-independent package for loading plugins during runtime and the foundation of the higher level ROS &quot;pluginlib&quot; library.
+ class_loader utilizes the host operating system's runtime loader to open runtime libraries (e.g. .so/.dll files), introspect the library for exported plugin classes, and allows users to instantiate objects of said exported classes without the explicit declaration (i.e. header file) for those classes.
+
+Package: ros-noetic-class-loader-dbgsym
+Source: ros-noetic-class-loader
+Version: 0.5.2-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 799
+Depends: ros-noetic-class-loader (= 0.5.2-0focal)
+Filename: pool/main/arm64/ros-noetic-class-loader-dbgsym_0.5.2-0bookworm_arm64.deb
+Size: 758852
+MD5sum: b94ad1eb4f6494219db7f83e96fc45fc
+SHA1: e1896e33bbde623956084a4e942d163befd29086
+SHA256: 84456c62c6842b3e07349da0400aad21c9cb98450395a5b44484354107819753
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-class-loader
+Build-Ids: de1b7f01f04e6de762442b174c2c719f21ef1fae
+
+Package: ros-noetic-cmake-modules
+Version: 0.5.2-0focal
+Architecture: arm64
+Maintainer: Mabel Zhang <mabel@openrobotics.org>
+Installed-Size: 85
+Filename: pool/main/arm64/ros-noetic-cmake-modules_0.5.2-0bookworm_arm64.deb
+Size: 18916
+MD5sum: e1a1eb66d7b117f88c2daacf96c801f7
+SHA1: e3752bca7db37dc88f013095f67b941bedeb2fd5
+SHA256: 887622b3db8acff1812cfe148063a5cd078969a1d11438d20492455b001707c5
+Section: misc
+Priority: optional
+Description: A common repository for CMake Modules which are not distributed with CMake but are commonly used by ROS packages.
+
+Package: ros-noetic-common-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 16
+Depends: ros-noetic-actionlib-msgs, ros-noetic-diagnostic-msgs, ros-noetic-geometry-msgs, ros-noetic-nav-msgs, ros-noetic-sensor-msgs, ros-noetic-shape-msgs, ros-noetic-stereo-msgs, ros-noetic-trajectory-msgs, ros-noetic-visualization-msgs
+Filename: pool/main/arm64/ros-noetic-common-msgs_1.13.2-0bookworm_arm64.deb
+Size: 3240
+MD5sum: 98b952493f851d0d57ef9e8610fcfa8d
+SHA1: 219382cfc3abfa29505d4de777fd36271f0c2825
+SHA256: 221760b0f64f7a0fac3de87670b6bf18121367d796e4dd62291c2cfe8f443c18
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/common_msgs
+Description: common_msgs contains messages that are widely used by other ROS packages.
+ These includes messages for actions (actionlib_msgs), diagnostics (diagnostic_msgs), geometric primitives (geometry_msgs), robot navigation (nav_msgs), and common sensors (sensor_msgs), such as laser range finders, cameras, point clouds.
+
+Package: ros-noetic-control-msgs
+Version: 1.5.2-0focal
+Architecture: arm64
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Installed-Size: 3198
+Depends: ros-noetic-actionlib-msgs, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-std-msgs, ros-noetic-trajectory-msgs
+Filename: pool/main/arm64/ros-noetic-control-msgs_1.5.2-0bookworm_arm64.deb
+Size: 135504
+MD5sum: a5d78ec99f84a733259e03a6b273eb97
+SHA1: 87411a7cb991a172a235d9fabb5344095a493d14
+SHA256: 4e0f5a012daaa1da09ec1b02d7cb1645b9d6dfae5dfb260451687654dd2b07ad
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/control_msgs
+Description: control_msgs contains base messages and actions useful for controlling robots.
+ It provides representations for controller setpoints and joint and cartesian trajectories.
+
+Package: ros-noetic-control-toolbox
+Version: 1.19.0-0focal
+Architecture: arm64
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Installed-Size: 382
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libtinyxml2.6.2v5 (>= 2.6.2), libtinyxml-dev, ros-noetic-control-msgs, ros-noetic-dynamic-reconfigure, ros-noetic-message-runtime, ros-noetic-realtime-tools, ros-noetic-roscpp, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-control-toolbox_1.19.0-0bookworm_arm64.deb
+Size: 84764
+MD5sum: 559bc678b2016d81354ad0725f342a2b
+SHA1: f86aeb2c95ed03e8202a194b6ad5c36ed83f7220
+SHA256: 01620982b15c20b54b4da64c0e16964658ba0143281a001178fe0c72f5752c29
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/control_toolbox
+Description: The control toolbox contains modules that are useful across all controllers.
+
+Package: ros-noetic-control-toolbox-dbgsym
+Source: ros-noetic-control-toolbox
+Version: 1.19.0-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Installed-Size: 1273
+Depends: ros-noetic-control-toolbox (= 1.19.0-0focal)
+Filename: pool/main/arm64/ros-noetic-control-toolbox-dbgsym_1.19.0-0bookworm_arm64.deb
+Size: 1198576
+MD5sum: e354024a6e7631c971763a545aba94b3
+SHA1: ed5582c8c25c1b308759b6df00a8af938eec5139
+SHA256: 7868811356875fbba2a58556fb0b1ecfe1dd667069f9b886059e55919ce88005
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-control-toolbox
+Build-Ids: b5ea0891633ae7eb0066bc67c4dcf70c38403d6c
+
+Package: ros-noetic-cpp-common
+Version: 0.7.3-0focal
+Architecture: arm64
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Installed-Size: 123
+Depends: libc6 (>= 2.17), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libboost-system-dev, libboost-thread-dev, libconsole-bridge-dev
+Filename: pool/main/arm64/ros-noetic-cpp-common_0.7.3-0bookworm_arm64.deb
+Size: 21352
+MD5sum: 4ade72cd53ea6fba4c0baea6ffa6d675
+SHA1: 73d761c581abc4a6525d3c073659da19406ba7e4
+SHA256: 7842a83e878d28cce9040dc51b35e7f4cfe37379cad4e3e26855f2971a4997ef
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/cpp_common
+Description: cpp_common contains C++ code for doing things that are not necessarily ROS related, but are useful for multiple packages.
+ This includes things like the ROS_DEPRECATED and ROS_FORCE_INLINE macros, as well as code for getting backtraces. This package is a component of roscpp.
+
+Package: ros-noetic-cpp-common-dbgsym
+Source: ros-noetic-cpp-common
+Version: 0.7.3-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Installed-Size: 163
+Depends: ros-noetic-cpp-common (= 0.7.3-0focal)
+Filename: pool/main/arm64/ros-noetic-cpp-common-dbgsym_0.7.3-0bookworm_arm64.deb
+Size: 142988
+MD5sum: 8e72d2604415ba68247a7ad72f563c94
+SHA1: e08e460b5451a28ffb93fefcd3c830056a427538
+SHA256: 04d72b2084e7ca78024052fa0b9704d4256acd3dc0910315f356a3627ce06e07
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-cpp-common
+Build-Ids: f455a44fd88911655a331837c39f5c1b9122a052
+
+Package: ros-noetic-cv-bridge
+Version: 1.16.2-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 431
+Depends: libboost-python1.74.0 (>= 1.74.0+ds1), libboost-python1.74.0-py311, libboost-regex1.74.0-icu72, libc6 (>= 2.17), libgcc-s1 (>= 3.0), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgcodecs406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libpython3.11 (>= 3.11.0), libstdc++6 (>= 11), libboost-all-dev, libopencv-dev, python3-dev, python3-opencv, ros-noetic-rosconsole, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-cv-bridge_1.16.2-0bookworm_arm64.deb
+Size: 82844
+MD5sum: b1c07f5681493e4247842d68bf5c0009
+SHA1: d25942dfc32b39e652c50da75a4935c47cdc6714
+SHA256: 46fe104f74d5cf76df8f0a363176233b3580892ebf582e7eb622fff4eddf546a
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/cv_bridge
+Description: This contains CvBridge, which converts between ROS Image messages and OpenCV images.
+
+Package: ros-noetic-diagnostic-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 396
+Depends: ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-diagnostic-msgs_1.13.2-0bookworm_arm64.deb
+Size: 36396
+MD5sum: a5e2e0d6881a65248c148176738320b0
+SHA1: 01b70eff28d8c373e1bc623c6e0738b543642aa0
+SHA256: 1c8079eef5df4015ffaccecf7a702ce776fb34de966076230d0d6069e01ae645
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/diagnostic_msgs
+Description: This package holds the diagnostic messages which provide the standardized interface for the diagnostic and runtime monitoring systems in ROS.
+ These messages are currently used by the diagnostics Stack, which provides libraries for simple ways to set and access the messages, as well as automated ways to process the diagnostic data. These messages are used for long term logging and will not be changed unless there is a very important reason.
+
+Package: ros-noetic-dynamic-reconfigure
+Version: 1.7.6-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 1182
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libboost-chrono-dev, libboost-dev, libboost-thread-dev, ros-noetic-message-runtime, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-rospy, ros-noetic-rosservice, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-dynamic-reconfigure_1.7.6-0bookworm_arm64.deb
+Size: 117696
+MD5sum: 27c1d7eff4a31bba9ee433427d8d8786
+SHA1: 9317a06d9245210d4a438c5f40a1e808e8e81a63
+SHA256: 5710a2f01d60d9b4684864a858c0ea85eef34210255da65f85c6411cefad5736
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/dynamic_reconfigure
+Description: The dynamic_reconfigure package provides a means to update parameters at runtime without having to restart the node.
+
+Package: ros-noetic-dynamic-reconfigure-dbgsym
+Source: ros-noetic-dynamic-reconfigure
+Version: 1.7.6-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 111
+Depends: ros-noetic-dynamic-reconfigure (= 1.7.6-0focal)
+Filename: pool/main/arm64/ros-noetic-dynamic-reconfigure-dbgsym_1.7.6-0bookworm_arm64.deb
+Size: 90520
+MD5sum: d49c1625f8c1050e1847e164890925f1
+SHA1: ae6f8c7ba354946f18c30fc8b44658df524af76c
+SHA256: 917a2b89262109d158f846691c0b1660977815be18a2fb23c38f489c4fa79150
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-dynamic-reconfigure
+Build-Ids: 7cb6b206988831e6fc1215d1754faf3542b2b945
+
+Package: ros-noetic-eigen-conversions
+Version: 1.13.4-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 108
+Depends: libc6 (>= 2.17), liborocos-kdl1.5 (>= 1.5.1), libstdc++6 (>= 4.1.1), libeigen3-dev, liborocos-kdl-dev, liborocos-kdl1.4, ros-noetic-geometry-msgs, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-eigen-conversions_1.13.4-0bookworm_arm64.deb
+Size: 12800
+MD5sum: 88cd529bcf7ddf485e249d906463f463
+SHA1: 1981a7cc31878c9b6c978d7627a5d8f33f1f26fa
+SHA256: c7d33c36003f4507aec57c1fa2b6a3f8ca66b226251571d1a77966c17cdca68b
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/eigen_conversions
+Description: Conversion functions between: - Eigen and KDL - Eigen and geometry_msgs.
+
+Package: ros-noetic-eigen-conversions-dbgsym
+Source: ros-noetic-eigen-conversions
+Version: 1.13.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 373
+Depends: ros-noetic-eigen-conversions (= 1.13.4-0focal)
+Filename: pool/main/arm64/ros-noetic-eigen-conversions-dbgsym_1.13.4-0bookworm_arm64.deb
+Size: 363556
+MD5sum: 2c06e49df117462ad32fa8fa8c0a94ed
+SHA1: d06917e0499cb680782afb2f9256826aa59dc951
+SHA256: de3fd6fef6e0fd43fae8bfb47dbb0c7d9c9508a34f1a46b9838eb0a9aa0694e7
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-eigen-conversions
+Build-Ids: 434bd7c8405a8e1f19f276870c3238de53027cf4
+
+Package: ros-noetic-eigen-stl-containers
+Version: 0.1.8-0focal
+Architecture: arm64
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Installed-Size: 41
+Depends: libeigen3-dev
+Filename: pool/main/arm64/ros-noetic-eigen-stl-containers_0.1.8-0bookworm_arm64.deb
+Size: 7540
+MD5sum: 0081c72f77a8d01389cc7a0cb0d9026d
+SHA1: 7cca32397d98206ae7c2c0c09660a20ac48d4188
+SHA256: 271e838f94e02be5640d5cf6a01a1f24ae3975ae2f2298e2191d729f2f82d30b
+Section: misc
+Priority: optional
+Homepage: http://eigen.tuxfamily.org/dox/TopicUnalignedArrayAssert.html
+Description: This package provides a set of typedef's that allow using Eigen datatypes in STL containers
+
+Package: ros-noetic-gencpp
+Version: 0.7.2-0focal
+Architecture: arm64
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 85
+Depends: ros-noetic-genmsg
+Filename: pool/main/arm64/ros-noetic-gencpp_0.7.2-0bookworm_arm64.deb
+Size: 17452
+MD5sum: 49ed80f3973309574bf21f356474e367
+SHA1: f8a997d3d7b1c4cb083a0dc32429d7242c1ce984
+SHA256: 592e246d3c98b0f4cdd06feb09ffd317fda0a5b4618e61c34b7424d81147017a
+Section: misc
+Priority: optional
+Description: C++ ROS message and service generators.
+
+Package: ros-noetic-geneus
+Version: 3.0.0-0focal
+Architecture: arm64
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Installed-Size: 162
+Depends: ros-noetic-genmsg
+Filename: pool/main/arm64/ros-noetic-geneus_3.0.0-0bookworm_arm64.deb
+Size: 38648
+MD5sum: f274ea8b6a31f4d2075beaf9651e376e
+SHA1: 9593f4a49230fbce6fb7614eb8b2636460887787
+SHA256: 282ac749c3bd86ddeb145029f533ce8a08a6f019b91e16a62496eae8ebb7d9e8
+Section: misc
+Priority: optional
+Description: EusLisp ROS message and service generators.
+
+Package: ros-noetic-genlisp
+Version: 0.4.18-0focal
+Architecture: arm64
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 149
+Depends: ros-noetic-genmsg
+Filename: pool/main/arm64/ros-noetic-genlisp_0.4.18-0bookworm_arm64.deb
+Size: 30644
+MD5sum: 9883eb80aeabd1b77d7c7b985123c6b9
+SHA1: 46ab6d1b22c399fbf991a3c494a8ef2cd4f03727
+SHA256: be6ea4a18542ca383dd54d81df1c10678d0a411ce1013a56f65a9be12fe06ba8
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/roslisp
+Description: Common-Lisp ROS message and service generators.
+
+Package: ros-noetic-genmsg
+Version: 0.6.1-0focal
+Architecture: arm64
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 209
+Depends: python3-empy, ros-noetic-catkin
+Filename: pool/main/arm64/ros-noetic-genmsg_0.6.1-0bookworm_arm64.deb
+Size: 44648
+MD5sum: 0f8025e72e80ca756b54c2d862586d52
+SHA1: c870272822cf5563e964f219185193fb8877a5e6
+SHA256: 3f223e24c2f13a8e105802c84ddcd3c02ac3a9dcb19e6227ab23530809d1bdcd
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/genmsg
+Description: Standalone Python library for generating ROS message and service data structures for various languages.
+
+Package: ros-noetic-gennodejs
+Version: 2.0.2-0focal
+Architecture: arm64
+Maintainer: Chris Smith <csmith@rethinkrobotics.com>
+Installed-Size: 150
+Depends: ros-noetic-genmsg
+Filename: pool/main/arm64/ros-noetic-gennodejs_2.0.2-0bookworm_arm64.deb
+Size: 31968
+MD5sum: 171de992c5e0bdb0c2ab7c85785ef495
+SHA1: 0e411b72483f1b0621d468d5c2916ad67ee35268
+SHA256: 592b7d06c064d4fe70a0d107103a35af0017df5b18198a6fb8fe05848dc9b0ef
+Section: misc
+Priority: optional
+Description: Javascript ROS message and service generators.
+
+Package: ros-noetic-genpy
+Version: 0.6.18-0focal
+Architecture: arm64
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Installed-Size: 296
+Depends: python3-yaml, ros-noetic-genmsg
+Filename: pool/main/arm64/ros-noetic-genpy_0.6.18-0bookworm_arm64.deb
+Size: 70032
+MD5sum: 9ebe71e12282ae86a4a3f4d657c030fb
+SHA1: 4893b8f7168fef525f73adab5fb22d1fc36f6f93
+SHA256: 9d235f3b097921c0d7d43e8d02ef0970096760ae95dfac8ead918d7a94b732cb
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/genpy
+Description: Python ROS message and service generators.
+
+Package: ros-noetic-geodesy
+Version: 0.5.6-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 180
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), python3-pyproj, ros-noetic-geographic-msgs, ros-noetic-geometry-msgs, ros-noetic-sensor-msgs, ros-noetic-tf, ros-noetic-unique-id, ros-noetic-uuid-msgs
+Filename: pool/main/arm64/ros-noetic-geodesy_0.5.6-0bookworm_arm64.deb
+Size: 30208
+MD5sum: 04694fb4344f3da20e0b3583cb8753b8
+SHA1: 8395eeae2ca28abdbc6e1b04daefb1ec192da4eb
+SHA256: b6d1c8f94398f24863b94317b88b660324e3d8fb541a9718a3454777d6871517
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/geodesy
+Description: Python and C++ interfaces for manipulating geodetic coordinates.
+
+Package: ros-noetic-geodesy-dbgsym
+Source: ros-noetic-geodesy
+Version: 0.5.6-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 130
+Depends: ros-noetic-geodesy (= 0.5.6-0focal)
+Filename: pool/main/arm64/ros-noetic-geodesy-dbgsym_0.5.6-0bookworm_arm64.deb
+Size: 111476
+MD5sum: b907cb31679370a669101503d69dbd86
+SHA1: 91b0e7ca87f4bc0935088487546345659ea7d100
+SHA256: 1e1cfa3b3b92169994e21ed6cf2331c00f1e72ef85301623ed7bf0a37a58b170
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-geodesy
+Build-Ids: c5d5a92f37e4cb11ecdb0e86a1e086ab1620b699
+
+Package: ros-noetic-geographic-info
+Version: 0.5.6-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 15
+Depends: ros-noetic-geodesy, ros-noetic-geographic-msgs
+Filename: pool/main/arm64/ros-noetic-geographic-info_0.5.6-0bookworm_arm64.deb
+Size: 2532
+MD5sum: 67c82733397eac49b701a8b9b7b2a984
+SHA1: d05709cf8c907ec5cfb957cee5a2eab50457b55d
+SHA256: ca8ac4bdaa87fe58ba9f2e908578f7f5a25dab35e9769a62530efdc4f1885dee
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/geographic_info
+Description: Geographic information metapackage.
+ Not needed for wet packages, use only to resolve dry stack dependencies.
+
+Package: ros-noetic-geographic-msgs
+Version: 0.5.6-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 1645
+Depends: ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-std-msgs, ros-noetic-uuid-msgs
+Filename: pool/main/arm64/ros-noetic-geographic-msgs_0.5.6-0bookworm_arm64.deb
+Size: 88548
+MD5sum: e4417e059b22cee3eaa539323153e652
+SHA1: 328b2e0f92c4740b7d1e22c3400a341d6023ccaf
+SHA256: be279308dd4697ded8f8dceeabb672635f47862928bf874c646f0f68681a735a
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/geographic_msgs
+Description: ROS messages for Geographic Information Systems.
+
+Package: ros-noetic-geometry
+Version: 1.13.4-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 16
+Depends: ros-noetic-angles, ros-noetic-eigen-conversions, ros-noetic-kdl-conversions, ros-noetic-tf, ros-noetic-tf-conversions
+Filename: pool/main/arm64/ros-noetic-geometry_1.13.4-0bookworm_arm64.deb
+Size: 3748
+MD5sum: 89a9fb103f11cd7dbe4d20a51cc53560
+SHA1: 454d6f7bdcb3124903efbea445d0c40f2f9bf200
+SHA256: 8e1d359ec65b81c008f5a70e242af3c71ba0841db46e38deb8d4ddc4339ef745
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/geometry
+Description: A metapackage for geometry library suite.
+ Migration: Since ROS Hydro, tf has been &quot;deprecated&quot; in favor of tf2. tf2 is an iteration on tf providing generally the same feature set more efficiently. As well as adding a few new features. As tf2 is a major change the tf API has been maintained in its current form. Since tf2 has a superset of the tf features with a subset of the dependencies the tf implementation has been removed and replaced with calls to tf2 under the hood. This will mean that all users will be compatible with tf2. It is recommended for new work to use tf2 directly as it has a cleaner interface. However tf will continue to be supported for through at least J Turtle.
+
+Package: ros-noetic-geometry-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 1343
+Depends: ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-geometry-msgs_1.13.2-0bookworm_arm64.deb
+Size: 74724
+MD5sum: eedcdb2416007211b51f6e093ca52007
+SHA1: bee7fe7fe9733d8405289e4a9d7c4ea617c0b29b
+SHA256: 317dd24e2445e2b768fe8b62a9b3c58d299fe0b0ad98dc66471b620257bdf903
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/geometry_msgs
+Description: geometry_msgs provides messages for common geometric primitives such as points, vectors, and poses.
+ These primitives are designed to provide a common data type and facilitate interoperability throughout the system.
+
+Package: ros-noetic-geometry2
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 15
+Depends: ros-noetic-tf2, ros-noetic-tf2-bullet, ros-noetic-tf2-eigen, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-kdl, ros-noetic-tf2-msgs, ros-noetic-tf2-py, ros-noetic-tf2-ros, ros-noetic-tf2-sensor-msgs, ros-noetic-tf2-tools
+Filename: pool/main/arm64/ros-noetic-geometry2_0.7.10-0bookworm_arm64.deb
+Size: 2648
+MD5sum: fd71ec106d3fa822c38b7bbb2684fb4f
+SHA1: 2fed3286f53a5ca9aedb28cd27b8421b840ba0b4
+SHA256: 38ce71e29fef8e1f9a8aec821bb931f57065a783a9eb56b96fac99827249c828
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/geometry2
+Description: A metapackage to bring in the default packages second generation Transform Library in ros, tf2.
+
+Package: ros-noetic-image-common
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 15
+Depends: ros-noetic-camera-calibration-parsers, ros-noetic-camera-info-manager, ros-noetic-image-transport, ros-noetic-polled-camera
+Filename: pool/main/arm64/ros-noetic-image-common_1.12.1-0bookworm_arm64.deb
+Size: 2908
+MD5sum: 63c2c198792d74a9e0b6f8d676bd1d75
+SHA1: fa4e3e1181789a079da767bd31ece85117847864
+SHA256: f2a3db87944a2c06ccb499fae8ab3976b721ef5458242ac51d36628da81b3c60
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/image_common
+Description: Common code for working with images in ROS.
+
+Package: ros-noetic-image-geometry
+Version: 1.16.2-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 169
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libopencv-calib3d406 (>= 4.6.0+dfsg), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), libopencv-dev, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-image-geometry_1.16.2-0bookworm_arm64.deb
+Size: 34952
+MD5sum: e91fe4aa952632ca4b1c7c175a1e9804
+SHA1: efad351037c2124e55c2281756c093a6db88ad93
+SHA256: 013cbd71e4b4ef023c978b384b11b2dd4fff7d47db37f7e6e0c0b8aab7206193
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/image_geometry
+Description: `image_geometry` contains C++ and Python libraries for interpreting images geometrically.
+ It interfaces the calibration parameters in sensor_msgs/CameraInfo messages with OpenCV functions such as image rectification, much as cv_bridge interfaces ROS sensor_msgs/Image with OpenCV data types.
+
+Package: ros-noetic-image-transport
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 1295
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libtinyxml2-9 (>= 8.0.0), ros-noetic-message-filters, ros-noetic-pluginlib, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-image-transport_1.12.1-0bookworm_arm64.deb
+Size: 217424
+MD5sum: 3e045bf49f14210dc77fd13710624a01
+SHA1: e7f4420833c490086a75c8d75a3cb3f78fc21e39
+SHA256: 8b2d438facb83d2c0645843d5ad9f5d43e2cd43d3c4cf6d73717481343fe1ed7
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/image_transport
+Description: image_transport should always be used to subscribe to and publish images.
+ It provides transparent support for transporting images in low-bandwidth compressed formats. Examples (provided by separate plugin packages) include JPEG/PNG compression and Theora streaming video.
+
+Package: ros-noetic-image-transport-dbgsym
+Source: ros-noetic-image-transport
+Version: 1.12.1-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 5314
+Depends: ros-noetic-image-transport (= 1.12.1-0focal)
+Filename: pool/main/arm64/ros-noetic-image-transport-dbgsym_1.12.1-0bookworm_arm64.deb
+Size: 5037700
+MD5sum: 44996b845e98e560270ca319d5c6955c
+SHA1: 4dad21cc988fd074bb4c7220a0c074dacac26011
+SHA256: b76255ffef5c0d30a7f31da4e88af55e0ea56a6a33f8984aaec1c6a5446ce056
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-image-transport
+Build-Ids: 288a1c413836cc0cb0326ecc9a4039a83ed0525b 361adef61fb41ea9f95b5be6c5d75451b86cea05 4f308ec258b1601413dd10f92547983ab866ab52 e2c8f2799f851a1bfe8d831175b6fd9726ac7763
+
+Package: ros-noetic-kdl-conversions
+Version: 1.13.4-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 104
+Depends: libc6 (>= 2.17), liborocos-kdl1.5 (>= 1.5.1), libstdc++6 (>= 4.1.1), liborocos-kdl-dev, liborocos-kdl1.4, ros-noetic-geometry-msgs
+Filename: pool/main/arm64/ros-noetic-kdl-conversions_1.13.4-0bookworm_arm64.deb
+Size: 10552
+MD5sum: 5091506b13028726c6a3414252af227a
+SHA1: a46ba7f0fae070be33c2077c47d98bdb6124f48d
+SHA256: 13342b41a9451ed3b90b1e732a8fc1c374c3601974069f48a1b490d8d3977317
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/kdl_conversions
+Description: Conversion functions between KDL and geometry_msgs types.
+
+Package: ros-noetic-kdl-conversions-dbgsym
+Source: ros-noetic-kdl-conversions
+Version: 1.13.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 39
+Depends: ros-noetic-kdl-conversions (= 1.13.4-0focal)
+Filename: pool/main/arm64/ros-noetic-kdl-conversions-dbgsym_1.13.4-0bookworm_arm64.deb
+Size: 24572
+MD5sum: 829ede55df1528c9e50e5d19e4a265a9
+SHA1: ba517fc40066bdc61df7ed9359a5d8bbf822d22a
+SHA256: bbdfa80365344afae1cdf2d34b65b22fd61ebec4f2b71f054236311e95bb4737
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-kdl-conversions
+Build-Ids: ed7a9f01fc3eda1071bd405eac99adceb95374c9
+
+Package: ros-noetic-mavlink
+Version: 2021.3.3-0focal
+Architecture: arm64
+Maintainer: Vladimir Ermakov <vooon341@gmail.com>
+Installed-Size: 17291
+Depends: ros-noetic-catkin
+Filename: pool/main/arm64/ros-noetic-mavlink_2021.3.3-0bookworm_arm64.deb
+Size: 801836
+MD5sum: 3781fbe2064ae0b73201326b86a99d74
+SHA1: 8b714618d196a47ae94c9a46f4e08b294e1da372
+SHA256: 36cd0a961608bb59498319900777c79e66271ffd09e511b2791639ee4cf2e07f
+Section: misc
+Priority: optional
+Homepage: https://mavlink.io/en/
+Description: MAVLink message marshaling library.
+ This package provides C-headers and C++11 library for both 1.0 and 2.0 versions of protocol. For pymavlink use separate install via rosdep (python-pymavlink).
+
+Package: ros-noetic-message-filters
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 277
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libboost-thread-dev, ros-noetic-rosconsole, ros-noetic-roscpp
+Filename: pool/main/arm64/ros-noetic-message-filters_1.17.4-0bookworm_arm64.deb
+Size: 37860
+MD5sum: 6a5fe767ec3d1f1b3db8c511dec4c821
+SHA1: ad3dd082afbbefbf1367927815d94514353d1b72
+SHA256: b1ccb5c8a8643f6a719d4cf1178fb4554730690eced1d6b55581a9f0d9718e4c
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/message_filters
+Description: A set of message filters which take in messages and may output those messages at a later time, based on the conditions that filter needs met.
+
+Package: ros-noetic-message-filters-dbgsym
+Source: ros-noetic-message-filters
+Version: 1.17.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 58
+Depends: ros-noetic-message-filters (= 1.17.4-0focal)
+Filename: pool/main/arm64/ros-noetic-message-filters-dbgsym_1.17.4-0bookworm_arm64.deb
+Size: 42808
+MD5sum: 8be13b665f9364c129238cd904c51810
+SHA1: 14454a655a7379f64456258dd059fb863ef48a55
+SHA256: 3c3e8e28ff4272a7b30ddc9339e7c54fe0b068d104695d84b60a377b71f63310
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-message-filters
+Build-Ids: 9541e253b32ae403b3dd7f82897ec2088a74b086
+
+Package: ros-noetic-message-generation
+Version: 0.4.1-0focal
+Architecture: arm64
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 29
+Depends: ros-noetic-gencpp, ros-noetic-geneus, ros-noetic-genlisp, ros-noetic-genmsg, ros-noetic-gennodejs, ros-noetic-genpy
+Filename: pool/main/arm64/ros-noetic-message-generation_0.4.1-0bookworm_arm64.deb
+Size: 4916
+MD5sum: 064f6db992be5a8a32e4538b19dfde1a
+SHA1: a6fad2a8d197c83f071f8fa4ab7b544a84d4168c
+SHA256: 761f030dcc80d282655ac48b2b0975d37336746d904f58a51e82c0bc92c4e943
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/message_generation
+Description: Package modeling the build-time dependencies for generating language bindings of messages.
+
+Package: ros-noetic-message-runtime
+Version: 0.4.13-0focal
+Architecture: arm64
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 29
+Depends: ros-noetic-cpp-common, ros-noetic-genpy, ros-noetic-roscpp-serialization, ros-noetic-roscpp-traits, ros-noetic-rostime
+Filename: pool/main/arm64/ros-noetic-message-runtime_0.4.13-0bookworm_arm64.deb
+Size: 4928
+MD5sum: 3a8339b690c0734e7816dab6b7feec60
+SHA1: d94fc6a6efbaaca157864c35c42650d8e2edaee0
+SHA256: 24cd142c804ee0f9d3dc9e912b5a5e277e033a2f142444ff7d2213bb2310e0f9
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/message_runtime
+Description: Package modeling the run-time dependencies for language bindings of messages.
+
+Package: ros-noetic-mk
+Version: 1.15.8-1buster.20220926.180800
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 46
+Depends: ros-noetic-rosbuild, ros-noetic-rospack
+Filename: pool/main/arm64/ros-noetic-mk_1.15.8-1buster.20220926.180800_arm64.deb
+Size: 11296
+MD5sum: 52d25762a8dba2a459982999b84d65af
+SHA1: 0bf78af10e1aed7866dcd6f28516391a4e6df012
+SHA256: b7a491e0cbcc5914ec1b1d195354463ae7ee426e41190ec72467b7152ddcf0b1
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/ROS
+Description: A collection of .mk include files for building ROS architectural elements.
+ Most package authors should use cmake .mk, which calls CMake for the build of the package. The other files in this package are intended for use in exotic situations that mostly arise when importing 3rdparty code.
+
+Package: ros-noetic-nav-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 1231
+Depends: ros-noetic-actionlib-msgs, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-nav-msgs_1.13.2-0bookworm_arm64.deb
+Size: 79140
+MD5sum: 88b2e4f7a67c4af42a9529d410a8bc56
+SHA1: cc86a0e70f3049ccfe943539a14626e9f8459524
+SHA256: fc00a2f2d15287d2bd48ed66bac9fd77e3f98f0cb9d1d2b0063f83f891b0f269
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/nav_msgs
+Description: nav_msgs defines the common messages used to interact with the navigation stack.
+
+Package: ros-noetic-nodelet
+Version: 1.11.2-0focal
+Architecture: arm64
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Installed-Size: 903
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libtinyxml2-9 (>= 8.0.0), libuuid1 (>= 2.16), libboost-thread1.71.0, ros-noetic-bondcpp, ros-noetic-message-runtime, ros-noetic-pluginlib (>= 1.10.0), ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-std-msgs, uuid-dev
+Filename: pool/main/arm64/ros-noetic-nodelet_1.11.2-0bookworm_arm64.deb
+Size: 147052
+MD5sum: 669cfd2f713a3726c26fe792d0a9215f
+SHA1: df8f0ffc158e363ff4ef5c02f6a1a57d3b4edb7b
+SHA256: 3f38c162dc5b99074c9acb3a85b26232f9ebd46256c1b3cc352abccbd18cb6e0
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/nodelet
+Description: The nodelet package is designed to provide a way to run multiple algorithms in the same process with zero copy transport between algorithms.
+ This package provides both the nodelet base class needed for implementing a nodelet, as well as the NodeletLoader class used for instantiating nodelets.
+
+Package: ros-noetic-nodelet-core
+Version: 1.11.2-0focal
+Architecture: arm64
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Installed-Size: 15
+Depends: ros-noetic-nodelet, ros-noetic-nodelet-topic-tools
+Filename: pool/main/arm64/ros-noetic-nodelet-core_1.11.2-0bookworm_arm64.deb
+Size: 3072
+MD5sum: 18f86d4f87340a44696180b48d32355c
+SHA1: 49d2cb043fc2c6c8a8ef0ca0002b3bcfff6beef1
+SHA256: 0fa979aa924bdb22ebee8e0cd1c9515fa26924f0e75a68fd250d2b20e6fbc6e1
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/nodelet_core
+Description: Nodelet Core Metapackage
+
+Package: ros-noetic-nodelet-dbgsym
+Source: ros-noetic-nodelet
+Version: 1.11.2-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Installed-Size: 2205
+Depends: ros-noetic-nodelet (= 1.11.2-0focal)
+Filename: pool/main/arm64/ros-noetic-nodelet-dbgsym_1.11.2-0bookworm_arm64.deb
+Size: 2080036
+MD5sum: 6163d3681d988c4cc6e473b9461f32fb
+SHA1: b6ced2897c02a546fcee60cff1eb2bca2e004b1c
+SHA256: 8a4d28712721327f56c331e96b9baa035f45b79f7690db696359b49c8c20e8c9
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-nodelet
+Build-Ids: 079c62fad3bd7d015704d8c314b41813f7020c05 cec1fd353e03d3cd5ff1049f39065dfc8ca7a122
+
+Package: ros-noetic-nodelet-topic-tools
+Version: 1.11.2-0focal
+Architecture: arm64
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Installed-Size: 94
+Depends: libboost-dev, libboost-thread-dev, ros-noetic-dynamic-reconfigure, ros-noetic-message-filters, ros-noetic-nodelet, ros-noetic-pluginlib, ros-noetic-roscpp
+Filename: pool/main/arm64/ros-noetic-nodelet-topic-tools_1.11.2-0bookworm_arm64.deb
+Size: 17252
+MD5sum: 7b6ddb1a18c2f7c28330bf1588505af8
+SHA1: 04b2ff9976b926371ea322e1b6740f374b415cc6
+SHA256: 8da3679f092924612f8fd1e1c4a35232016f71cab532dc3c6a88f52dd0eafc4a
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/nodelet_topic_tools
+Description: This package contains common nodelet tools such as a mux, demux and throttle.
+
+Package: ros-noetic-opencv-tests
+Version: 1.16.2-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 32
+Depends: ros-noetic-cv-bridge
+Filename: pool/main/arm64/ros-noetic-opencv-tests_1.16.2-0bookworm_arm64.deb
+Size: 7732
+MD5sum: b18b77673102ce257ec7e48e12d8ca68
+SHA1: ae464d8f46be5649240aa17dc49263dab7e7a161
+SHA256: fb4ecec32dc2bdec937ab6704ee8134bec37905d6f3689136d51200d7271312f
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/opencv_tests
+Description: Tests the enumerants of the ROS Image message, and functionally tests the Python and C++ implementations of CvBridge.
+
+Package: ros-noetic-pluginlib
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Steven! Ragnarök <stevenragnarok@osrfoundation.org>
+Installed-Size: 119
+Depends: libboost-all-dev, libboost-dev, libboost-filesystem-dev, libboost-filesystem1.71.0, libtinyxml2-dev, ros-noetic-class-loader, ros-noetic-rosconsole, ros-noetic-roslib (>= 1.11.1)
+Filename: pool/main/arm64/ros-noetic-pluginlib_1.13.2-0bookworm_arm64.deb
+Size: 22652
+MD5sum: 71e6f399586987ee11c0bb014c381df3
+SHA1: ad3a7508c05eddfaba86c92179055f35be84836c
+SHA256: 878ec2b799a4b9861dcdef10cb773a53e0a9845b4e77286fa3e5adaa9d6e72c8
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/pluginlib
+Description: The pluginlib package provides tools for writing and dynamically loading plugins using the ROS build infrastructure.
+ To work, these tools require plugin providers to register their plugins in the package.xml of their package.
+
+Package: ros-noetic-polled-camera
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 366
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), ros-noetic-image-transport, ros-noetic-message-runtime, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-polled-camera_1.12.1-0bookworm_arm64.deb
+Size: 56544
+MD5sum: 84014dcee63324acfc005897f6a4966f
+SHA1: 3836260bbba24e7c5a30c1aa6fff18c3cf3eb4ef
+SHA256: 7a90428ca056b1ba342e59f0c0b21c1754a805a788990f782661d502b272bd56
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/polled_camera
+Description: polled_camera contains a service and C++ helper classes for implementing a polled camera driver node and requesting images from it.
+ The package is currently for internal use as the API is still under development.
+
+Package: ros-noetic-realtime-tools
+Version: 1.16.1-0focal
+Architecture: arm64
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Installed-Size: 123
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 6), ros-noetic-actionlib, ros-noetic-roscpp
+Filename: pool/main/arm64/ros-noetic-realtime-tools_1.16.1-0bookworm_arm64.deb
+Size: 20912
+MD5sum: c25f0cd7d9d39d4cedd54549cc3ad5a8
+SHA1: a3f267915c9c96dc2e3d75a1e96ba88b86baacc6
+SHA256: 26710d3e3572f746f48a7b28bdb9dd6d0bc11706697d25eba6a2fdbaf0b954a3
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/realtime_tools
+Description: Contains a set of tools that can be used from a hard realtime thread, without breaking the realtime behavior.
+
+Package: ros-noetic-realtime-tools-dbgsym
+Source: ros-noetic-realtime-tools
+Version: 1.16.1-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Installed-Size: 140
+Depends: ros-noetic-realtime-tools (= 1.16.1-0focal)
+Filename: pool/main/arm64/ros-noetic-realtime-tools-dbgsym_1.16.1-0bookworm_arm64.deb
+Size: 120188
+MD5sum: fab60195a886c7a35f95d2e0d19395df
+SHA1: bc5c51fcb4b01a8e459b537f141063f7e04cb6af
+SHA256: 348e209a8dbbebdf00c1801c229434f08fd8c401dc16f94a1afd96747db4a92c
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-realtime-tools
+Build-Ids: a58309c47bc8ed3662c9ae554acb9ed426927524
+
+Package: ros-noetic-ros
+Version: 1.15.10-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 16
+Depends: ros-noetic-catkin, ros-noetic-mk, ros-noetic-rosbash, ros-noetic-rosboost-cfg, ros-noetic-rosbuild, ros-noetic-rosclean, ros-noetic-roscreate, ros-noetic-roslang, ros-noetic-roslib, ros-noetic-rosmake, ros-noetic-rosunit
+Filename: pool/main/arm64/ros-noetic-ros_1.15.10-0bookworm_arm64.deb
+Size: 2160
+MD5sum: 39b16cdd021f6675ff19cefa714a9bf7
+SHA1: d4e31ff86854bbd7efc13566179081b940761b6f
+SHA256: bbe3325a0391a9823061155632942b979e6a6a33a680d433630b7dfcf44198ca
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/ROS
+Description: ROS packaging system
+
+Package: ros-noetic-ros-base
+Version: 1.5.0-0focal
+Architecture: arm64
+Maintainer: Mikael Arguedas <mikael@osrfoundation.org>
+Installed-Size: 14
+Depends: ros-noetic-actionlib, ros-noetic-bond-core, ros-noetic-dynamic-reconfigure, ros-noetic-nodelet-core, ros-noetic-ros-core
+Filename: pool/main/arm64/ros-noetic-ros-base_1.5.0-0bookworm_arm64.deb
+Size: 2072
+MD5sum: df3eb075aec84c2595779573e42d3fe9
+SHA1: 9d432d98b605d3b757af214cb5ba1fd6b0080003
+SHA256: 020a61834dacda244af63b8ab2c4e822d87c72b7b5e117e3f6c4bb9e7dfd5230
+Section: misc
+Priority: optional
+Description: A metapackage which extends ros_core and includes other basic non-robot tools like actionlib, dynamic reconfigure, nodelets, and pluginlib.
+
+Package: ros-noetic-ros-comm
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 17
+Depends: ros-noetic-message-filters, ros-noetic-ros, ros-noetic-rosbag, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-rosgraph, ros-noetic-rosgraph-msgs, ros-noetic-roslaunch, ros-noetic-roslisp, ros-noetic-rosmaster, ros-noetic-rosmsg, ros-noetic-rosnode, ros-noetic-rosout, ros-noetic-rosparam, ros-noetic-rospy, ros-noetic-rosservice, ros-noetic-rostest, ros-noetic-rostopic, ros-noetic-roswtf, ros-noetic-std-srvs, ros-noetic-topic-tools, ros-noetic-xmlrpcpp
+Filename: pool/main/arm64/ros-noetic-ros-comm_1.17.4-0bookworm_arm64.deb
+Size: 3844
+MD5sum: b4e6bed6d42a6a74f1d75fd6c367a7ed
+SHA1: 1604b9e5eb13d1d17cd4650111983714f5aec35f
+SHA256: 924e372b9d67f0afdde8e6d5a4e3cc7fb5b15f0c36dbb11ec688895aec54c9fd
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/ros_comm
+Description: ROS communications-related packages, including core client libraries (roscpp, rospy) and graph introspection tools (rostopic, rosnode, rosservice, rosparam).
+
+Package: ros-noetic-ros-core
+Version: 1.5.0-0focal
+Architecture: arm64
+Maintainer: Mikael Arguedas <mikael@osrfoundation.org>
+Installed-Size: 15
+Depends: ros-noetic-catkin, ros-noetic-class-loader, ros-noetic-cmake-modules, ros-noetic-common-msgs, ros-noetic-gencpp, ros-noetic-geneus, ros-noetic-genlisp, ros-noetic-genmsg, ros-noetic-gennodejs, ros-noetic-genpy, ros-noetic-message-generation, ros-noetic-message-runtime, ros-noetic-pluginlib, ros-noetic-ros, ros-noetic-ros-comm, ros-noetic-rosbag-migration-rule, ros-noetic-rosconsole, ros-noetic-rosconsole-bridge, ros-noetic-roscpp-core, ros-noetic-rosgraph-msgs, ros-noetic-roslisp, ros-noetic-rospack, ros-noetic-std-msgs, ros-noetic-std-srvs
+Filename: pool/main/arm64/ros-noetic-ros-core_1.5.0-0bookworm_arm64.deb
+Size: 2332
+MD5sum: 943fa0a0f8e53accd13b5df2861b5bc2
+SHA1: e49d855c01cf7d65ef57ccf98703a2ae1b01a7be
+SHA256: 8125f333d4510899a7c260095afd69ef9fd57f2490aa32a84c16ea9aeece8a70
+Section: misc
+Priority: optional
+Description: A metapackage to aggregate the packages required to use publish / subscribe, services, launch files, and other core ROS concepts.
+
+Package: ros-noetic-ros-environment
+Version: 1.3.2-0focal
+Architecture: arm64
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 45
+Filename: pool/main/arm64/ros-noetic-ros-environment_1.3.2-0bookworm_arm64.deb
+Size: 5816
+MD5sum: 9344c37aa4ddbc4448aa8d57b4810831
+SHA1: bf344e20d4749fb1532685748ebf6be7bfea072b
+SHA256: 19f965374e0d4d43f759218628de6cd6ffd7e7ceca7f26468c8220b7fc7c2d90
+Section: misc
+Priority: optional
+Description: The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`, `ROS_PACKAGE_PATH`, and `ROS_ETC_DIR`.
+
+Package: ros-noetic-rosbag
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 1771
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-program-options1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-icu72, libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-thread-dev, python3-gnupg, python3-pycryptodome, python3-rospkg, ros-noetic-genmsg, ros-noetic-genpy, ros-noetic-rosbag-storage, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-rospy, ros-noetic-std-srvs, ros-noetic-topic-tools, ros-noetic-xmlrpcpp
+Filename: pool/main/arm64/ros-noetic-rosbag_1.17.4-0bookworm_arm64.deb
+Size: 365796
+MD5sum: 3bf5a79c7c6826597229f2280ce55ea4
+SHA1: 5c20bf836263a44c1aaeb8e15919febd42a052c7
+SHA256: 5cc160b76602ce66516cce551e67c339965c3029661ae91a5ead10a5af985647
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rosbag
+Description: This is a set of tools for recording from and playing back to ROS topics.
+ It is intended to be high performance and avoids deserialization and reserialization of the messages.
+
+Package: ros-noetic-rosbag-dbgsym
+Source: ros-noetic-rosbag
+Version: 1.17.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 4879
+Depends: ros-noetic-rosbag (= 1.17.4-0focal)
+Filename: pool/main/arm64/ros-noetic-rosbag-dbgsym_1.17.4-0bookworm_arm64.deb
+Size: 4577916
+MD5sum: 202b80de06407bac2fc2855276d9f472
+SHA1: d4f2ba820f4448a4e0e3dd133cb849ca4e7ae49c
+SHA256: 045e82238e95cd28627571a442e714970878c566422faa2634afccdc195d0618
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-rosbag
+Build-Ids: 60e916ebcc47e32e00ec74d0bec712bc20e342f6 7c4f910086bdd8bc6aed8d3cc98a74913b8a8a74 c575279cdd0125c56f47c2d96d664b12e7a7f795 d583105ee07936cbbf2e18a4beb92fc38b3bd849
+
+Package: ros-noetic-rosbag-migration-rule
+Version: 1.0.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 30
+Filename: pool/main/arm64/ros-noetic-rosbag-migration-rule_1.0.2-0bookworm_arm64.deb
+Size: 4988
+MD5sum: 8d7bb4fa669ad1d700d1c4c76ab28156
+SHA1: 9ea95bd78d5ee6ffa88c07dd1438dcdbe069e1a9
+SHA256: 5a63643b6bd4c8a948aa3b98601f62b876bfda0243eee6bd2b7fb4a54658ff7b
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosbag_migration_rule
+Description: This empty package allows to export rosbag migration rule files without depending on rosbag.
+
+Package: ros-noetic-rosbag-storage
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 782
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libbz2-1.0, libc6 (>= 2.17), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libgpgme11 (>= 1.2.0), libssl3 (>= 3.0.0), libstdc++6 (>= 11), libtinyxml2-9 (>= 8.0.0), libboost-filesystem-dev, libbz2-dev, libconsole-bridge-dev, libgpgme-dev, libssl-dev, ros-noetic-cpp-common (>= 0.3.17), ros-noetic-pluginlib, ros-noetic-roscpp-serialization, ros-noetic-roscpp-traits (>= 0.3.17), ros-noetic-roslz4, ros-noetic-rostime
+Filename: pool/main/arm64/ros-noetic-rosbag-storage_1.17.4-0bookworm_arm64.deb
+Size: 165132
+MD5sum: 22dc041e2cfb4de836a512e01cbe93e9
+SHA1: 86677de8084618c161c018a84ae2882bbc13c183
+SHA256: 3168598e272c21fb21496f0bb11315d7fe7d44563f917715c5e086a234f67c09
+Section: misc
+Priority: optional
+Description: This is a set of tools for recording from and playing back ROS message without relying on the ROS client library.
+
+Package: ros-noetic-rosbag-storage-dbgsym
+Source: ros-noetic-rosbag-storage
+Version: 1.17.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 3925
+Depends: ros-noetic-rosbag-storage (= 1.17.4-0focal)
+Filename: pool/main/arm64/ros-noetic-rosbag-storage-dbgsym_1.17.4-0bookworm_arm64.deb
+Size: 3822984
+MD5sum: 5e9bf01efcc31bfc1059812c654d6f25
+SHA1: 9d0b3cc2124e701fc96cd0af73606ca73974659c
+SHA256: bc79d6fce863b59258492e58d5601659d14de7be2007f94ee7e98ef9b16e2386
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-rosbag-storage
+Build-Ids: 23eff6846d0eeecf19aba90069cdf6aaf52273b0 e780179d5c35d13aff373ae5e79909e4e2de976f
+
+Package: ros-noetic-rosbash
+Version: 1.15.8-1buster.20210726.194131
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 149
+Depends: ros-noetic-catkin, ros-noetic-rospack
+Filename: pool/main/arm64/ros-noetic-rosbash_1.15.8-1buster.20210726.194131_arm64.deb
+Size: 24000
+MD5sum: 3e171b2e80e9407428ee9843679b6629
+SHA1: 02f8fa729642c0ce87816dfcc80f146335f6663a
+SHA256: 208dfbf04d0acb24a08747b6d756666958d02c2e24023720dc0d5323272e8342
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/rosbash
+Description: Assorted shell commands for using ros with bash.
+
+Package: ros-noetic-rosboost-cfg
+Version: 1.15.8-1buster.20210726.194130
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 67
+Filename: pool/main/arm64/ros-noetic-rosboost-cfg_1.15.8-1buster.20210726.194130_arm64.deb
+Size: 14820
+MD5sum: 46158686409d50c2f5fd85cce4809a56
+SHA1: a5c425a4c532ea0493a3d4092b0e88b5653294c5
+SHA256: e755abafbc4bd5e795380f75b8c659a79070a2e5fb13191c2288076edf727d04
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosboost_cfg
+Description: Contains scripts used by the rosboost-cfg tool for determining cflags/lflags/etc.
+ of boost on your system
+
+Package: ros-noetic-rosbuild
+Version: 1.15.10-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 148
+Depends: ros-noetic-catkin, ros-noetic-message-generation, ros-noetic-message-runtime
+Filename: pool/main/arm64/ros-noetic-rosbuild_1.15.10-0bookworm_arm64.deb
+Size: 28636
+MD5sum: 1f2a2f14eb9b77fed6bf15c4a2728f0e
+SHA1: 1196635975199c9967ed6331d5f6be536200696b
+SHA256: 8dccbd24b4a89e3563a332327895f8d6fc538d9499120fe2d00c7b941560a170
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosbuild
+Description: rosbuild contains scripts for managing the CMake-based build system for ROS.
+
+Package: ros-noetic-rosclean
+Version: 1.15.10-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 64
+Depends: python3-rospkg
+Filename: pool/main/arm64/ros-noetic-rosclean_1.15.10-0bookworm_arm64.deb
+Size: 14908
+MD5sum: 16885f4c11b497f206f4f27ab684fd10
+SHA1: 5785095a796bb1867a2de6035ef5f2c71d429619
+SHA256: 550f2b1838bb4e7d5ee31867b7dfab6baf9c45f975085c8e78d08a5838d28982
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rosclean
+Description: rosclean: cleanup filesystem resources (e.g.
+ log files).
+
+Package: ros-noetic-rosconsole
+Version: 1.14.4-0focal
+Architecture: arm64
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 560
+Depends: libboost-regex1.74.0-icu72, libc6 (>= 2.32), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libapr1-dev, libaprutil1-dev, libboost-regex-dev, liblog4cxx-dev, ros-noetic-cpp-common, ros-noetic-rosbuild, ros-noetic-rostime
+Filename: pool/main/arm64/ros-noetic-rosconsole_1.14.4-0bookworm_arm64.deb
+Size: 91688
+MD5sum: a7cc205db56484552cfd9ed1357bdf78
+SHA1: 43f24c0d0bb452da89b5486c7526ff8194658e30
+SHA256: 7e3646dd902edebc9d168a0d85e7bdf950017c3c64a121cd73ef198ea5d56b81
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/rosconsole
+Description: ROS console output library.
+
+Package: ros-noetic-rosconsole-bridge
+Version: 0.5.5-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 104
+Depends: libc6 (>= 2.17), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libconsole-bridge-dev, ros-noetic-cpp-common, ros-noetic-rosconsole
+Filename: pool/main/arm64/ros-noetic-rosconsole-bridge_0.5.5-0bookworm_arm64.deb
+Size: 12348
+MD5sum: c3039ac6c2263a52b1578df3190ee581
+SHA1: 6de1ba579a17b34dd1ceec69da659f15619afe54
+SHA256: a9a5fe2795ef17834f4399816d173fc834c361dc03037b5dc39a5f29511ee82b
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/rosconsole_bridge
+Description: rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging.
+
+Package: ros-noetic-rosconsole-bridge-dbgsym
+Source: ros-noetic-rosconsole-bridge
+Version: 0.5.5-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 66
+Depends: ros-noetic-rosconsole-bridge (= 0.5.5-0focal)
+Filename: pool/main/arm64/ros-noetic-rosconsole-bridge-dbgsym_0.5.5-0bookworm_arm64.deb
+Size: 50060
+MD5sum: 2abf9c977424d50dd3cf3055c12b7f67
+SHA1: fc5253d6747967438274076b2ee42f147fe9bb75
+SHA256: ec2dfc23999a87c0563b53337c8ea6d976b11704a17899e104bca914fe707d65
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-rosconsole-bridge
+Build-Ids: 2e11af0914b9d87bdd9a172339db19518d7bbd49
+
+Package: ros-noetic-rosconsole-dbgsym
+Source: ros-noetic-rosconsole
+Version: 1.14.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 1021
+Depends: ros-noetic-rosconsole (= 1.14.4-0focal)
+Filename: pool/main/arm64/ros-noetic-rosconsole-dbgsym_1.14.4-0bookworm_arm64.deb
+Size: 907920
+MD5sum: 78a5df702853262e118c659115ef7ab6
+SHA1: 8fcef83de050a145fe7a69942f75e221d1d6d02f
+SHA256: 36f92008158fae3f7024b43142f339ccd4fdb736ced75fcb4953028ad353869e
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-rosconsole
+Build-Ids: 7a6d4c2c0d3d58c840b574084d78c2a812b03edf 9222e8c819b9580d035af17d512a1c9e2f72ba82 c9de6d33b2ff843df3f3c8feffdbbaf17760a601
+
+Package: ros-noetic-roscpp
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 2402
+Depends: libboost-chrono1.74.0 (>= 1.74.0+ds1), libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libboost-chrono-dev, libboost-filesystem-dev, libboost-system-dev, ros-noetic-cpp-common (>= 0.3.17), ros-noetic-message-runtime, ros-noetic-rosconsole, ros-noetic-roscpp-serialization, ros-noetic-roscpp-traits (>= 0.3.17), ros-noetic-rosgraph-msgs (>= 1.10.3), ros-noetic-rostime (>= 0.6.4), ros-noetic-std-msgs, ros-noetic-xmlrpcpp
+Filename: pool/main/arm64/ros-noetic-roscpp_1.17.4-0bookworm_arm64.deb
+Size: 460952
+MD5sum: f50dc6e1f560ed07d5352df919e29b3a
+SHA1: 58781e1002eae2ff1840940bb9dfb312b248a99f
+SHA256: 73af1e4245ab35c871a9292a7aabe8cdca5ceb7ed833eae1ebc424d8763081fb
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/roscpp
+Description: roscpp is a C++ implementation of ROS.
+ It provides a client library that enables C++ programmers to quickly interface with ROS Topics, Services, and Parameters. roscpp is the most widely used ROS client library and is designed to be the high-performance library for ROS.
+
+Package: ros-noetic-roscpp-core
+Version: 0.7.3-0focal
+Architecture: arm64
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Installed-Size: 15
+Depends: ros-noetic-cpp-common, ros-noetic-roscpp-serialization, ros-noetic-roscpp-traits, ros-noetic-rostime
+Filename: pool/main/arm64/ros-noetic-roscpp-core_0.7.3-0bookworm_arm64.deb
+Size: 2032
+MD5sum: 3b55e3685a8b5da8459b437b80688141
+SHA1: 6f4b02366424d9f212cf24c469f7685315bed4ad
+SHA256: 1237b67c4d2e09f5c2414808a9e1d6d23354406b0f2995d909932b8a0003afa4
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/roscpp_core
+Description: Underlying data libraries for roscpp messages.
+
+Package: ros-noetic-roscpp-dbgsym
+Source: ros-noetic-roscpp
+Version: 1.17.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 13096
+Depends: ros-noetic-roscpp (= 1.17.4-0focal)
+Filename: pool/main/arm64/ros-noetic-roscpp-dbgsym_1.17.4-0bookworm_arm64.deb
+Size: 12926328
+MD5sum: a1c1c4c9d750f67c9c0af009452c8e43
+SHA1: 84f1d791831a35936f7bbac1715325aa7299158c
+SHA256: e30c49dd8f258b93a2f5c6e43b7b9d5c3fb391c2cbfe1974d40d8e3a073f3422
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-roscpp
+Build-Ids: 2e6c8909659afb3ecd93e4f31c6a6b0ab441b046
+
+Package: ros-noetic-roscpp-serialization
+Version: 0.7.3-0focal
+Architecture: arm64
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Installed-Size: 129
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), ros-noetic-cpp-common, ros-noetic-roscpp-traits, ros-noetic-rostime
+Filename: pool/main/arm64/ros-noetic-roscpp-serialization_0.7.3-0bookworm_arm64.deb
+Size: 14212
+MD5sum: 4e8ebd8d08e43ece778776dfea8c3e43
+SHA1: 606ad0f5379386d61dd112ac3f02a32b66b723e3
+SHA256: 81a82e28f636cf15c7ea530928fe242e05fec2e02b40d58ff8ab91d5a2e0cb40
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/roscpp_serialization
+Description: roscpp_serialization contains the code for serialization as described in MessagesSerializationAndAdaptingTypes.
+ This package is a component of roscpp.
+
+Package: ros-noetic-roscpp-serialization-dbgsym
+Source: ros-noetic-roscpp-serialization
+Version: 0.7.3-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Installed-Size: 45
+Depends: ros-noetic-roscpp-serialization (= 0.7.3-0focal)
+Filename: pool/main/arm64/ros-noetic-roscpp-serialization-dbgsym_0.7.3-0bookworm_arm64.deb
+Size: 31000
+MD5sum: 8ea2634a1cd57a8e7119bc3dfc2bc46c
+SHA1: 1a2216e4effc2f31591cfffc16e5ac71b13bddc9
+SHA256: 53b231ee0e219bf23935db236e3c3d6942e510f7b5b39de904140b18791a6093
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-roscpp-serialization
+Build-Ids: 4b2d2cae14e596f6d222d6a6de0cbe0d3dd5b31c
+
+Package: ros-noetic-roscpp-traits
+Version: 0.7.3-0focal
+Architecture: arm64
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Installed-Size: 64
+Depends: ros-noetic-cpp-common, ros-noetic-rostime
+Filename: pool/main/arm64/ros-noetic-roscpp-traits_0.7.3-0bookworm_arm64.deb
+Size: 10788
+MD5sum: 227f107c91a8d200db1d6d204da63ac6
+SHA1: 7cb6be8c6a53f67fae41ad5fdadc55182a642d6c
+SHA256: 467864cdb1eef9d9d1d13a5f57e8a4604aa9764e6801a5de2110cafa3bc61dbd
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/roscpp_traits
+Description: roscpp_traits contains the message traits code as described in MessagesTraits.
+ This package is a component of roscpp.
+
+Package: ros-noetic-roscreate
+Version: 1.15.8-1buster.20210726.215204
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 68
+Depends: python3-rospkg, ros-noetic-roslib
+Filename: pool/main/arm64/ros-noetic-roscreate_1.15.8-1buster.20210726.215204_arm64.deb
+Size: 13260
+MD5sum: 096a9ebd21cc09ee5f81e7a5c2204c7e
+SHA1: b73d7e35f9ff2ed1ad625b74f4c97dd47ab6782a
+SHA256: 09f0b157e2d88f23fcbda31ba43ccb087fc1dca6f2d8529a391074dcb3f6f37c
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/roscreate
+Description: roscreate contains a tool that assists in the creation of ROS filesystem resources.
+ It provides: roscreate-pkg, which creates a new package directory, including the appropriate build and manifest files.
+
+Package: ros-noetic-rosgraph
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 281
+Depends: python3-netifaces, python3-rospkg, python3-yaml
+Filename: pool/main/arm64/ros-noetic-rosgraph_1.17.4-0bookworm_arm64.deb
+Size: 64336
+MD5sum: 99eef1f030bac41ce7e21f8ed726c9a8
+SHA1: 7a0e6bbc4baa7f0b355ef4797b9b37219b88b0bd
+SHA256: f466f524250fc9150805c47386ece9c94081b3b0f875902734403f98bb64213d
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rosgraph
+Description: rosgraph contains the rosgraph command-line tool, which prints information about the ROS Computation Graph.
+ It also provides an internal library that can be used by graphical tools.
+
+Package: ros-noetic-rosgraph-msgs
+Version: 1.11.4-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 36
+Depends: ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-rosgraph-msgs_1.11.4-0bookworm_arm64.deb
+Size: 6512
+MD5sum: 5d3672b591512599be6b0ba8f5020396
+SHA1: bd8131e1910c446c5e2a7f55c5e2b68d36cbae5b
+SHA256: 32aef8dd92cb454c4b92a5271ef98a54b10c974cee1084c1664b3a38c2720a82
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosgraph_msgs
+Description: Messages relating to the ROS Computation Graph.
+ These are generally considered to be low-level messages that end users do not interact with.
+
+Package: ros-noetic-roslang
+Version: 1.15.10-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 31
+Depends: ros-noetic-catkin, ros-noetic-genmsg
+Filename: pool/main/arm64/ros-noetic-roslang_1.15.10-0bookworm_arm64.deb
+Size: 6488
+MD5sum: db0e546e4730957a2e5b872de352c1cb
+SHA1: ccc5d8d16f161705d34cfc1cd4a395927551e021
+SHA256: 545925031a8caf5cc0f6d755e7f6afc37f46bdcd16e18a1e6703babd49b0bef3
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/roslang
+Description: roslang is a common package that all ROS client libraries depend on.
+ This is mainly used to find client libraries (via 'rospack depends-on1 roslang').
+
+Package: ros-noetic-roslaunch
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 841
+Depends: python3-paramiko, python3-rospkg (>= 1.0.37), python3-yaml, ros-noetic-rosclean, ros-noetic-rosgraph-msgs, ros-noetic-roslib, ros-noetic-rosmaster (>= 1.11.16), ros-noetic-rosout, ros-noetic-rosparam, ros-noetic-rosunit (>= 1.13.3)
+Filename: pool/main/arm64/ros-noetic-roslaunch_1.17.4-0bookworm_arm64.deb
+Size: 189108
+MD5sum: 4e7443e229dc644b7311deacf04d4378
+SHA1: deff6a1979a332a2695687d40fbecfb632f0d848
+SHA256: 0b53e263db294c0e72fc3de8ba9172fc13487b6a80cf7b878905bfa988a0cddf
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/roslaunch
+Description: roslaunch is a tool for easily launching multiple ROS nodes locally and remotely via SSH, as well as setting parameters on the Parameter Server.
+ It includes options to automatically respawn processes that have already died. roslaunch takes in one or more XML configuration files (with the .launch extension) that specify the parameters to set and nodes to launch, as well as the machines that they should be run on.
+
+Package: ros-noetic-roslib
+Version: 1.15.10-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 571
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), python3-rospkg (>= 1.0.37), ros-noetic-catkin, ros-noetic-ros-environment, ros-noetic-rospack
+Filename: pool/main/arm64/ros-noetic-roslib_1.15.10-0bookworm_arm64.deb
+Size: 114900
+MD5sum: 1fc85f7529abbb683e2ffc35c14781ca
+SHA1: 700b6fe76ca98c933690771d5f5a83c5491a794d
+SHA256: e94c99e25a4722edd4aa06290adf0bf623717ab149d5764e01ee0f01cdeb8737
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/roslib
+Description: Base dependencies and support libraries for ROS.
+ roslib contains many of the common data structures and tools that are shared across ROS client library implementations.
+
+Package: ros-noetic-roslib-dbgsym
+Source: ros-noetic-roslib
+Version: 1.15.10-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 304
+Depends: ros-noetic-roslib (= 1.15.10-0focal)
+Filename: pool/main/arm64/ros-noetic-roslib-dbgsym_1.15.10-0bookworm_arm64.deb
+Size: 278912
+MD5sum: 4f8ae822811239d39571f355407943a7
+SHA1: 925678513e18384a8d50f1287d3ceb94aa1121cb
+SHA256: fc4528d5de2de3cef4b008a2714238012ef4227f1241b087b6d9487539f75d7b
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-roslib
+Build-Ids: 1c398eca54f1241955c6eeaeeff96c263490622d
+
+Package: ros-noetic-roslisp
+Version: 1.9.25-0focal
+Architecture: arm64
+Maintainer: Gayane Kazhoyan <kazhoyan@cs.uni-bremen.de>
+Installed-Size: 563
+Depends: ros-noetic-ros-environment, ros-noetic-rosgraph-msgs, ros-noetic-roslang, ros-noetic-rospack, ros-noetic-std-srvs, sbcl
+Filename: pool/main/arm64/ros-noetic-roslisp_1.9.25-0bookworm_arm64.deb
+Size: 99260
+MD5sum: 68700c7e38548eb7c6ed8068174a3427
+SHA1: 3161940462bdd83f42e3dcc3ff81e8cfab9e1feb
+SHA256: 8a1f1912b6f835f53a38446f0329726919d7428bb198919274e3f64ded996649
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/roslisp
+Description: Lisp client library for ROS, the Robot Operating System.
+
+Package: ros-noetic-roslz4
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 182
+Depends: libc6 (>= 2.17), liblz4-1 (>= 0.0~r130), libpython3.11 (>= 3.11.0), liblz4-dev, python3-dev
+Filename: pool/main/arm64/ros-noetic-roslz4_1.17.4-0bookworm_arm64.deb
+Size: 17876
+MD5sum: 59f15aded42246481952d6c3947fba25
+SHA1: d7ec7064a7d73afb8bfc334a216e427136a63cc0
+SHA256: 5aa00a24cfda6868ff65c8b9d866dfdb09a56877f0d10f2ba0df208b95663375
+Section: misc
+Priority: optional
+Description: A Python and C++ implementation of the LZ4 streaming format.
+ Large data streams are split into blocks which are compressed using the very fast LZ4 compression algorithm.
+
+Package: ros-noetic-roslz4-dbgsym
+Source: ros-noetic-roslz4
+Version: 1.17.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 50
+Depends: ros-noetic-roslz4 (= 1.17.4-0focal)
+Filename: pool/main/arm64/ros-noetic-roslz4-dbgsym_1.17.4-0bookworm_arm64.deb
+Size: 27372
+MD5sum: e2bb098c3e6a9d6b255c56d6a527042f
+SHA1: 47d6b4200f6b8212558d136688980f041fa2a9b3
+SHA256: 8562b33f870c01f3e99c8fc35f83217b9493fd352748486da916e8814e83b73d
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-roslz4
+Build-Ids: 44f81f846d4de2180ed4876bdea682983f7376cb ca296344a54a377646a1f5eba3fd86a1aee0782f
+
+Package: ros-noetic-rosmake
+Version: 1.15.8-1buster.20210726.194259
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 149
+Depends: python3-rospkg, ros-noetic-catkin
+Filename: pool/main/arm64/ros-noetic-rosmake_1.15.8-1buster.20210726.194259_arm64.deb
+Size: 34088
+MD5sum: 19a0ef038511128a49841d912cda5cbb
+SHA1: 3a051967efce3c8aa0c12991e0568051ce8eb7a0
+SHA256: 61bc7aa976f773f015e6464dba3bbac78774a227b35e347db935c2e7e003ba2f
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rosmake
+Description: rosmake is a ros dependency aware build tool which can be used to build all dependencies in the correct order.
+
+Package: ros-noetic-rosmaster
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 264
+Depends: python3-defusedxml, ros-noetic-rosgraph
+Filename: pool/main/arm64/ros-noetic-rosmaster_1.17.4-0bookworm_arm64.deb
+Size: 54600
+MD5sum: 312d124d9e022af3c1457d08b510725d
+SHA1: 4c7d27d0a075ce9f0d820297332b2d8173f70ee5
+SHA256: 747b4cf9c829f7f1c9f146503a9b9f8812c8149e69586e52944f59ff772b6ff3
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rosmaster
+Description: ROS Master implementation.
+
+Package: ros-noetic-rosmsg
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 118
+Depends: python3-rospkg, ros-noetic-catkin (>= 0.6.4), ros-noetic-genmsg, ros-noetic-genpy (>= 0.6.5), ros-noetic-rosbag, ros-noetic-roslib
+Filename: pool/main/arm64/ros-noetic-rosmsg_1.17.4-0bookworm_arm64.deb
+Size: 29636
+MD5sum: 75faa0ed7ca990759e5add7012134cee
+SHA1: 47c77c4d9ede09b353beb332f4bb1782a97b0c9d
+SHA256: 59edc5e4668f642af6775892ae350f821d43c984c70f8ab05e952986e8c2f7ae
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rosmsg
+Description: rosmsg contains two command-line tools: rosmsg and rossrv.
+ rosmsg is a command-line tool for displaying information about ROS Message types. rossrv is a command-line tool for displaying information about ROS Service types.
+
+Package: ros-noetic-rosnode
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 120
+Depends: ros-noetic-rosgraph, ros-noetic-rostopic
+Filename: pool/main/arm64/ros-noetic-rosnode_1.17.4-0bookworm_arm64.deb
+Size: 28284
+MD5sum: 32575ec3782e2a90f4aabea07f79655f
+SHA1: a6cc83ff15011e0fe5ede020cf58b1a72394f5ce
+SHA256: baba0a055ef36e04bbe3278889c472501642ce5aa91b946e9dd2d730451c95bb
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosnode
+Description: rosnode is a command-line tool for displaying debug information about ROS Nodes, including publications, subscriptions and connections.
+ It also contains an experimental library for retrieving node information. This library is intended for internal use only.
+
+Package: ros-noetic-rosout
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 162
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), ros-noetic-roscpp, ros-noetic-rosgraph-msgs
+Filename: pool/main/arm64/ros-noetic-rosout_1.17.4-0bookworm_arm64.deb
+Size: 34820
+MD5sum: 946694d7c4a91b647b3b03a1fe9aac3a
+SHA1: d4d680501272e8991d3f0f68bd7de6ff4c8c773f
+SHA256: d3db2b965d8950f2861dc6ed3ee6413bddc1b57e2f05dc5d03e91d676e9535e8
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosout
+Description: System-wide logging mechanism for messages sent to the /rosout topic.
+
+Package: ros-noetic-rosout-dbgsym
+Source: ros-noetic-rosout
+Version: 1.17.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 431
+Depends: ros-noetic-rosout (= 1.17.4-0focal)
+Filename: pool/main/arm64/ros-noetic-rosout-dbgsym_1.17.4-0bookworm_arm64.deb
+Size: 398920
+MD5sum: d531962c93c50bd651dd719c674ba0b0
+SHA1: a3b6b310e1db8163963d1b2e25d31e30f93fe358
+SHA256: c3a8496c661ffc2874394748f79d9396593c3232cf32df4695c293d95792e424
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-rosout
+Build-Ids: 0e18ed89be8376d118680886e5f7d3eec6edec62
+
+Package: ros-noetic-rospack
+Version: 2.6.4-0focal
+Architecture: arm64
+Maintainer: Jacob Perron <jacob@openrobotics.org>
+Installed-Size: 465
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-program-options1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libpython3.11 (>= 3.11.0), libstdc++6 (>= 11), libtinyxml2-9 (>= 8.0.0), libboost-filesystem-dev, libboost-program-options-dev, libboost-system-dev, libtinyxml2-dev, pkg-config, python3-catkin-pkg-modules, python3-dev, python3-rosdep-modules, ros-noetic-ros-environment
+Filename: pool/main/arm64/ros-noetic-rospack_2.6.4-0bookworm_arm64.deb
+Size: 91548
+MD5sum: a7802ddbf76b3802f8fedc8f3f09cb2b
+SHA1: d9d4bc9f9874a70705d6eb61365f9547a0640531
+SHA256: 3d8cf03e2ea8fd0525682000b9428c5090875532777c6475d24fa2cf4c357382
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rospack
+Description: ROS Package Tool
+
+Package: ros-noetic-rospack-dbgsym
+Source: ros-noetic-rospack
+Version: 2.6.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Jacob Perron <jacob@openrobotics.org>
+Installed-Size: 1431
+Depends: ros-noetic-rospack (= 2.6.4-0focal)
+Filename: pool/main/arm64/ros-noetic-rospack-dbgsym_2.6.4-0bookworm_arm64.deb
+Size: 1384400
+MD5sum: bb6fb5791fe2722a483d8b99c09d5e48
+SHA1: 53d06a16ad4fdb59e361056e1315d78a095c00b5
+SHA256: 0433640691375f73eff4dfc48c45722168d7de47f5dc8f77a9f7eac5e715aa51
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-rospack
+Build-Ids: 1217be811465ba1c248ab2c13ed10f30b4c710d0 ab3ac93b88415e8dcc14ca6878a342a5d15ae916 d4a16b73c152da2bf6e36890e73342829b485599
+
+Package: ros-noetic-rosparam
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 94
+Depends: python3-yaml, ros-noetic-rosgraph
+Filename: pool/main/arm64/ros-noetic-rosparam_1.17.4-0bookworm_arm64.deb
+Size: 22736
+MD5sum: a0c9368515213d38379848638b4f53d6
+SHA1: 0c63c9c3878946e42c5d5ea9df11ee2e323c6c78
+SHA256: 09707beacfac7c945f48c1047d4e78ad1a9d5d9ab155fc3aec0bdb6c7c0016ee
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rosparam
+Description: rosparam contains the rosparam command-line tool for getting and setting ROS Parameters on the Parameter Server using YAML-encoded files.
+ It also contains an experimental library for using YAML with the Parameter Server. This library is intended for internal use only. rosparam can be invoked within a roslaunch file.
+
+Package: ros-noetic-rospy
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 857
+Depends: python3-numpy, python3-rospkg, python3-yaml, ros-noetic-genpy, ros-noetic-roscpp, ros-noetic-rosgraph, ros-noetic-rosgraph-msgs (>= 1.10.3), ros-noetic-roslib, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-rospy_1.17.4-0bookworm_arm64.deb
+Size: 181560
+MD5sum: 4776d3935191c659fa88ad6301c2fdb1
+SHA1: d046913500c3384bc539bba1ca820b3142fb46d2
+SHA256: 465c13b613dbf9cc8e11f070b5cb0974bb5126fa2394c86e904de50573f853b7
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rospy
+Description: rospy is a pure Python client library for ROS.
+ The rospy client API enables Python programmers to quickly interface with ROS Topics, Services, and Parameters. The design of rospy favors implementation speed (i.e. developer time) over runtime performance so that algorithms can be quickly prototyped and tested within ROS. It is also ideal for non-critical-path code, such as configuration and initialization code. Many of the ROS tools are written in rospy to take advantage of the type introspection capabilities. Many of the ROS tools, such as rostopic and rosservice, are built on top of rospy.
+
+Package: ros-noetic-rosservice
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 113
+Depends: ros-noetic-genpy, ros-noetic-rosgraph, ros-noetic-roslib, ros-noetic-rosmsg, ros-noetic-rospy
+Filename: pool/main/arm64/ros-noetic-rosservice_1.17.4-0bookworm_arm64.deb
+Size: 24856
+MD5sum: 05a374e7b2fcc479287f352078143e21
+SHA1: 85837fa7ad031c16ed09fcbee8636377d8a9f9e1
+SHA256: feb86e4b4e55594afa1c71ef1776e0b723985afc708512bab6a1de665c8d2a77
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosservice
+Description: rosservice contains the rosservice command-line tool for listing and querying ROS Services.
+ It also contains a Python library for retrieving information about Services and dynamically invoking them. The Python library is experimental and is for internal-use only.
+
+Package: ros-noetic-rostest
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 171
+Depends: libboost-thread-dev, ros-noetic-rosgraph, ros-noetic-roslaunch, ros-noetic-rosmaster, ros-noetic-rospy, ros-noetic-rosunit
+Filename: pool/main/arm64/ros-noetic-rostest_1.17.4-0bookworm_arm64.deb
+Size: 38728
+MD5sum: 75e2d4b7ed9799dfab848579acbf2a2f
+SHA1: 17cc581cce58dc30b639005e0e0c734f4ec92ad7
+SHA256: ac7f39109f6aad5ddf34c32e88484e728f0fb1afd54d261f2512836f9e45afbe
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rostest
+Description: Integration test suite based on roslaunch that is compatible with xUnit frameworks.
+
+Package: ros-noetic-rostime
+Version: 0.7.3-0focal
+Architecture: arm64
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Installed-Size: 203
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libboost-date-time-dev, libboost-system-dev, libboost-thread-dev, ros-noetic-cpp-common
+Filename: pool/main/arm64/ros-noetic-rostime_0.7.3-0bookworm_arm64.deb
+Size: 38604
+MD5sum: c13a997c94d5d3296feaf8e648c07e0e
+SHA1: 09ee01d166f071db8237ce4f2e42e880f3bcb674
+SHA256: 7e5aec49990fc8aedea59802f3a059786db2aae947ac80eeb94350db3e6223cf
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rostime
+Description: Time and Duration implementations for C++ libraries, including roscpp.
+
+Package: ros-noetic-rostime-dbgsym
+Source: ros-noetic-rostime
+Version: 0.7.3-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Installed-Size: 304
+Depends: ros-noetic-rostime (= 0.7.3-0focal)
+Filename: pool/main/arm64/ros-noetic-rostime-dbgsym_0.7.3-0bookworm_arm64.deb
+Size: 264024
+MD5sum: ea728ed5e68cd1504bf6882b890e0353
+SHA1: 25af7ca89fdeb3c0e4b4b6aa7984e445a8ed444f
+SHA256: f9dce2b5cb38eb7607ce664d18bbef655465f5bbb5bf68b6ccc0b235f0ff5ce2
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-rostime
+Build-Ids: 9d3c809f4b87ba4ea1d41dac747e5621eef5f427
+
+Package: ros-noetic-rostopic
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 250
+Depends: ros-noetic-genpy (>= 0.5.4), ros-noetic-rosbag, ros-noetic-rospy
+Filename: pool/main/arm64/ros-noetic-rostopic_1.17.4-0bookworm_arm64.deb
+Size: 63060
+MD5sum: c3637541250eefaf3fb6c0ab0be319ba
+SHA1: f7359e46ba352d596d44be29212e65ac461a8f90
+SHA256: c6c5f1a58304c10bd3b6504fef028b6ab430db39700fe1d5a310f76496633c50
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rostopic
+Description: rostopic contains the rostopic command-line tool for displaying debug information about ROS Topics, including publishers, subscribers, publishing rate, and ROS Messages.
+ It also contains an experimental Python library for getting information about and interacting with topics dynamically. This library is for internal-use only as the code API may change, though it does provide examples of how to implement dynamic subscription and publication behaviors in ROS.
+
+Package: ros-noetic-rosunit
+Version: 1.15.10-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 274
+Depends: python3-rospkg, ros-noetic-roslib
+Filename: pool/main/arm64/ros-noetic-rosunit_1.15.10-0bookworm_arm64.deb
+Size: 63612
+MD5sum: 79f16ab16ad6e367f367874d8ad227de
+SHA1: 5833b064c802b81c3303a0a14b9342bc9c91142e
+SHA256: 7cbd00c04c14c6abf555c0ce497e8662bb90a05293b757d45ca14c65e7c3a276
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/rosunit
+Description: Unit-testing package for ROS.
+ This is a lower-level library for rostest and handles unit tests, whereas rostest handles integration tests.
+
+Package: ros-noetic-roswtf
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 239
+Depends: python3-paramiko, python3-rospkg, ros-noetic-rosbuild, ros-noetic-rosgraph, ros-noetic-roslaunch, ros-noetic-roslib, ros-noetic-rosnode, ros-noetic-rosservice
+Filename: pool/main/arm64/ros-noetic-roswtf_1.17.4-0bookworm_arm64.deb
+Size: 56652
+MD5sum: ef5c3b43fb0d45ec6c5b9983906a4b57
+SHA1: 7b92bf163c91eb4ea1bda77b60d03dd7a51f1f9a
+SHA256: 68648ca840d30d9aa8b28476352d098e10025118b92357e815e33e11704647c1
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/roswtf
+Description: roswtf is a tool for diagnosing issues with a running ROS system.
+ Think of it as a FAQ implemented in code.
+
+Package: ros-noetic-sensor-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 2138
+Depends: ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-sensor-msgs_1.13.2-0bookworm_arm64.deb
+Size: 150100
+MD5sum: b9d48c55fdec33eed25926d6a0823506
+SHA1: 32966b6300d4cf1819102b2459695fcf9dc015c1
+SHA256: 24d563267739d7e4ecef056889ac1d43f29ff904131d1b5f9132930e62ebe145
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/sensor_msgs
+Description: This package defines messages for commonly used sensors, including cameras and scanning laser rangefinders.
+
+Package: ros-noetic-shape-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 213
+Depends: ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-shape-msgs_1.13.2-0bookworm_arm64.deb
+Size: 25964
+MD5sum: 5b12f3ac86a48690edca2896805a352c
+SHA1: d71bd7ca69b17416299bf6694eac6b8187ad7762
+SHA256: d515e52b48a054d34e0bb8c8d9634bbfd040f526709402906d33423cd971d9f3
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/shape_msgs
+Description: This package contains messages for defining shapes, such as simple solid object primitives (cube, sphere, etc), planes, and meshes.
+
+Package: ros-noetic-smclib
+Version: 1.8.7-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 78
+Filename: pool/main/arm64/ros-noetic-smclib_1.8.7-0bookworm_arm64.deb
+Size: 14944
+MD5sum: 543b0e813ac2526e61f61afa85eab7eb
+SHA1: 13c2a4433182131c23e70dd7346b8ca770c3367c
+SHA256: b7f843ae48043e55ae111d17ca18d4d95dc709fe9ac77724c97a173aa7d4eff8
+Section: misc
+Priority: optional
+Homepage: http://smc.sourceforge.net/
+Description: The State Machine Compiler (SMC) from http://smc.sourceforge.net/ converts a language-independent description of a state machine into the source code to support that state machine.
+ This package contains the libraries that a compiled state machine depends on, but it does not contain the compiler itself.
+
+Package: ros-noetic-std-msgs
+Version: 0.5.14-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 1286
+Depends: ros-noetic-message-runtime
+Filename: pool/main/arm64/ros-noetic-std-msgs_0.5.14-0bookworm_arm64.deb
+Size: 61456
+MD5sum: 58ffc55843a9f65d395161e9976c0e89
+SHA1: 599cacef059f5eb2ebaef3efe2114cedc9779300
+SHA256: a0f57f6d9edd0acadd3b306dc4a7701dec3fd7035e890312c428b58896eed6ae
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/std_msgs
+Description: Standard ROS Messages including common message types representing primitive data types and other basic message constructs, such as multiarrays.
+ For common, generic robot-specific message types, please see common_msgs.
+
+Package: ros-noetic-std-srvs
+Version: 1.11.4-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 214
+Depends: ros-noetic-message-runtime
+Filename: pool/main/arm64/ros-noetic-std-srvs_1.11.4-0bookworm_arm64.deb
+Size: 21072
+MD5sum: 45e8505da4fed209b46cfe9c71e797ba
+SHA1: e3207b07caf0659ebf88c594f3d39e789ece9123
+SHA256: dbb93e65954101c697017d76e3f39a01c51a8068107f8fe23db07579fba038bd
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/std_srvs
+Description: Common service definitions.
+
+Package: ros-noetic-stereo-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 160
+Depends: ros-noetic-message-runtime, ros-noetic-sensor-msgs, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-stereo-msgs_1.13.2-0bookworm_arm64.deb
+Size: 21400
+MD5sum: a7d1db09bb36d17515f5cbddce5b765c
+SHA1: 2335cdc3bc2c459ec6d769c4974b639f180c188f
+SHA256: d789847ebbea381174296b4ee37aae59391432cae332d731a193bc33ea04dba1
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/stereo_msgs
+Description: stereo_msgs contains messages specific to stereo processing, such as disparity images.
+
+Package: ros-noetic-test-tf2
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 34
+Depends: ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-rostest, ros-noetic-tf2, ros-noetic-tf2-bullet, ros-noetic-tf2-eigen, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-kdl, ros-noetic-tf2-msgs, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-test-tf2_0.7.10-0bookworm_arm64.deb
+Size: 9912
+MD5sum: d52fd4d5973ad3ce95e5811e6cb4f37b
+SHA1: 1ffcece7b4d3620c9bc6cd0182207df641f2bdcf
+SHA256: a67040059b5d449fa1e95028ccfaa243bdc0b28438060cce3aa1444cf0795dc6
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/geometry_experimental
+Description: tf2 unit tests
+
+Package: ros-noetic-tf
+Version: 1.13.4-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 1428
+Depends: libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), graphviz, ros-noetic-geometry-msgs, ros-noetic-message-filters (>= 1.11.1), ros-noetic-message-runtime, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-roswtf, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-tf2-ros (>= 0.5.16)
+Filename: pool/main/arm64/ros-noetic-tf_1.13.4-0bookworm_arm64.deb
+Size: 227608
+MD5sum: a6e2a40d8e00369a48d3abcee371b523
+SHA1: 2fdc536f21a3b234f01bd6fed0d3a5e1f3fb8670
+SHA256: b4558b198435cd48a8bac2374edc386a67fc9efa8fb838dfc1a0a760017c73df
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf
+Description: tf is a package that lets the user keep track of multiple coordinate frames over time.
+ tf maintains the relationship between coordinate frames in a tree structure buffered in time, and lets the user transform points, vectors, etc between any two coordinate frames at any desired point in time. Migration: Since ROS Hydro, tf has been &quot;deprecated&quot; in favor of tf2. tf2 is an iteration on tf providing generally the same feature set more efficiently. As well as adding a few new features. As tf2 is a major change the tf API has been maintained in its current form. Since tf2 has a superset of the tf features with a subset of the dependencies the tf implementation has been removed and replaced with calls to tf2 under the hood. This will mean that all users will be compatible with tf2. It is recommended for new work to use tf2 directly as it has a cleaner interface. However tf will continue to be supported for through at least J Turtle.
+
+Package: ros-noetic-tf-conversions
+Version: 1.13.4-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 136
+Depends: libc6 (>= 2.17), liborocos-kdl1.5 (>= 1.5.1), libstdc++6 (>= 4.1.1), libeigen3-dev, liborocos-kdl-dev, liborocos-kdl1.4, python3-pykdl, ros-noetic-geometry-msgs, ros-noetic-kdl-conversions, ros-noetic-tf
+Filename: pool/main/arm64/ros-noetic-tf-conversions_1.13.4-0bookworm_arm64.deb
+Size: 18100
+MD5sum: 6abe06f809f901ba1758345857422f07
+SHA1: 777430acfef9ce76181ac6b501ff4740cb04840a
+SHA256: e0970b2a18c4c7e0f1cc690b947d8a7044e2b72264751f4a17a6a45cd7ec888e
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf_conversions
+Description: This package contains a set of conversion functions to convert common tf datatypes (point, vector, pose, etc) into semantically identical datatypes used by other libraries.
+ The conversion functions make it easier for users of the transform library (tf) to work with the datatype of their choice. Currently this package has support for the Kinematics and Dynamics Library (KDL) and the Eigen matrix library. This package is stable, and will get integrated into tf in the next major release cycle (see roadmap).
+
+Package: ros-noetic-tf-conversions-dbgsym
+Source: ros-noetic-tf-conversions
+Version: 1.13.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 135
+Depends: ros-noetic-tf-conversions (= 1.13.4-0focal)
+Filename: pool/main/arm64/ros-noetic-tf-conversions-dbgsym_1.13.4-0bookworm_arm64.deb
+Size: 122256
+MD5sum: 7cbfd44c51618c3b299def6acf0e8331
+SHA1: 8c9992b369e75cb10793397d4096ac78e8399b8f
+SHA256: 5604817329f018a259a25bfef0ff7c68944d93a43b7ab54012747852f9348083
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-tf-conversions
+Build-Ids: f5e8049876c59f1bb0f69e33fbcb2c598b9eb316
+
+Package: ros-noetic-tf-dbgsym
+Source: ros-noetic-tf
+Version: 1.13.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 3432
+Depends: ros-noetic-tf (= 1.13.4-0focal)
+Filename: pool/main/arm64/ros-noetic-tf-dbgsym_1.13.4-0bookworm_arm64.deb
+Size: 3263564
+MD5sum: 15e472c0a0ba52619a946da0c9d04380
+SHA1: 670ed66c7fbdf09e0acac37a3381a9f1767d10a6
+SHA256: cbf8e94f5dba354fe58e69f1642570ad0eab08f4de6750c5e19de7a15a555496
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-tf
+Build-Ids: 1387a6237db00cd9d5da3e938ed7c4a18e4fffaf 18e52952ff405293250a9845cc4c73a0c66dff25 a530b5a04f090066c170f8bede7b3446563df357 c2878cddabbf7ae5855d277d40fb84ec419ee9b4 d07ac1c89f6120d1a3b65b0313999e75f5df59ed d14af965c89a90ccae08d9b353cf11e0072f55c3
+
+Package: ros-noetic-tf2
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 443
+Depends: libc6 (>= 2.17), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libconsole-bridge-dev, ros-noetic-geometry-msgs, ros-noetic-rostime, ros-noetic-tf2-msgs
+Filename: pool/main/arm64/ros-noetic-tf2_0.7.10-0bookworm_arm64.deb
+Size: 100112
+MD5sum: 15c0aed19ef1155f61cd51d22b53e53a
+SHA1: 9280051cb4064a13c8bde3a77abfaae046a69a5c
+SHA256: 4c8d25d971dacf70f4eea383c0349cee058d476c4a3073f529a06291a9784d14
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf2
+Description: tf2 is the second generation of the transform library, which lets the user keep track of multiple coordinate frames over time.
+ tf2 maintains the relationship between coordinate frames in a tree structure buffered in time, and lets the user transform points, vectors, etc between any two coordinate frames at any desired point in time.
+
+Package: ros-noetic-tf2-bullet
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 39
+Depends: libbullet-dev, ros-noetic-geometry-msgs, ros-noetic-tf2
+Filename: pool/main/arm64/ros-noetic-tf2-bullet_0.7.10-0bookworm_arm64.deb
+Size: 8856
+MD5sum: aba01f452b6e264948ea3396239da66d
+SHA1: 6a74f79ad6fc37a5b567c1b756afff076980a7fa
+SHA256: 245cac2a6767b74dfddde0fa9df309311046ad6966e2db330a03aa0a4bb08861
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf2_bullet
+Description: tf2_bullet
+
+Package: ros-noetic-tf2-eigen
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Koji Terada <terakoji@gmail.com>
+Installed-Size: 54
+Depends: libeigen3-dev, ros-noetic-geometry-msgs, ros-noetic-tf2
+Filename: pool/main/arm64/ros-noetic-tf2-eigen_0.7.10-0bookworm_arm64.deb
+Size: 10412
+MD5sum: 9bfb8e11c1ea3c2c5ba72abbc0f5f9b3
+SHA1: d713a28b6b0fa4d202940ea6345b9db3949534e5
+SHA256: 09e39fbb02cc60ca7addbe1333e74462a3761a74912cae74997e119d6b079ffc
+Section: misc
+Priority: optional
+Description: tf2_eigen
+
+Package: ros-noetic-tf2-geometry-msgs
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 94
+Depends: liborocos-kdl-dev, python3-pykdl, ros-noetic-geometry-msgs, ros-noetic-tf2, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-tf2-geometry-msgs_0.7.10-0bookworm_arm64.deb
+Size: 16260
+MD5sum: 04d80af1feb243d13fdf904b08269d16
+SHA1: b29868f14ba84053d41b27026230e1fc313171ed
+SHA256: 8b8a38e17f54a7a25dcc28c825a5a8153df26ffd6e11bc1a580218628238e059
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf2_ros
+Description: tf2_geometry_msgs
+
+Package: ros-noetic-tf2-kdl
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 75
+Depends: libeigen3-dev, liborocos-kdl-dev, ros-noetic-tf2, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-tf2-kdl_0.7.10-0bookworm_arm64.deb
+Size: 13712
+MD5sum: f2dc7e5623cc5606f56b530f4039afbe
+SHA1: 790c4b855c68d2ce961fc961881f9b2a78ff0c47
+SHA256: 6ad5ed1a97a9c4fad640fad9f148b2705b402d27ab71cc92ddd817067cd3ebb2
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/tf2
+Description: KDL binding for tf2
+
+Package: ros-noetic-tf2-msgs
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 762
+Depends: ros-noetic-actionlib-msgs, ros-noetic-geometry-msgs, ros-noetic-message-generation
+Filename: pool/main/arm64/ros-noetic-tf2-msgs_0.7.10-0bookworm_arm64.deb
+Size: 52464
+MD5sum: 2f52b4ed647b79acbb9eaa83c4749bcc
+SHA1: 48a7271642221bbb9b202979921e68fc64da08a9
+SHA256: 9c6df877bde21fda49cbeadb7df43abee9fce4718574536cd187973b3cca1d13
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf2_msgs
+Description: tf2_msgs
+
+Package: ros-noetic-tf2-py
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 176
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libpython3.11 (>= 3.11.0), libstdc++6 (>= 11), ros-noetic-rospy, ros-noetic-tf2
+Filename: pool/main/arm64/ros-noetic-tf2-py_0.7.10-0bookworm_arm64.deb
+Size: 28232
+MD5sum: 4abcbba1a736779868007ebb33d1ca03
+SHA1: 0e70306014254324c85a0c17c84d182b247cb63e
+SHA256: caf690d02d8139119ea3b3d16835e32096ede88ad6dfbda69620c1df08b2a1cb
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/tf2_py
+Description: The tf2_py package
+
+Package: ros-noetic-tf2-ros
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 1244
+Depends: libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), ros-noetic-actionlib, ros-noetic-actionlib-msgs, ros-noetic-geometry-msgs, ros-noetic-message-filters, ros-noetic-roscpp, ros-noetic-rosgraph, ros-noetic-rospy, ros-noetic-std-msgs, ros-noetic-tf2, ros-noetic-tf2-msgs, ros-noetic-tf2-py, ros-noetic-xmlrpcpp
+Filename: pool/main/arm64/ros-noetic-tf2-ros_0.7.10-0bookworm_arm64.deb
+Size: 214956
+MD5sum: 8d37f6676ebce6ccfb4880d093018f43
+SHA1: 1e6964b69c24efb1434990695b63e0d0a9a0d885
+SHA256: 04161eb7c209d461d880cc43923d978baa6dc31e36ca672c77168f1eacff2616
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf2_ros
+Description: This package contains the ROS bindings for the tf2 library, for both Python and C++.
+
+Package: ros-noetic-tf2-sensor-msgs
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 55
+Depends: libeigen3-dev, python3-pykdl, ros-noetic-rospy, ros-noetic-sensor-msgs, ros-noetic-tf2, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-tf2-sensor-msgs_0.7.10-0bookworm_arm64.deb
+Size: 10700
+MD5sum: a52f58d869b80c05f63abd569afddcee
+SHA1: 420a626f8e0792ca0f1fe227d5a6cbe3c45cb227
+SHA256: 70905c94b5697b228e2736ea208d83a0bb969ddd1f52b336b958715d6e7cdf24
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf2_ros
+Description: Small lib to transform sensor_msgs with tf.
+ Most notably, PointCloud2
+
+Package: ros-noetic-tf2-tools
+Version: 0.7.10-0focal
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 46
+Depends: ros-noetic-tf2, ros-noetic-tf2-msgs, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-tf2-tools_0.7.10-0bookworm_arm64.deb
+Size: 11376
+MD5sum: e5729a7febd0da52fd8a79dc63c69a63
+SHA1: 97d18ab9c2aff00ade00f36fc1fde948f36b78f7
+SHA256: 07936592838cf47abfd7b462917acdd2f31d28c447b699473a22d1563bf3539c
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf2_tools
+Description: tf2_tools
+
+Package: ros-noetic-topic-tools
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 1466
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), ros-noetic-message-runtime, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-rostime, ros-noetic-std-msgs, ros-noetic-xmlrpcpp
+Filename: pool/main/arm64/ros-noetic-topic-tools_1.17.4-0bookworm_arm64.deb
+Size: 157336
+MD5sum: 551ae8bdf76e197165486e84d487a40e
+SHA1: f7661e85b541e43acb6bbe2ee8a3cfe57492eb0a
+SHA256: ac32ad3eecd9d4cb665700b8b1a37dd270e3f0155f3036090b4f145dae8708b4
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/topic_tools
+Description: Tools for directing, throttling, selecting, and otherwise messing with ROS topics at a meta level.
+ None of the programs in this package actually know about the topics whose streams they are altering; instead, these tools deal with messages as generic binary blobs. This means they can be applied to any ROS topic.
+
+Package: ros-noetic-topic-tools-dbgsym
+Source: ros-noetic-topic-tools
+Version: 1.17.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 2945
+Depends: ros-noetic-topic-tools (= 1.17.4-0focal)
+Filename: pool/main/arm64/ros-noetic-topic-tools-dbgsym_1.17.4-0bookworm_arm64.deb
+Size: 2674480
+MD5sum: 8fac506d68483355dd8b744c217c10be
+SHA1: eea7ce620e01566169244fd1d202ad8f641ad43b
+SHA256: 7006029555bc68e4b93fe899c1b658ccc1e3e09db59bc38a95346d3f31e84524
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-topic-tools
+Build-Ids: 45e927b834d49d05833846616ec2dd5c0d60fe00 4adbca092e03fb6807526f1f7aa02944ff0427c4 85e82b242c3cff9d6b9cbf78d75b2c1e0d7b35d7 8775ad2bfd47e8ad7684f2895fade9c3b45020b4 8b9e5b02e50a64b92d5a5c0c978ccc31b5c085d9 a54e40d171621d6759d6f8915af2745f832ab419 fddec0e314d692a22d6b04a5b87eebe0c33f2850
+
+Package: ros-noetic-trajectory-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 353
+Depends: ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-rosbag-migration-rule, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-trajectory-msgs_1.13.2-0bookworm_arm64.deb
+Size: 32792
+MD5sum: 10427a3fd157c6a97180a06b98c0d5e9
+SHA1: 9bbc0df7e8c6e1ac641440507b8c666f84d33cab
+SHA256: 3ff585c8227d9e22430a845aadb9ac17157243d886cfab0ac913b5e636c3d5fc
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/trajectory_msgs
+Description: This package defines messages for defining robot trajectories.
+ These messages are also the building blocks of most of the control_msgs actions.
+
+Package: ros-noetic-unique-id
+Version: 1.0.6-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 65
+Depends: ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-uuid-msgs
+Filename: pool/main/arm64/ros-noetic-unique-id_1.0.6-0bookworm_arm64.deb
+Size: 11420
+MD5sum: c3bca6ee6f37338185c2cf9d28fec64f
+SHA1: eca2cdc72951675c85b4e4512ee880f5813dabc3
+SHA256: 95a0e8ae93c6f86ca203217406c1fb4c8c8d616db19cc13b7682facd8d470ad6
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/unique_id
+Description: ROS Python and C++ interfaces for universally unique identifiers.
+
+Package: ros-noetic-unique-identifier
+Version: 1.0.6-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 15
+Depends: ros-noetic-unique-id, ros-noetic-uuid-msgs
+Filename: pool/main/arm64/ros-noetic-unique-identifier_1.0.6-0bookworm_arm64.deb
+Size: 2664
+MD5sum: 88ae543f31f2732dc16b6fe78a6b86d7
+SHA1: d8c76be245d450d616e21d31444d2378472ac62e
+SHA256: 0847edd4822943499432d521a455edfa53b5f1394e0b69fe56e8a940961affd9
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/unique_identifier
+Description: ROS messages and interfaces for universally unique identifiers.
+ Not needed for wet packages, use only to resolve dry stack dependencies.
+
+Package: ros-noetic-uuid-msgs
+Version: 1.0.6-0focal
+Architecture: arm64
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Installed-Size: 90
+Depends: ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-uuid-msgs_1.0.6-0bookworm_arm64.deb
+Size: 13456
+MD5sum: 72633cebc55af54afa5f5fdf93fedc96
+SHA1: d25c49b9463b98f47a2710f8158ab7f86bd72f35
+SHA256: 389a9eacc0a0e42d6d4defb82386d4886bc0de46a48d2433a322e3b03547c9e1
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/uuid_msgs
+Description: ROS messages for universally unique identifiers.
+
+Package: ros-noetic-vision-opencv
+Version: 1.16.2-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 15
+Depends: ros-noetic-cv-bridge, ros-noetic-image-geometry
+Filename: pool/main/arm64/ros-noetic-vision-opencv_1.16.2-0bookworm_arm64.deb
+Size: 3012
+MD5sum: d1f8cab87f4d08fa360aff38ef638531
+SHA1: 4525ed0cca840f4358ce12f18f4fbda9fb8d9064
+SHA256: 08e9c50a7a84f8dc23cc49223b6394d9fcf41bb590165e848b6f8f8512b49866
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/vision_opencv
+Description: Packages for interfacing ROS with OpenCV, a library of programming functions for real time computer vision.
+
+Package: ros-noetic-visualization-msgs
+Version: 1.13.2-0focal
+Architecture: arm64
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Installed-Size: 1340
+Depends: ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-visualization-msgs_1.13.2-0bookworm_arm64.deb
+Size: 81360
+MD5sum: 0c57da8cd9bfc81cb26475070bc6eada
+SHA1: 72935dd7e7570652e423e8ff56c6923a0b4d53b7
+SHA256: 2e1cd495c1dde88e5b0e238915ae3e0d1626ebd25581d7068513e055facc37b7
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/visualization_msgs
+Description: visualization_msgs is a set of messages used by higher level packages, such as rviz, that deal in visualization-specific data.
+ The main messages in visualization_msgs is visualization_msgs/Marker. The marker message is used to send visualization &quot;markers&quot; such as boxes, spheres, arrows, lines, etc. to a visualization environment such as rviz. See the rviz tutorial rviz tutorials for more information.
+
+Package: ros-noetic-xmlrpcpp
+Version: 1.17.4-0focal
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 211
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), ros-noetic-cpp-common, ros-noetic-rostime (>= 0.6.9)
+Filename: pool/main/arm64/ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb
+Size: 59524
+MD5sum: 75e5f8b42c868aaf015430e8e94e398b
+SHA1: 16c04dce9f0901f3b7b14f7484e8902e3f1207ef
+SHA256: 3e8115abbc0c2f6c51d808d799bde1f9c8ec64fd306bafd0af564cc1fbece7f9
+Section: misc
+Priority: optional
+Homepage: http://xmlrpcpp.sourceforge.net
+Description: XmlRpc++ is a C++ implementation of the XML-RPC protocol.
+ This version is heavily modified from the package available on SourceForge in order to support roscpp's threading model. As such, we are maintaining our own fork.
+
+Package: ros-noetic-xmlrpcpp-dbgsym
+Source: ros-noetic-xmlrpcpp
+Version: 1.17.4-0focal
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Installed-Size: 582
+Depends: ros-noetic-xmlrpcpp (= 1.17.4-0focal)
+Filename: pool/main/arm64/ros-noetic-xmlrpcpp-dbgsym_1.17.4-0bookworm_arm64.deb
+Size: 556056
+MD5sum: 65cd72907ac9787b97fc2e5e16ad65e1
+SHA1: 602a353dd230a601c77622c56602b8b5efe5027a
+SHA256: 11cd16ead21cdb62cfdc5dc65d0392d8d31c80fc475ccb042cde59ca7fdd7165
+Section: debug
+Priority: optional
+Description: debug symbols for ros-noetic-xmlrpcpp
+Build-Ids: eccaff9e64b20d480bd111bbe4abf30e76167b7a
+
