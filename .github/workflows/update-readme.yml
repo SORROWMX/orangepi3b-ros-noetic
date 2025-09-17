@@ -1,4 +1,4 @@
-name: Auto-update README
+name: 🔄 Quick README Update (.deb files only)
 
 on:
   push:
@@ -73,7 +73,7 @@ jobs:
         echo "" >> $GITHUB_STEP_SUMMARY
         
         # Подсчитываем файлы
-        DEB_COUNT=$(ls -1 *.deb 2>/dev/null | wc -l)
+        DEB_COUNT=$(find debian/pool/main/arm64 -name "*.deb" 2>/dev/null | wc -l)
         echo "**Total .deb files:** $DEB_COUNT" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         
