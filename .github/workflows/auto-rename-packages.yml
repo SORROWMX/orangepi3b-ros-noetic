@@ -61,6 +61,18 @@ jobs:
         else
           echo "ℹ️ No focal packages to remove"
         fi
+        
+        # Дополнительная проверка на все файлы с 'focal'
+        echo "🔍 Additional check for any files with 'focal' in name..."
+        ALL_FOCAL=$(ls *focal*.deb 2>/dev/null || true)
+        if [ -n "$ALL_FOCAL" ]; then
+          echo "Found additional focal files:"
+          echo "$ALL_FOCAL"
+          rm *focal*.deb
+          echo "✅ All focal files removed"
+        else
+          echo "ℹ️ No additional focal files found"
+        fi
 
     - name: Check for changes
       id: verify-changes
