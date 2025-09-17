@@ -1,4 +1,4 @@
-name: Auto-rename packages for Debian Bookworm
+name: 🔄 Auto-rename Packages (Ubuntu → Debian)
 
 on:
   push:
