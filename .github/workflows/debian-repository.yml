@@ -48,8 +48,14 @@ jobs:
       with:
         gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
         passphrase: ${{ secrets.GPG_PASSPHRASE }}
-        git_user_signingkey: ${{ secrets.GPG_KEY_ID }}
         git_commit_gpgsign: true
+
+    - name: Configure GPG key ID
+      if: env.GPG_PRIVATE_KEY != ''
+      run: |
+        # Настраиваем GPG key ID для подписи
+        echo "default-key ${{ secrets.GPG_KEY_ID }}" >> ~/.gnupg/gpg.conf
+        echo "🔐 GPG key configured: ${{ secrets.GPG_KEY_ID }}"
 
     - name: Create repository structure
       run: |
@@ -101,13 +107,13 @@ jobs:
         cd debian/dists/bookworm
         
         # Подписываем Release файл
-        gpg --batch --yes --clearsign --local-user ${{ secrets.GPG_KEY_ID }} Release
+        gpg --batch --yes --clearsign Release
         
         # Создаем InRelease файл (переименовываем Release.asc в InRelease)
         mv Release.asc InRelease
         
         # Создаем Release.gpg файл
-        gpg --batch --yes --detach-sign --armor --local-user ${{ secrets.GPG_KEY_ID }} Release
+        gpg --batch --yes --detach-sign --armor Release
         
         echo "🔐 Release file signed with GPG key: ${{ secrets.GPG_KEY_ID }}"
 
