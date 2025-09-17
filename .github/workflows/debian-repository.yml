@@ -38,6 +38,19 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y dpkg-dev apt-utils gnupg2
 
+    - name: Setup GPG (if secrets available)
+      if: ${{ secrets.GPG_PRIVATE_KEY != '' }}
+      run: |
+        # Импортируем приватный ключ
+        echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
+        
+        # Настраиваем gpg-agent
+        echo "use-agent" >> ~/.gnupg/gpg.conf
+        echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+        
+        # Настраиваем passphrase
+        echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --local-user ${{ secrets.GPG_KEY_ID }} /dev/null
+
     - name: Create repository structure
       run: |
         # Создаем структуру директорий
@@ -81,6 +94,19 @@ jobs:
         find . -type f -name "Packages*" -exec sha256sum {} \; | sed 's/^/ /' >> Release
         
         echo "📋 Release file generated"
+
+    - name: Sign Release file (if GPG available)
+      if: ${{ secrets.GPG_PRIVATE_KEY != '' }}
+      run: |
+        cd debian/dists/bookworm
+        
+        # Подписываем Release файл
+        echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --clearsign --local-user ${{ secrets.GPG_KEY_ID }} Release
+        
+        # Создаем InRelease файл
+        echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --detach-sign --armor --local-user ${{ secrets.GPG_KEY_ID }} Release
+        
+        echo "🔐 Release file signed with GPG key: ${{ secrets.GPG_KEY_ID }}"
 
     - name: Count packages
       id: count
