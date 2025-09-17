@@ -106,6 +106,13 @@
             color: #333;
         }
         
+        .package-description {
+            color: #666;
+            font-size: 0.85em;
+            margin: 2px 0;
+            font-style: italic;
+        }
+        
         .package-size {
             color: #666;
             font-size: 0.9em;
@@ -367,6 +374,26 @@
         // Load packages from the repository
         async function loadPackages() {
             try {
+                // First try to load from packages.json (more reliable)
+                const jsonResponse = await fetch('./packages.json');
+                if (jsonResponse.ok) {
+                    const data = await jsonResponse.json();
+                    allPackages = data.packages.map(pkg => ({
+                        name: pkg.name,
+                        url: pkg.url,
+                        size: pkg.size,
+                        category: pkg.category,
+                        description: pkg.description
+                    }));
+                    
+                    filteredPackages = [...allPackages];
+                    updateStats();
+                    renderPackages();
+                    updateLastUpdated();
+                    return;
+                }
+                
+                // Fallback: try to load from directory listing
                 const response = await fetch('./pool/main/arm64/');
                 const html = await response.text();
                 
@@ -375,23 +402,27 @@
                 const doc = parser.parseFromString(html, 'text/html');
                 const links = doc.querySelectorAll('a[href$=".deb"]');
                 
-                allPackages = Array.from(links).map(link => {
-                    const href = link.getAttribute('href');
-                    const text = link.textContent.trim();
-                    const size = link.nextSibling ? link.nextSibling.textContent.trim() : '';
+                if (links.length > 0) {
+                    allPackages = Array.from(links).map(link => {
+                        const href = link.getAttribute('href');
+                        const text = link.textContent.trim();
+                        const size = link.nextSibling ? link.nextSibling.textContent.trim() : '';
+                        
+                        return {
+                            name: text,
+                            url: href,
+                            size: size,
+                            category: categorizePackage(text)
+                        };
+                    });
                     
-                    return {
-                        name: text,
-                        url: href,
-                        size: size,
-                        category: categorizePackage(text)
-                    };
-                });
-                
-                filteredPackages = [...allPackages];
-                updateStats();
-                renderPackages();
-                updateLastUpdated();
+                    filteredPackages = [...allPackages];
+                    updateStats();
+                    renderPackages();
+                    updateLastUpdated();
+                } else {
+                    throw new Error('No packages found in directory');
+                }
                 
             } catch (error) {
                 console.error('Error loading packages:', error);
@@ -468,6 +499,7 @@
                 <div class="package-item">
                     <div>
                         <div class="package-name">${pkg.name}</div>
+                        ${pkg.description ? `<div class="package-description">${pkg.description}</div>` : ''}
                         <div class="package-size">${pkg.size}</div>
                     </div>
                     <a href="./pool/main/arm64/${pkg.url}" class="package-link" download>Download</a>
