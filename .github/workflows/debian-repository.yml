@@ -1,4 +1,4 @@
-name: Debian Repository Generator
+name: 📦 Debian Repository Generator
 
 on:
   push:
