@@ -40,7 +40,7 @@ jobs:
     - name: Install required tools
       run: |
         sudo apt-get update
-        sudo apt-get install -y dpkg-dev apt-utils gnupg2
+        sudo apt-get install -y dpkg-dev apt-utils gnupg2 bc
 
     - name: Import GPG key
       if: env.GPG_PRIVATE_KEY != ''
@@ -73,6 +73,90 @@ jobs:
         dpkg-scanpackages -m pool/main/arm64 /dev/null > dists/bookworm/main/binary-arm64/Packages
         
         echo "📦 Packages file generated"
+
+    - name: Generate packages.json for web interface
+      run: |
+        cd debian
+        
+        # Создаем packages.json для веб-интерфейса
+        echo "📋 Generating packages.json for web interface..."
+        
+        # Получаем список .deb файлов
+        DEB_FILES=$(find pool/main/arm64 -name "*.deb" | sort)
+        
+        # Создаем JSON структуру
+        echo "{" > packages.json
+        echo "  \"packages\": [" >> packages.json
+        
+        # Добавляем информацию о каждом пакете
+        first=true
+        for deb_file in $DEB_FILES; do
+          if [ "$first" = true ]; then
+            first=false
+          else
+            echo "," >> packages.json
+          fi
+          
+          filename=$(basename "$deb_file")
+          size=$(stat -c%s "$deb_file" 2>/dev/null || echo "0")
+          size_mb=$(echo "scale=2; $size / 1024 / 1024" | bc -l 2>/dev/null || echo "0")
+          
+          # Определяем категорию пакета
+          category="other"
+          if [[ "$filename" =~ ros-core|ros-base|ros-comm|ros_ ]]; then
+            category="core"
+          elif [[ "$filename" =~ roscpp|rospy|rosgraph|rosmaster ]]; then
+            category="communication"
+          elif [[ "$filename" =~ msgs ]] && [[ ! "$filename" =~ dbgsym ]]; then
+            category="messages"
+          elif [[ "$filename" =~ tf ]] && [[ ! "$filename" =~ dbgsym ]]; then
+            category="tf"
+          elif [[ "$filename" =~ image|camera|opencv ]]; then
+            category="image"
+          elif [[ "$filename" =~ rosbag|roslaunch|roswtf ]]; then
+            category="utilities"
+          elif [[ "$filename" =~ dbgsym ]]; then
+            category="debug"
+          fi
+          
+          # Создаем описание пакета
+          description=""
+          if [[ "$filename" =~ ros-core ]]; then
+            description="Core ROS functionality"
+          elif [[ "$filename" =~ ros-base ]]; then
+            description="Base ROS installation"
+          elif [[ "$filename" =~ ros-comm ]]; then
+            description="ROS communication libraries"
+          elif [[ "$filename" =~ roscpp ]]; then
+            description="C++ client library for ROS"
+          elif [[ "$filename" =~ rospy ]]; then
+            description="Python client library for ROS"
+          elif [[ "$filename" =~ tf ]]; then
+            description="Transform library for ROS"
+          elif [[ "$filename" =~ msgs ]]; then
+            description="Message definitions for ROS"
+          elif [[ "$filename" =~ dbgsym ]]; then
+            description="Debug symbols"
+          fi
+          
+          echo "    {" >> packages.json
+          echo "      \"name\": \"$filename\"," >> packages.json
+          echo "      \"size\": \"${size_mb} MB\"," >> packages.json
+          echo "      \"size_bytes\": $size," >> packages.json
+          echo "      \"category\": \"$category\"," >> packages.json
+          echo "      \"description\": \"$description\"," >> packages.json
+          echo "      \"url\": \"$filename\"" >> packages.json
+          echo -n "    }" >> packages.json
+        done
+        
+        echo "" >> packages.json
+        echo "  ]," >> packages.json
+        echo "  \"total_count\": $(echo "$DEB_FILES" | wc -l)," >> packages.json
+        echo "  \"generated_at\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"," >> packages.json
+        echo "  \"repository_url\": \"https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/debian/\"" >> packages.json
+        echo "}" >> packages.json
+        
+        echo "✅ packages.json generated with $(echo "$DEB_FILES" | wc -l) packages"
 
     - name: Generate Release file
       run: |
