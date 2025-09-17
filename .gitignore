@@ -32,4 +32,5 @@ Thumbs.db
 *.bak
 *.backup
 backup_original/
+backup_before_cleanup/
 rename_report.txt
