@@ -42,37 +42,34 @@ jobs:
         cp *.deb backup_original/
         echo "✅ Backup created in backup_original/"
 
+    - name: Make scripts executable
+      run: |
+        chmod +x *.sh
+        echo "✅ Scripts made executable"
+
+    - name: Check current package status
+      run: |
+        echo "📊 Checking current package status..."
+        ./check_packages.sh
+
     - name: Rename packages
       if: steps.check-focal.outputs.focal_count > 0
       run: |
         echo "🔄 Renaming packages from -0focal to -0bookworm..."
         python3 rename_packages.py
 
-    - name: Remove old focal packages
+    - name: Clean up duplicate packages
       if: steps.check-focal.outputs.focal_count > 0
       run: |
-        echo "🗑️ Removing old -0focal packages..."
-        FOCAL_FILES=$(ls *-0focal*.deb 2>/dev/null || true)
-        if [ -n "$FOCAL_FILES" ]; then
-          echo "Removing files:"
-          echo "$FOCAL_FILES"
-          rm *-0focal*.deb
-          echo "✅ Old focal packages removed"
-        else
-          echo "ℹ️ No focal packages to remove"
-        fi
-        
-        # Дополнительная проверка на все файлы с 'focal'
-        echo "🔍 Additional check for any files with 'focal' in name..."
-        ALL_FOCAL=$(ls *focal*.deb 2>/dev/null || true)
-        if [ -n "$ALL_FOCAL" ]; then
-          echo "Found additional focal files:"
-          echo "$ALL_FOCAL"
-          rm *focal*.deb
-          echo "✅ All focal files removed"
-        else
-          echo "ℹ️ No additional focal files found"
-        fi
+        echo "🧹 Cleaning up duplicate packages..."
+        # Автоматически удаляем focal файлы без подтверждения
+        echo "y" | ./cleanup_duplicates.sh || true
+        echo "✅ Duplicate cleanup completed"
+
+    - name: Final package check
+      run: |
+        echo "📊 Final package status after processing..."
+        ./check_packages.sh
 
     - name: Check for changes
       id: verify-changes
