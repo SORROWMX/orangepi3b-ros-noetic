@@ -5,16 +5,17 @@
 
 echo "📊 Проверка пакетов в репозитории..."
 
-# Проверяем наличие .deb файлов
-if [ ! -f *.deb 2>/dev/null ]; then
-    echo "❌ Не найдено .deb файлов в текущей директории"
+# Проверяем наличие .deb файлов в pool
+if [ ! -f debian/pool/main/arm64/*.deb 2>/dev/null ]; then
+    echo "❌ Не найдено .deb файлов в debian/pool/main/arm64/"
+    echo "💡 Запустите ./setup_debian_repo.sh для настройки структуры"
     exit 1
 fi
 
 # Подсчитываем файлы
-total_deb=$(ls *.deb 2>/dev/null | wc -l)
-focal_deb=$(ls *-0focal*.deb 2>/dev/null | wc -l || echo "0")
-bookworm_deb=$(ls *-0bookworm*.deb 2>/dev/null | wc -l || echo "0")
+total_deb=$(ls debian/pool/main/arm64/*.deb 2>/dev/null | wc -l)
+focal_deb=$(ls debian/pool/main/arm64/*-0focal*.deb 2>/dev/null | wc -l || echo "0")
+bookworm_deb=$(ls debian/pool/main/arm64/*-0bookworm*.deb 2>/dev/null | wc -l || echo "0")
 other_deb=$((total_deb - focal_deb - bookworm_deb))
 
 echo ""
@@ -28,7 +29,7 @@ echo "   - Другие пакеты: $other_deb"
 if [ $focal_deb -gt 0 ]; then
     echo ""
     echo "📦 Примеры focal пакетов:"
-    ls *-0focal*.deb | head -5
+    ls debian/pool/main/arm64/*-0focal*.deb | head -5
     if [ $focal_deb -gt 5 ]; then
         echo "... и еще $((focal_deb - 5)) файлов"
     fi
@@ -37,7 +38,7 @@ fi
 if [ $bookworm_deb -gt 0 ]; then
     echo ""
     echo "📦 Примеры bookworm пакетов:"
-    ls *-0bookworm*.deb | head -5
+    ls debian/pool/main/arm64/*-0bookworm*.deb | head -5
     if [ $bookworm_deb -gt 5 ]; then
         echo "... и еще $((bookworm_deb - 5)) файлов"
     fi
