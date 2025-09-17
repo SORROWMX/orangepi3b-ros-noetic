@@ -1,0 +1,34 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Orange Pi 3B ROS Noetic Repository
+Label: Orange Pi 3B ROS Noetic
+Suite: bookworm
+Version: 12
+Codename: bookworm
+Date: Wed, 17 Sep 2025 22:23:30 +0000
+Architectures: arm64
+Components: main
+Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
+MD5Sum:
+ ceec8f29520a819bcefbb4f2a318d3f3  ./main/binary-arm64/Packages
+ f42bccd0403e254a79f35635ffda86bd  ./main/binary-arm64/Packages.gz
+SHA256:
+ d4124522077d735c12cb12d8d1d24dfaa8bc4383def2b785bc96fcde0ef88716  ./main/binary-arm64/Packages
+ 3a96da803de67b13be7b0b6f77b1fa69a239a1571fcf61cbb2c669d580c10b1a  ./main/binary-arm64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEZdjwhMAWvwDptARQd6AJ/Dr/AAAFAmjLNOIACgkQd6AJ/Dr/
+AAAjpg/+LC4EZbrMDEYG81GsVpDlYy9FNuJ0ebr6VxjzS3ZvrOxcbRTQTF/WojTW
+uExMhCFR7V4fbtR1OUaNVZuADlRj3L0kg/iyk8Sdx7kVAVsS8YdWwVqo0ASnIqOC
+rkuRb2MC6QhqywxiEi0ndBDZrn79c7BEGwwV7t2SAWA5SGK+c3RH5/jmKLwZ0g1j
+ufzXUhyz1k9XcWjkw9GP0k5dZAZOBzxpI0RcO6k3VJoA8lULmVWY29wfH/OUCd9U
+/mh1HtIQJYFGjIvjBBQV06CCecRYsW1TS445HknbCwUcnG5Qr/DY7mm/DDz6eBDa
+tnjq8ECCpt/jl4VEHtFep2+jjDj+9U/3bK4osh9ZMYtbpnBh3rYsKueI1yJIeKzz
+ABKuX+tW1KFx21++qDM1CmRYl8w5CtHn0qVeQN9WDf1AJudftKNbRjmHoo6gdtNz
+j8F19UwDk8JIfQev1/yz/Df1UcsECNO7Cfodw/G32ZpEt4/TONA1Kb9YhkNyQMz5
+LBlqXfxPsnNrzbFJZ6KsxDVr3kmLmLdZBgvXfvzDqM/vbTssCZUQZKBKnc+vvw2k
+ThU6wjdm/w+cl5dXWdrT1sxp/B0+U9SOhCvAc6qy1mw0geFyjPUsxC5oiKK7i144
+cIhgL5Z/giJpNbqNQRCuIEYd8QlUOSB0nC83m6P8IuPFLAuccI0=
+=gTn2
+-----END PGP SIGNATURE-----
