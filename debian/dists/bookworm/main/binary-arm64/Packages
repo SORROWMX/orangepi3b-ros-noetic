@@ -984,7 +984,7 @@ Architecture: arm64
 Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
 Installed-Size: 46
 Depends: ros-noetic-rosbuild, ros-noetic-rospack
-Filename: pool/main/arm64/ros-noetic-mk_1.15.10-0focal_arm64.deb
+Filename: pool/main/arm64/ros-noetic-mk_1.15.10-0bookworm_arm64.deb
 Size: 10752
 MD5sum: 15f03244c77745e37aa851b7534d70a8
 SHA1: e5c73e164b09bf3adac3883f19c1832f1d1dc537
@@ -1327,7 +1327,7 @@ Architecture: arm64
 Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
 Installed-Size: 147
 Depends: ros-noetic-catkin, ros-noetic-rospack
-Filename: pool/main/arm64/ros-noetic-rosbash_1.15.10-0focal_arm64.deb
+Filename: pool/main/arm64/ros-noetic-rosbash_1.15.10-0bookworm_arm64.deb
 Size: 22956
 MD5sum: 99d32cb951f3f652e1aa5b3291ae1b9b
 SHA1: 0ea2b4b0fbba64e93e38a822b350bf528c8e16d4
@@ -1342,7 +1342,7 @@ Version: 1.15.10-0focal
 Architecture: arm64
 Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
 Installed-Size: 78
-Filename: pool/main/arm64/ros-noetic-rosboost-cfg_1.15.10-0focal_arm64.deb
+Filename: pool/main/arm64/ros-noetic-rosboost-cfg_1.15.10-0bookworm_arm64.deb
 Size: 18140
 MD5sum: 3132c04db4b7ad71d20ed49beea55d36
 SHA1: 567f199d9b317cb4d89a5ad53527bb23f1938718
@@ -1563,7 +1563,7 @@ Architecture: arm64
 Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
 Installed-Size: 73
 Depends: python3-rospkg, ros-noetic-roslib
-Filename: pool/main/arm64/ros-noetic-roscreate_1.15.10-0focal_arm64.deb
+Filename: pool/main/arm64/ros-noetic-roscreate_1.15.10-0bookworm_arm64.deb
 Size: 14536
 MD5sum: cf79260198806dc96ff76189756dbc2c
 SHA1: c91487d3020f4c40e41ca7d102027f0d76c66520
@@ -1733,7 +1733,7 @@ Architecture: arm64
 Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
 Installed-Size: 188
 Depends: python3-rospkg, ros-noetic-catkin
-Filename: pool/main/arm64/ros-noetic-rosmake_1.15.10-0focal_arm64.deb
+Filename: pool/main/arm64/ros-noetic-rosmake_1.15.10-0bookworm_arm64.deb
 Size: 45452
 MD5sum: a471b7f4a8169a48c6bf68b08b0f7f83
 SHA1: bfbfa05a2e2f7c3f25f537651982b1200cf13ac5

@@ -3,13 +3,13 @@ Label: Orange Pi 3B ROS Noetic
 Suite: bookworm
 Version: 12
 Codename: bookworm
-Date: Thu, 18 Sep 2025 07:12:03 +0000
+Date: Thu, 18 Sep 2025 07:19:34 +0000
 Architectures: arm64
 Components: main
 Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
 MD5Sum:
- e90830750af819de1800232296dfc261  ./main/binary-arm64/Packages
- a5c5d04599076bed32ac02d65c536522  ./main/binary-arm64/Packages.gz
+ 901c188784730eae6db6ab422c73cd05  ./main/binary-arm64/Packages
+ da76a07f1ef93f8616b6662ea01fa56e  ./main/binary-arm64/Packages.gz
 SHA256:
- cb7197c78d6d75d93b6fd86780119d75e28981de5e9467ee9d4394def73a43e4  ./main/binary-arm64/Packages
- 6792c88bbcc4b3e807079709c4889cf03d2657416cf6d2f2718bce477b065fa2  ./main/binary-arm64/Packages.gz
+ 9bb384c84de4d923c6c333e516949676bb346448431e69c161402d96eddcca64  ./main/binary-arm64/Packages
+ d9866e17f4a29cbd798a838e9e4ea329b1cdd7e2d3369af97e86158e26bd4b27  ./main/binary-arm64/Packages.gz
