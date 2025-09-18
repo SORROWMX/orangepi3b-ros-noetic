@@ -2,7 +2,7 @@
   "packages": [
     {
       "name": "hddtemp_0.3-beta15-54_arm64.deb",
-      "size": ".04 MB",
+      "size": "0.05 MB",
       "size_bytes": 47744,
       "category": "other",
       "description": "",
@@ -10,7 +10,7 @@
     },
     {
       "name": "libboost-filesystem1.71.0_1.71.0-6ubuntu6_arm64.deb",
-      "size": ".22 MB",
+      "size": "0.23 MB",
       "size_bytes": 237608,
       "category": "other",
       "description": "",
@@ -18,7 +18,7 @@
     },
     {
       "name": "libboost-system1.71.0_1.71.0-6ubuntu6_arm64.deb",
-      "size": ".19 MB",
+      "size": "0.20 MB",
       "size_bytes": 205184,
       "category": "other",
       "description": "",
@@ -26,7 +26,7 @@
     },
     {
       "name": "libboost-thread1.71.0_1.71.0-6ubuntu6_arm64.deb",
-      "size": ".23 MB",
+      "size": "0.23 MB",
       "size_bytes": 245280,
       "category": "other",
       "description": "",
@@ -34,7 +34,7 @@
     },
     {
       "name": "ros-noetic-actionlib-dbgsym_1.14.3-0bookworm_arm64.deb",
-      "size": ".42 MB",
+      "size": "0.43 MB",
       "size_bytes": 448884,
       "category": "debug",
       "description": "Debug symbols",
@@ -42,7 +42,7 @@
     },
     {
       "name": "ros-noetic-actionlib-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 29804,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -50,7 +50,7 @@
     },
     {
       "name": "ros-noetic-actionlib_1.14.3-0bookworm_arm64.deb",
-      "size": ".14 MB",
+      "size": "0.14 MB",
       "size_bytes": 150296,
       "category": "other",
       "description": "",
@@ -58,7 +58,7 @@
     },
     {
       "name": "ros-noetic-bond-core_1.8.7-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 3028,
       "category": "other",
       "description": "",
@@ -66,7 +66,7 @@
     },
     {
       "name": "ros-noetic-bond_1.8.7-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 20580,
       "category": "other",
       "description": "",
@@ -74,7 +74,7 @@
     },
     {
       "name": "ros-noetic-bondcpp-dbgsym_1.8.7-0bookworm_arm64.deb",
-      "size": ".69 MB",
+      "size": "0.69 MB",
       "size_bytes": 726860,
       "category": "debug",
       "description": "Debug symbols",
@@ -82,7 +82,7 @@
     },
     {
       "name": "ros-noetic-bondcpp_1.8.7-0bookworm_arm64.deb",
-      "size": ".04 MB",
+      "size": "0.05 MB",
       "size_bytes": 52352,
       "category": "other",
       "description": "",
@@ -90,7 +90,7 @@
     },
     {
       "name": "ros-noetic-bondpy_1.8.7-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 19972,
       "category": "other",
       "description": "",
@@ -106,7 +106,7 @@
     },
     {
       "name": "ros-noetic-camera-calibration-parsers_1.12.1-0bookworm_arm64.deb",
-      "size": ".06 MB",
+      "size": "0.06 MB",
       "size_bytes": 67860,
       "category": "image",
       "description": "",
@@ -114,7 +114,7 @@
     },
     {
       "name": "ros-noetic-camera-info-manager-dbgsym_1.12.1-0bookworm_arm64.deb",
-      "size": ".40 MB",
+      "size": "0.41 MB",
       "size_bytes": 426304,
       "category": "image",
       "description": "Debug symbols",
@@ -122,7 +122,7 @@
     },
     {
       "name": "ros-noetic-camera-info-manager_1.12.1-0bookworm_arm64.deb",
-      "size": ".04 MB",
+      "size": "0.04 MB",
       "size_bytes": 42948,
       "category": "image",
       "description": "",
@@ -130,7 +130,7 @@
     },
     {
       "name": "ros-noetic-catkin_0.8.12-0bookworm_arm64.deb",
-      "size": ".13 MB",
+      "size": "0.13 MB",
       "size_bytes": 141492,
       "category": "other",
       "description": "",
@@ -138,7 +138,7 @@
     },
     {
       "name": "ros-noetic-class-loader-dbgsym_0.5.2-0bookworm_arm64.deb",
-      "size": ".72 MB",
+      "size": "0.72 MB",
       "size_bytes": 758852,
       "category": "debug",
       "description": "Debug symbols",
@@ -146,7 +146,7 @@
     },
     {
       "name": "ros-noetic-class-loader_0.5.2-0bookworm_arm64.deb",
-      "size": ".05 MB",
+      "size": "0.06 MB",
       "size_bytes": 61964,
       "category": "other",
       "description": "",
@@ -154,7 +154,7 @@
     },
     {
       "name": "ros-noetic-cmake-modules_0.5.2-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 18916,
       "category": "other",
       "description": "",
@@ -162,7 +162,7 @@
     },
     {
       "name": "ros-noetic-common-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 3240,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -170,7 +170,7 @@
     },
     {
       "name": "ros-noetic-control-msgs_1.5.2-0bookworm_arm64.deb",
-      "size": ".12 MB",
+      "size": "0.13 MB",
       "size_bytes": 135504,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -186,7 +186,7 @@
     },
     {
       "name": "ros-noetic-control-toolbox_1.19.0-0bookworm_arm64.deb",
-      "size": ".08 MB",
+      "size": "0.08 MB",
       "size_bytes": 84764,
       "category": "other",
       "description": "",
@@ -194,7 +194,7 @@
     },
     {
       "name": "ros-noetic-cpp-common-dbgsym_0.7.3-0bookworm_arm64.deb",
-      "size": ".13 MB",
+      "size": "0.14 MB",
       "size_bytes": 142988,
       "category": "debug",
       "description": "Debug symbols",
@@ -202,7 +202,7 @@
     },
     {
       "name": "ros-noetic-cpp-common_0.7.3-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 21352,
       "category": "other",
       "description": "",
@@ -210,7 +210,7 @@
     },
     {
       "name": "ros-noetic-cv-bridge_1.16.2-0bookworm_arm64.deb",
-      "size": ".07 MB",
+      "size": "0.08 MB",
       "size_bytes": 82844,
       "category": "other",
       "description": "",
@@ -218,7 +218,7 @@
     },
     {
       "name": "ros-noetic-diagnostic-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.03 MB",
       "size_bytes": 36396,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -226,7 +226,7 @@
     },
     {
       "name": "ros-noetic-dynamic-reconfigure-dbgsym_1.7.6-0bookworm_arm64.deb",
-      "size": ".08 MB",
+      "size": "0.09 MB",
       "size_bytes": 90520,
       "category": "debug",
       "description": "Debug symbols",
@@ -234,7 +234,7 @@
     },
     {
       "name": "ros-noetic-dynamic-reconfigure_1.7.6-0bookworm_arm64.deb",
-      "size": ".11 MB",
+      "size": "0.11 MB",
       "size_bytes": 117696,
       "category": "other",
       "description": "",
@@ -242,7 +242,7 @@
     },
     {
       "name": "ros-noetic-eigen-conversions-dbgsym_1.13.4-0bookworm_arm64.deb",
-      "size": ".34 MB",
+      "size": "0.35 MB",
       "size_bytes": 363556,
       "category": "debug",
       "description": "Debug symbols",
@@ -250,7 +250,7 @@
     },
     {
       "name": "ros-noetic-eigen-conversions_1.13.4-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 12800,
       "category": "other",
       "description": "",
@@ -258,7 +258,7 @@
     },
     {
       "name": "ros-noetic-eigen-stl-containers_0.1.8-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.01 MB",
       "size_bytes": 7540,
       "category": "other",
       "description": "",
@@ -266,7 +266,7 @@
     },
     {
       "name": "ros-noetic-gencpp_0.7.2-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 17452,
       "category": "other",
       "description": "",
@@ -274,7 +274,7 @@
     },
     {
       "name": "ros-noetic-geneus_3.0.0-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.04 MB",
       "size_bytes": 38648,
       "category": "other",
       "description": "",
@@ -282,7 +282,7 @@
     },
     {
       "name": "ros-noetic-genlisp_0.4.18-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 30644,
       "category": "other",
       "description": "",
@@ -290,7 +290,7 @@
     },
     {
       "name": "ros-noetic-genmsg_0.6.1-0bookworm_arm64.deb",
-      "size": ".04 MB",
+      "size": "0.04 MB",
       "size_bytes": 44648,
       "category": "other",
       "description": "",
@@ -298,7 +298,7 @@
     },
     {
       "name": "ros-noetic-gennodejs_2.0.2-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.03 MB",
       "size_bytes": 31968,
       "category": "other",
       "description": "",
@@ -306,7 +306,7 @@
     },
     {
       "name": "ros-noetic-genpy_0.6.18-0bookworm_arm64.deb",
-      "size": ".06 MB",
+      "size": "0.07 MB",
       "size_bytes": 70032,
       "category": "other",
       "description": "",
@@ -314,7 +314,7 @@
     },
     {
       "name": "ros-noetic-geodesy-dbgsym_0.5.6-0bookworm_arm64.deb",
-      "size": ".10 MB",
+      "size": "0.11 MB",
       "size_bytes": 111476,
       "category": "debug",
       "description": "Debug symbols",
@@ -322,7 +322,7 @@
     },
     {
       "name": "ros-noetic-geodesy_0.5.6-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 30208,
       "category": "other",
       "description": "",
@@ -330,7 +330,7 @@
     },
     {
       "name": "ros-noetic-geographic-info_0.5.6-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 2532,
       "category": "other",
       "description": "",
@@ -338,7 +338,7 @@
     },
     {
       "name": "ros-noetic-geographic-msgs_0.5.6-0bookworm_arm64.deb",
-      "size": ".08 MB",
+      "size": "0.08 MB",
       "size_bytes": 88548,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -346,7 +346,7 @@
     },
     {
       "name": "ros-noetic-geometry-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".07 MB",
+      "size": "0.07 MB",
       "size_bytes": 74724,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -354,7 +354,7 @@
     },
     {
       "name": "ros-noetic-geometry2_0.7.10-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 2648,
       "category": "other",
       "description": "",
@@ -362,7 +362,7 @@
     },
     {
       "name": "ros-noetic-geometry_1.13.4-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 3748,
       "category": "other",
       "description": "",
@@ -370,7 +370,7 @@
     },
     {
       "name": "ros-noetic-image-common_1.12.1-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 2908,
       "category": "image",
       "description": "",
@@ -378,7 +378,7 @@
     },
     {
       "name": "ros-noetic-image-geometry_1.16.2-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.03 MB",
       "size_bytes": 34952,
       "category": "image",
       "description": "",
@@ -394,7 +394,7 @@
     },
     {
       "name": "ros-noetic-image-transport_1.12.1-0bookworm_arm64.deb",
-      "size": ".20 MB",
+      "size": "0.21 MB",
       "size_bytes": 217424,
       "category": "image",
       "description": "",
@@ -402,7 +402,7 @@
     },
     {
       "name": "ros-noetic-kdl-conversions-dbgsym_1.13.4-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 24572,
       "category": "debug",
       "description": "Debug symbols",
@@ -410,7 +410,7 @@
     },
     {
       "name": "ros-noetic-kdl-conversions_1.13.4-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 10552,
       "category": "other",
       "description": "",
@@ -418,7 +418,7 @@
     },
     {
       "name": "ros-noetic-mavlink_2021.3.3-0bookworm_arm64.deb",
-      "size": ".76 MB",
+      "size": "0.76 MB",
       "size_bytes": 801836,
       "category": "other",
       "description": "",
@@ -426,7 +426,7 @@
     },
     {
       "name": "ros-noetic-message-filters-dbgsym_1.17.4-0bookworm_arm64.deb",
-      "size": ".04 MB",
+      "size": "0.04 MB",
       "size_bytes": 42808,
       "category": "debug",
       "description": "Debug symbols",
@@ -434,7 +434,7 @@
     },
     {
       "name": "ros-noetic-message-filters_1.17.4-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.04 MB",
       "size_bytes": 37860,
       "category": "other",
       "description": "",
@@ -442,7 +442,7 @@
     },
     {
       "name": "ros-noetic-message-generation_0.4.1-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 4916,
       "category": "other",
       "description": "",
@@ -450,7 +450,7 @@
     },
     {
       "name": "ros-noetic-message-runtime_0.4.13-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 4928,
       "category": "other",
       "description": "",
@@ -458,7 +458,7 @@
     },
     {
       "name": "ros-noetic-mk_1.15.10-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 10752,
       "category": "other",
       "description": "",
@@ -466,7 +466,7 @@
     },
     {
       "name": "ros-noetic-nav-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".07 MB",
+      "size": "0.08 MB",
       "size_bytes": 79140,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -474,7 +474,7 @@
     },
     {
       "name": "ros-noetic-nodelet-core_1.11.2-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 3072,
       "category": "other",
       "description": "",
@@ -490,7 +490,7 @@
     },
     {
       "name": "ros-noetic-nodelet-topic-tools_1.11.2-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 17252,
       "category": "other",
       "description": "",
@@ -498,7 +498,7 @@
     },
     {
       "name": "ros-noetic-nodelet_1.11.2-0bookworm_arm64.deb",
-      "size": ".14 MB",
+      "size": "0.14 MB",
       "size_bytes": 147052,
       "category": "other",
       "description": "",
@@ -506,7 +506,7 @@
     },
     {
       "name": "ros-noetic-opencv-tests_1.16.2-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.01 MB",
       "size_bytes": 7732,
       "category": "image",
       "description": "",
@@ -514,7 +514,7 @@
     },
     {
       "name": "ros-noetic-pluginlib_1.13.2-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 22652,
       "category": "other",
       "description": "",
@@ -522,7 +522,7 @@
     },
     {
       "name": "ros-noetic-polled-camera_1.12.1-0bookworm_arm64.deb",
-      "size": ".05 MB",
+      "size": "0.05 MB",
       "size_bytes": 56544,
       "category": "image",
       "description": "",
@@ -530,7 +530,7 @@
     },
     {
       "name": "ros-noetic-realtime-tools-dbgsym_1.16.1-0bookworm_arm64.deb",
-      "size": ".11 MB",
+      "size": "0.11 MB",
       "size_bytes": 120188,
       "category": "debug",
       "description": "Debug symbols",
@@ -538,7 +538,7 @@
     },
     {
       "name": "ros-noetic-realtime-tools_1.16.1-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 20912,
       "category": "other",
       "description": "",
@@ -546,7 +546,7 @@
     },
     {
       "name": "ros-noetic-ros-base_1.5.0-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 2072,
       "category": "core",
       "description": "Base ROS installation",
@@ -554,7 +554,7 @@
     },
     {
       "name": "ros-noetic-ros-comm_1.17.4-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 3844,
       "category": "core",
       "description": "ROS communication libraries",
@@ -562,7 +562,7 @@
     },
     {
       "name": "ros-noetic-ros-core_1.5.0-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 2332,
       "category": "core",
       "description": "Core ROS functionality",
@@ -570,7 +570,7 @@
     },
     {
       "name": "ros-noetic-ros-environment_1.3.2-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.01 MB",
       "size_bytes": 5816,
       "category": "other",
       "description": "",
@@ -578,7 +578,7 @@
     },
     {
       "name": "ros-noetic-ros_1.15.10-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 2160,
       "category": "core",
       "description": "",
@@ -586,7 +586,7 @@
     },
     {
       "name": "ros-noetic-rosbag-dbgsym_1.17.4-0bookworm_arm64.deb",
-      "size": "4.36 MB",
+      "size": "4.37 MB",
       "size_bytes": 4577916,
       "category": "utilities",
       "description": "Debug symbols",
@@ -594,7 +594,7 @@
     },
     {
       "name": "ros-noetic-rosbag-migration-rule_1.0.2-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 4988,
       "category": "utilities",
       "description": "",
@@ -602,7 +602,7 @@
     },
     {
       "name": "ros-noetic-rosbag-storage-dbgsym_1.17.4-0bookworm_arm64.deb",
-      "size": "3.64 MB",
+      "size": "3.65 MB",
       "size_bytes": 3822984,
       "category": "utilities",
       "description": "Debug symbols",
@@ -610,7 +610,7 @@
     },
     {
       "name": "ros-noetic-rosbag-storage_1.17.4-0bookworm_arm64.deb",
-      "size": ".15 MB",
+      "size": "0.16 MB",
       "size_bytes": 165132,
       "category": "utilities",
       "description": "",
@@ -618,7 +618,7 @@
     },
     {
       "name": "ros-noetic-rosbag_1.17.4-0bookworm_arm64.deb",
-      "size": ".34 MB",
+      "size": "0.35 MB",
       "size_bytes": 365796,
       "category": "utilities",
       "description": "",
@@ -626,7 +626,7 @@
     },
     {
       "name": "ros-noetic-rosbash_1.15.10-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 22956,
       "category": "other",
       "description": "",
@@ -634,7 +634,7 @@
     },
     {
       "name": "ros-noetic-rosboost-cfg_1.15.10-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 18140,
       "category": "other",
       "description": "",
@@ -642,7 +642,7 @@
     },
     {
       "name": "ros-noetic-rosbuild_1.15.10-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 28636,
       "category": "other",
       "description": "",
@@ -650,7 +650,7 @@
     },
     {
       "name": "ros-noetic-rosclean_1.15.10-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 14908,
       "category": "other",
       "description": "",
@@ -658,7 +658,7 @@
     },
     {
       "name": "ros-noetic-rosconsole-bridge-dbgsym_0.5.5-0bookworm_arm64.deb",
-      "size": ".04 MB",
+      "size": "0.05 MB",
       "size_bytes": 50060,
       "category": "debug",
       "description": "Debug symbols",
@@ -666,7 +666,7 @@
     },
     {
       "name": "ros-noetic-rosconsole-bridge_0.5.5-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 12348,
       "category": "other",
       "description": "",
@@ -674,7 +674,7 @@
     },
     {
       "name": "ros-noetic-rosconsole-dbgsym_1.14.4-0bookworm_arm64.deb",
-      "size": ".86 MB",
+      "size": "0.87 MB",
       "size_bytes": 907920,
       "category": "debug",
       "description": "Debug symbols",
@@ -682,7 +682,7 @@
     },
     {
       "name": "ros-noetic-rosconsole_1.14.4-0bookworm_arm64.deb",
-      "size": ".08 MB",
+      "size": "0.09 MB",
       "size_bytes": 91688,
       "category": "other",
       "description": "",
@@ -690,7 +690,7 @@
     },
     {
       "name": "ros-noetic-roscpp-core_0.7.3-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 2032,
       "category": "communication",
       "description": "C++ client library for ROS",
@@ -698,7 +698,7 @@
     },
     {
       "name": "ros-noetic-roscpp-dbgsym_1.17.4-0bookworm_arm64.deb",
-      "size": "12.32 MB",
+      "size": "12.33 MB",
       "size_bytes": 12926328,
       "category": "communication",
       "description": "C++ client library for ROS",
@@ -706,7 +706,7 @@
     },
     {
       "name": "ros-noetic-roscpp-serialization-dbgsym_0.7.3-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 31000,
       "category": "communication",
       "description": "C++ client library for ROS",
@@ -714,7 +714,7 @@
     },
     {
       "name": "ros-noetic-roscpp-serialization_0.7.3-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 14212,
       "category": "communication",
       "description": "C++ client library for ROS",
@@ -722,7 +722,7 @@
     },
     {
       "name": "ros-noetic-roscpp-traits_0.7.3-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 10788,
       "category": "communication",
       "description": "C++ client library for ROS",
@@ -730,7 +730,7 @@
     },
     {
       "name": "ros-noetic-roscpp_1.17.4-0bookworm_arm64.deb",
-      "size": ".43 MB",
+      "size": "0.44 MB",
       "size_bytes": 460952,
       "category": "communication",
       "description": "C++ client library for ROS",
@@ -738,7 +738,7 @@
     },
     {
       "name": "ros-noetic-roscreate_1.15.10-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 14536,
       "category": "other",
       "description": "",
@@ -746,7 +746,7 @@
     },
     {
       "name": "ros-noetic-rosgraph-msgs_1.11.4-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.01 MB",
       "size_bytes": 6512,
       "category": "communication",
       "description": "Message definitions for ROS",
@@ -754,7 +754,7 @@
     },
     {
       "name": "ros-noetic-rosgraph_1.17.4-0bookworm_arm64.deb",
-      "size": ".06 MB",
+      "size": "0.06 MB",
       "size_bytes": 64336,
       "category": "communication",
       "description": "",
@@ -762,7 +762,7 @@
     },
     {
       "name": "ros-noetic-roslang_1.15.10-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.01 MB",
       "size_bytes": 6488,
       "category": "other",
       "description": "",
@@ -770,7 +770,7 @@
     },
     {
       "name": "ros-noetic-roslaunch_1.17.4-0bookworm_arm64.deb",
-      "size": ".18 MB",
+      "size": "0.18 MB",
       "size_bytes": 189108,
       "category": "utilities",
       "description": "",
@@ -778,7 +778,7 @@
     },
     {
       "name": "ros-noetic-roslib-dbgsym_1.15.10-0bookworm_arm64.deb",
-      "size": ".26 MB",
+      "size": "0.27 MB",
       "size_bytes": 278912,
       "category": "debug",
       "description": "Debug symbols",
@@ -786,7 +786,7 @@
     },
     {
       "name": "ros-noetic-roslib_1.15.10-0bookworm_arm64.deb",
-      "size": ".10 MB",
+      "size": "0.11 MB",
       "size_bytes": 114900,
       "category": "other",
       "description": "",
@@ -794,7 +794,7 @@
     },
     {
       "name": "ros-noetic-roslisp_1.9.25-0bookworm_arm64.deb",
-      "size": ".09 MB",
+      "size": "0.09 MB",
       "size_bytes": 99260,
       "category": "other",
       "description": "",
@@ -802,7 +802,7 @@
     },
     {
       "name": "ros-noetic-roslz4-dbgsym_1.17.4-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 27372,
       "category": "debug",
       "description": "Debug symbols",
@@ -810,7 +810,7 @@
     },
     {
       "name": "ros-noetic-roslz4_1.17.4-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 17876,
       "category": "other",
       "description": "",
@@ -818,7 +818,7 @@
     },
     {
       "name": "ros-noetic-rosmake_1.15.10-0bookworm_arm64.deb",
-      "size": ".04 MB",
+      "size": "0.04 MB",
       "size_bytes": 45452,
       "category": "other",
       "description": "",
@@ -826,7 +826,7 @@
     },
     {
       "name": "ros-noetic-rosmaster_1.17.4-0bookworm_arm64.deb",
-      "size": ".05 MB",
+      "size": "0.05 MB",
       "size_bytes": 54600,
       "category": "communication",
       "description": "",
@@ -834,7 +834,7 @@
     },
     {
       "name": "ros-noetic-rosmsg_1.17.4-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 29636,
       "category": "other",
       "description": "",
@@ -842,7 +842,7 @@
     },
     {
       "name": "ros-noetic-rosnode_1.17.4-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 28284,
       "category": "other",
       "description": "",
@@ -850,7 +850,7 @@
     },
     {
       "name": "ros-noetic-rosout-dbgsym_1.17.4-0bookworm_arm64.deb",
-      "size": ".38 MB",
+      "size": "0.38 MB",
       "size_bytes": 398920,
       "category": "debug",
       "description": "Debug symbols",
@@ -858,7 +858,7 @@
     },
     {
       "name": "ros-noetic-rosout_1.17.4-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.03 MB",
       "size_bytes": 34820,
       "category": "other",
       "description": "",
@@ -874,7 +874,7 @@
     },
     {
       "name": "ros-noetic-rospack_2.6.4-0bookworm_arm64.deb",
-      "size": ".08 MB",
+      "size": "0.09 MB",
       "size_bytes": 91548,
       "category": "other",
       "description": "",
@@ -882,7 +882,7 @@
     },
     {
       "name": "ros-noetic-rosparam_1.17.4-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 22736,
       "category": "other",
       "description": "",
@@ -890,7 +890,7 @@
     },
     {
       "name": "ros-noetic-rospy_1.17.4-0bookworm_arm64.deb",
-      "size": ".17 MB",
+      "size": "0.17 MB",
       "size_bytes": 181560,
       "category": "communication",
       "description": "Python client library for ROS",
@@ -898,7 +898,7 @@
     },
     {
       "name": "ros-noetic-rosservice_1.17.4-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 24856,
       "category": "other",
       "description": "",
@@ -906,7 +906,7 @@
     },
     {
       "name": "ros-noetic-rostest_1.17.4-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.04 MB",
       "size_bytes": 38728,
       "category": "other",
       "description": "",
@@ -914,7 +914,7 @@
     },
     {
       "name": "ros-noetic-rostime-dbgsym_0.7.3-0bookworm_arm64.deb",
-      "size": ".25 MB",
+      "size": "0.25 MB",
       "size_bytes": 264024,
       "category": "debug",
       "description": "Debug symbols",
@@ -922,7 +922,7 @@
     },
     {
       "name": "ros-noetic-rostime_0.7.3-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.04 MB",
       "size_bytes": 38604,
       "category": "other",
       "description": "",
@@ -930,7 +930,7 @@
     },
     {
       "name": "ros-noetic-rostopic_1.17.4-0bookworm_arm64.deb",
-      "size": ".06 MB",
+      "size": "0.06 MB",
       "size_bytes": 63060,
       "category": "other",
       "description": "",
@@ -938,7 +938,7 @@
     },
     {
       "name": "ros-noetic-rosunit_1.15.10-0bookworm_arm64.deb",
-      "size": ".06 MB",
+      "size": "0.06 MB",
       "size_bytes": 63612,
       "category": "other",
       "description": "",
@@ -946,7 +946,7 @@
     },
     {
       "name": "ros-noetic-roswtf_1.17.4-0bookworm_arm64.deb",
-      "size": ".05 MB",
+      "size": "0.05 MB",
       "size_bytes": 56652,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -954,7 +954,7 @@
     },
     {
       "name": "ros-noetic-sensor-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".14 MB",
+      "size": "0.14 MB",
       "size_bytes": 150100,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -962,7 +962,7 @@
     },
     {
       "name": "ros-noetic-shape-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 25964,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -970,7 +970,7 @@
     },
     {
       "name": "ros-noetic-smclib_1.8.7-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 14944,
       "category": "other",
       "description": "",
@@ -978,7 +978,7 @@
     },
     {
       "name": "ros-noetic-std-msgs_0.5.14-0bookworm_arm64.deb",
-      "size": ".05 MB",
+      "size": "0.06 MB",
       "size_bytes": 61456,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -986,7 +986,7 @@
     },
     {
       "name": "ros-noetic-std-srvs_1.11.4-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 21072,
       "category": "other",
       "description": "",
@@ -994,7 +994,7 @@
     },
     {
       "name": "ros-noetic-stereo-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.02 MB",
       "size_bytes": 21400,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -1002,7 +1002,7 @@
     },
     {
       "name": "ros-noetic-test-tf2_0.7.10-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.01 MB",
       "size_bytes": 9912,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1010,7 +1010,7 @@
     },
     {
       "name": "ros-noetic-tf-conversions-dbgsym_1.13.4-0bookworm_arm64.deb",
-      "size": ".11 MB",
+      "size": "0.12 MB",
       "size_bytes": 122256,
       "category": "debug",
       "description": "Transform library for ROS",
@@ -1018,7 +1018,7 @@
     },
     {
       "name": "ros-noetic-tf-conversions_1.13.4-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 18100,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1034,7 +1034,7 @@
     },
     {
       "name": "ros-noetic-tf2-bullet_0.7.10-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.01 MB",
       "size_bytes": 8856,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1042,7 +1042,7 @@
     },
     {
       "name": "ros-noetic-tf2-eigen_0.7.10-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.01 MB",
       "size_bytes": 10412,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1050,7 +1050,7 @@
     },
     {
       "name": "ros-noetic-tf2-geometry-msgs_0.7.10-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.02 MB",
       "size_bytes": 16260,
       "category": "messages",
       "description": "Transform library for ROS",
@@ -1058,7 +1058,7 @@
     },
     {
       "name": "ros-noetic-tf2-kdl_0.7.10-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 13712,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1066,7 +1066,7 @@
     },
     {
       "name": "ros-noetic-tf2-msgs_0.7.10-0bookworm_arm64.deb",
-      "size": ".05 MB",
+      "size": "0.05 MB",
       "size_bytes": 52464,
       "category": "messages",
       "description": "Transform library for ROS",
@@ -1074,7 +1074,7 @@
     },
     {
       "name": "ros-noetic-tf2-py_0.7.10-0bookworm_arm64.deb",
-      "size": ".02 MB",
+      "size": "0.03 MB",
       "size_bytes": 28232,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1082,7 +1082,7 @@
     },
     {
       "name": "ros-noetic-tf2-ros_0.7.10-0bookworm_arm64.deb",
-      "size": ".20 MB",
+      "size": "0.20 MB",
       "size_bytes": 214956,
       "category": "core",
       "description": "Transform library for ROS",
@@ -1090,7 +1090,7 @@
     },
     {
       "name": "ros-noetic-tf2-sensor-msgs_0.7.10-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 10700,
       "category": "messages",
       "description": "Transform library for ROS",
@@ -1098,7 +1098,7 @@
     },
     {
       "name": "ros-noetic-tf2-tools_0.7.10-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 11376,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1106,7 +1106,7 @@
     },
     {
       "name": "ros-noetic-tf2_0.7.10-0bookworm_arm64.deb",
-      "size": ".09 MB",
+      "size": "0.10 MB",
       "size_bytes": 100112,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1114,7 +1114,7 @@
     },
     {
       "name": "ros-noetic-tf_1.13.4-0bookworm_arm64.deb",
-      "size": ".21 MB",
+      "size": "0.22 MB",
       "size_bytes": 227608,
       "category": "tf",
       "description": "Transform library for ROS",
@@ -1130,7 +1130,7 @@
     },
     {
       "name": "ros-noetic-topic-tools_1.17.4-0bookworm_arm64.deb",
-      "size": ".15 MB",
+      "size": "0.15 MB",
       "size_bytes": 157336,
       "category": "other",
       "description": "",
@@ -1138,7 +1138,7 @@
     },
     {
       "name": "ros-noetic-trajectory-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".03 MB",
+      "size": "0.03 MB",
       "size_bytes": 32792,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -1146,7 +1146,7 @@
     },
     {
       "name": "ros-noetic-unique-id_1.0.6-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 11420,
       "category": "other",
       "description": "",
@@ -1154,7 +1154,7 @@
     },
     {
       "name": "ros-noetic-unique-identifier_1.0.6-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 2664,
       "category": "other",
       "description": "",
@@ -1162,7 +1162,7 @@
     },
     {
       "name": "ros-noetic-uuid-msgs_1.0.6-0bookworm_arm64.deb",
-      "size": ".01 MB",
+      "size": "0.01 MB",
       "size_bytes": 13456,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -1170,7 +1170,7 @@
     },
     {
       "name": "ros-noetic-vision-opencv_1.16.2-0bookworm_arm64.deb",
-      "size": "0 MB",
+      "size": "0.00 MB",
       "size_bytes": 3012,
       "category": "image",
       "description": "",
@@ -1178,7 +1178,7 @@
     },
     {
       "name": "ros-noetic-visualization-msgs_1.13.2-0bookworm_arm64.deb",
-      "size": ".07 MB",
+      "size": "0.08 MB",
       "size_bytes": 81360,
       "category": "messages",
       "description": "Message definitions for ROS",
@@ -1186,7 +1186,7 @@
     },
     {
       "name": "ros-noetic-xmlrpcpp-dbgsym_1.17.4-0bookworm_arm64.deb",
-      "size": ".53 MB",
+      "size": "0.53 MB",
       "size_bytes": 556056,
       "category": "debug",
       "description": "Debug symbols",
@@ -1194,7 +1194,7 @@
     },
     {
       "name": "ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb",
-      "size": ".05 MB",
+      "size": "0.06 MB",
       "size_bytes": 59524,
       "category": "other",
       "description": "",
@@ -1202,6 +1202,6 @@
     }
   ],
   "total_count": 150,
-  "generated_at": "2025-09-18T07:19:34Z",
+  "generated_at": "2025-09-18T09:21:50Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }
