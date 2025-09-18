@@ -57,6 +57,22 @@
       "url": "ros-noetic-actionlib_1.14.3-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-angles_1.9.14-0bookworm_arm64.deb",
+      "size": "0.01 MB",
+      "size_bytes": 14716,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-angles_1.9.14-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-async-web-server-cpp_1.0.3-0bookworm_arm64.deb",
+      "size": "0.13 MB",
+      "size_bytes": 133068,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-async-web-server-cpp_1.0.3-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-bond-core_1.8.7-0bookworm_arm64.deb",
       "size": "0.00 MB",
       "size_bytes": 3028,
@@ -111,6 +127,14 @@
       "category": "image",
       "description": "",
       "url": "ros-noetic-camera-calibration-parsers_1.12.1-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-camera-calibration_1.17.0-0bookworm_arm64.deb",
+      "size": "0.07 MB",
+      "size_bytes": 70240,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-camera-calibration_1.17.0-0bookworm_arm64.deb"
     },
     {
       "name": "ros-noetic-camera-info-manager-dbgsym_1.12.1-0bookworm_arm64.deb",
@@ -217,12 +241,68 @@
       "url": "ros-noetic-cv-bridge_1.16.2-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-cv-camera_0.6.0-0bookworm_arm64.deb",
+      "size": "0.05 MB",
+      "size_bytes": 56348,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-cv-camera_0.6.0-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-depth-image-proc_1.17.0-0bookworm_arm64.deb",
+      "size": "0.18 MB",
+      "size_bytes": 190532,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-depth-image-proc_1.17.0-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb",
+      "size": "0.24 MB",
+      "size_bytes": 252816,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-diagnostic-analysis_1.12.1-0bookworm_arm64.deb",
+      "size": "0.01 MB",
+      "size_bytes": 15360,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-diagnostic-analysis_1.12.1-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-diagnostic-common-diagnostics_1.12.1-0bookworm_arm64.deb",
+      "size": "0.03 MB",
+      "size_bytes": 34824,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-diagnostic-common-diagnostics_1.12.1-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-diagnostic-msgs_1.13.2-0bookworm_arm64.deb",
       "size": "0.03 MB",
       "size_bytes": 36396,
       "category": "messages",
       "description": "Message definitions for ROS",
       "url": "ros-noetic-diagnostic-msgs_1.13.2-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-diagnostic-updater_1.12.1-0bookworm_arm64.deb",
+      "size": "0.06 MB",
+      "size_bytes": 60360,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-diagnostic-updater_1.12.1-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-diagnostics_1.12.1-0bookworm_arm64.deb",
+      "size": "0.00 MB",
+      "size_bytes": 3036,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-diagnostics_1.12.1-0bookworm_arm64.deb"
     },
     {
       "name": "ros-noetic-dynamic-reconfigure-dbgsym_1.7.6-0bookworm_arm64.deb",
@@ -385,6 +465,38 @@
       "url": "ros-noetic-image-geometry_1.16.2-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-image-pipeline_1.17.0-0bookworm_arm64.deb",
+      "size": "0.00 MB",
+      "size_bytes": 3144,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-image-pipeline_1.17.0-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-image-proc_1.17.0-0bookworm_arm64.deb",
+      "size": "0.16 MB",
+      "size_bytes": 167772,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-image-proc_1.17.0-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-image-publisher_1.17.0-0bookworm_arm64.deb",
+      "size": "0.07 MB",
+      "size_bytes": 77892,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-image-publisher_1.17.0-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-image-rotate_1.17.0-0bookworm_arm64.deb",
+      "size": "0.09 MB",
+      "size_bytes": 90392,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-image-rotate_1.17.0-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-image-transport-dbgsym_1.12.1-0bookworm_arm64.deb",
       "size": "4.80 MB",
       "size_bytes": 5037700,
@@ -401,6 +513,14 @@
       "url": "ros-noetic-image-transport_1.12.1-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-image-view_1.17.0-0bookworm_arm64.deb",
+      "size": "0.26 MB",
+      "size_bytes": 268448,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-image-view_1.17.0-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-kdl-conversions-dbgsym_1.13.4-0bookworm_arm64.deb",
       "size": "0.02 MB",
       "size_bytes": 24572,
@@ -415,6 +535,14 @@
       "category": "other",
       "description": "",
       "url": "ros-noetic-kdl-conversions_1.13.4-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-led-msgs_0.0.15-0bookworm_arm64.deb",
+      "size": "0.02 MB",
+      "size_bytes": 24692,
+      "category": "messages",
+      "description": "Message definitions for ROS",
+      "url": "ros-noetic-led-msgs_0.0.15-0bookworm_arm64.deb"
     },
     {
       "name": "ros-noetic-mavlink_2021.3.3-0bookworm_arm64.deb",
@@ -585,6 +713,14 @@
       "url": "ros-noetic-ros_1.15.10-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-rosapi_0.11.18-0bookworm_arm64.deb",
+      "size": "0.10 MB",
+      "size_bytes": 102652,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-rosapi_0.11.18-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-rosbag-dbgsym_1.17.4-0bookworm_arm64.deb",
       "size": "4.37 MB",
       "size_bytes": 4577916,
@@ -639,6 +775,38 @@
       "category": "other",
       "description": "",
       "url": "ros-noetic-rosboost-cfg_1.15.10-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-rosbridge-library_0.11.18-0bookworm_arm64.deb",
+      "size": "0.14 MB",
+      "size_bytes": 150752,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-rosbridge-library_0.11.18-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-rosbridge-msgs_0.11.18-0bookworm_arm64.deb",
+      "size": "0.02 MB",
+      "size_bytes": 18292,
+      "category": "messages",
+      "description": "Message definitions for ROS",
+      "url": "ros-noetic-rosbridge-msgs_0.11.18-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-rosbridge-server_0.11.18-0bookworm_arm64.deb",
+      "size": "0.04 MB",
+      "size_bytes": 40896,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-rosbridge-server_0.11.18-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-rosbridge-suite_0.11.18-0bookworm_arm64.deb",
+      "size": "0.00 MB",
+      "size_bytes": 4068,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-rosbridge-suite_0.11.18-0bookworm_arm64.deb"
     },
     {
       "name": "ros-noetic-rosbuild_1.15.10-0bookworm_arm64.deb",
@@ -745,6 +913,14 @@
       "url": "ros-noetic-roscreate_1.15.10-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-rosdiagnostic_1.12.1-0bookworm_arm64.deb",
+      "size": "0.01 MB",
+      "size_bytes": 12924,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-rosdiagnostic_1.12.1-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-rosgraph-msgs_1.11.4-0bookworm_arm64.deb",
       "size": "0.01 MB",
       "size_bytes": 6512,
@@ -791,6 +967,14 @@
       "category": "other",
       "description": "",
       "url": "ros-noetic-roslib_1.15.10-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-roslint_0.12.0-0bookworm_arm64.deb",
+      "size": "0.18 MB",
+      "size_bytes": 189300,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-roslint_0.12.0-0bookworm_arm64.deb"
     },
     {
       "name": "ros-noetic-roslisp_1.9.25-0bookworm_arm64.deb",
@@ -953,6 +1137,14 @@
       "url": "ros-noetic-roswtf_1.17.4-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-self-test_1.12.1-0bookworm_arm64.deb",
+      "size": "0.14 MB",
+      "size_bytes": 150184,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-self-test_1.12.1-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-sensor-msgs_1.13.2-0bookworm_arm64.deb",
       "size": "0.14 MB",
       "size_bytes": 150100,
@@ -993,12 +1185,28 @@
       "url": "ros-noetic-std-srvs_1.11.4-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-stereo-image-proc_1.17.0-0bookworm_arm64.deb",
+      "size": "0.17 MB",
+      "size_bytes": 182676,
+      "category": "image",
+      "description": "",
+      "url": "ros-noetic-stereo-image-proc_1.17.0-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-stereo-msgs_1.13.2-0bookworm_arm64.deb",
       "size": "0.02 MB",
       "size_bytes": 21400,
       "category": "messages",
       "description": "Message definitions for ROS",
       "url": "ros-noetic-stereo-msgs_1.13.2-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-test-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb",
+      "size": "0.01 MB",
+      "size_bytes": 8440,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-test-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb"
     },
     {
       "name": "ros-noetic-test-tf2_0.7.10-0bookworm_arm64.deb",
@@ -1105,6 +1313,14 @@
       "url": "ros-noetic-tf2-tools_0.7.10-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-tf2-web-republisher_0.3.2-0bookworm_arm64.deb",
+      "size": "0.12 MB",
+      "size_bytes": 123312,
+      "category": "tf",
+      "description": "Transform library for ROS",
+      "url": "ros-noetic-tf2-web-republisher_0.3.2-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-tf2_0.7.10-0bookworm_arm64.deb",
       "size": "0.10 MB",
       "size_bytes": 100112,
@@ -1185,6 +1401,30 @@
       "url": "ros-noetic-visualization-msgs_1.13.2-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-vl53l1x_1.0.0-0bookworm_arm64.deb",
+      "size": "0.06 MB",
+      "size_bytes": 60040,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-vl53l1x_1.0.0-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-web-video-server_0.2.2-0bookworm_arm64.deb",
+      "size": "0.08 MB",
+      "size_bytes": 88760,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-web-video-server_0.2.2-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-ws281x_0.0.15-0bookworm_arm64.deb",
+      "size": "0.05 MB",
+      "size_bytes": 49816,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-ws281x_0.0.15-0bookworm_arm64.deb"
+    },
+    {
       "name": "ros-noetic-xmlrpcpp-dbgsym_1.17.4-0bookworm_arm64.deb",
       "size": "0.53 MB",
       "size_bytes": 556056,
@@ -1201,7 +1441,7 @@
       "url": "ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb"
     }
   ],
-  "total_count": 150,
-  "generated_at": "2025-09-18T09:21:50Z",
+  "total_count": 180,
+  "generated_at": "2025-09-18T10:52:05Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }

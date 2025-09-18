@@ -145,6 +145,38 @@ Homepage: http://wiki.ros.org/actionlib_msgs
 Description: actionlib_msgs defines the common messages to interact with an action server and an action client.
  For full documentation of the actionlib API see the actionlib package.
 
+Package: ros-noetic-angles
+Version: 1.9.14-0focal
+Architecture: arm64
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Installed-Size: 78
+Filename: pool/main/arm64/ros-noetic-angles_1.9.14-0bookworm_arm64.deb
+Size: 14716
+MD5sum: ad7f5efb17169842d6c1a43b90a4127e
+SHA1: 62574f760ab0f5e2d2fe9a6a0ef4b5f7fbdb6beb
+SHA256: 344f97087fbb9ade9a8488e07203ad5c5bd517fae3d39fbdfd9080609e272287
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/angles
+Description: This package provides a set of simple math utilities to work with angles.
+ The utilities cover simple things like normalizing an angle and conversion between degrees and radians. But even if you're trying to calculate things like the shortest angular distance between two joint space positions of your robot, but the joint motion is constrained by joint limits, this package is what you need. The code in this package is stable and well tested. There are no plans for major changes in the near future.
+
+Package: ros-noetic-async-web-server-cpp
+Version: 1.0.3-0focal
+Architecture: arm64
+Maintainer: Timo Röhling <timo.roehling@fkie.fraunhofer.de>
+Installed-Size: 580
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-icu72, libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0), libstdc++6 (>= 11), libboost-all-dev
+Filename: pool/main/arm64/ros-noetic-async-web-server-cpp_1.0.3-0bookworm_arm64.deb
+Size: 133068
+MD5sum: ef79c0d547788710845329359615fdc1
+SHA1: 1bf18a1693ff536f6a4ee693313232f53f02bb08
+SHA256: be504103f06eeb6d55512f3ab76a3151cce15cbd20cb14990cc443d4d73622a5
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/async_web_server_cpp
+Description: Asynchronous Web/WebSocket Server in C++
+
 Package: ros-noetic-bond
 Version: 1.8.7-0focal
 Architecture: arm64
@@ -228,6 +260,22 @@ Section: misc
 Priority: optional
 Homepage: http://www.ros.org/wiki/bondpy
 Description: Python implementation of bond, a mechanism for checking when another process has terminated.
+
+Package: ros-noetic-camera-calibration
+Version: 1.17.0-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 281
+Depends: ros-noetic-cv-bridge, ros-noetic-image-geometry, ros-noetic-message-filters, ros-noetic-rospy, ros-noetic-sensor-msgs, ros-noetic-std-srvs
+Filename: pool/main/arm64/ros-noetic-camera-calibration_1.17.0-0bookworm_arm64.deb
+Size: 70240
+MD5sum: 823502cde6d5c323c9e1502d51d3abeb
+SHA1: 4dad5eb574543820a50e03947ce271ae2ea13a73
+SHA256: 0793fb372d14e91abf32d3b8dfd7ea9bec1ca61530dc5c7af7f4eea0aa7de388
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/camera_calibration
+Description: camera_calibration allows easy calibration of monocular or stereo cameras using a checkerboard calibration target.
 
 Package: ros-noetic-camera-calibration-parsers
 Version: 1.12.1-0focal
@@ -482,6 +530,89 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/cv_bridge
 Description: This contains CvBridge, which converts between ROS Image messages and OpenCV images.
 
+Package: ros-noetic-cv-camera
+Version: 0.6.0-0focal
+Architecture: arm64
+Maintainer: Takashi Ogura <t.ogura@gmail.com>
+Installed-Size: 316
+Depends: libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-core406 (>= 4.6.0+dfsg), libopencv-videoio406 (>= 4.6.0+dfsg), libstdc++6 (>= 9), libopencv-dev, ros-noetic-camera-info-manager, ros-noetic-cv-bridge, ros-noetic-image-transport, ros-noetic-nodelet, ros-noetic-roscpp, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-cv-camera_0.6.0-0bookworm_arm64.deb
+Size: 56348
+MD5sum: 4f0e1baaf23e0cdb30d4f4420af3dd2a
+SHA1: 723c715198dfc3f74fc3b8a03c3e9147750b739f
+SHA256: 1a3a8b3eea4a00a7fe9cee8e4335759e0654133a93bd443665c5464bbf4454d5
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/cv_camera
+Description: cv_camera uses OpenCV capture object to capture camera image.
+ This supports camera_image and nodelet.
+
+Package: ros-noetic-depth-image-proc
+Version: 1.17.0-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 1078
+Depends: libc6 (>= 2.17), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-calib3d406 (>= 4.6.0+dfsg), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), libboost-all-dev, ros-noetic-cv-bridge, ros-noetic-eigen-conversions, ros-noetic-image-geometry, ros-noetic-image-transport, ros-noetic-nodelet, ros-noetic-sensor-msgs, ros-noetic-tf2, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-depth-image-proc_1.17.0-0bookworm_arm64.deb
+Size: 190532
+MD5sum: ee01fcfe86aa460f7c9fe6b6fbf88975
+SHA1: d584bd649a64de67870a0110fa95915799bf3dcf
+SHA256: ca063a992aa0b4370c02b56323b9d2d6d83d713867d09b6d472fe0b82a474f9d
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/depth_image_proc
+Description: Contains nodelets for processing depth images such as those produced by OpenNI camera.
+ Functions include creating disparity images and point clouds, as well as registering (reprojecting) a depth image into another camera frame.
+
+Package: ros-noetic-diagnostic-aggregator
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Installed-Size: 1149
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-regex1.74.0-icu72, libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libtinyxml2-9 (>= 8.0.0), ros-noetic-bondcpp, ros-noetic-bondpy, ros-noetic-diagnostic-msgs (>= 1.11.9), ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-xmlrpcpp
+Filename: pool/main/arm64/ros-noetic-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb
+Size: 252816
+MD5sum: c0194808d8be03c44fe32cebcf23a931
+SHA1: bb732e506d752b2aa256eeb0fe3b4ce9bcb61266
+SHA256: c42619fac5219716fb7af16aa6c7c76ee78c19340e868b3617f08fe52792b2b7
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/diagnostic_aggregator
+Description: diagnostic_aggregator
+
+Package: ros-noetic-diagnostic-analysis
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Installed-Size: 72
+Depends: ros-noetic-diagnostic-msgs, ros-noetic-rosbag, ros-noetic-roslib
+Filename: pool/main/arm64/ros-noetic-diagnostic-analysis_1.12.1-0bookworm_arm64.deb
+Size: 15360
+MD5sum: fc994ce25f8e8f1408c792051b0534a8
+SHA1: 60b7c69c6101568173acdff32cf8e63537e5c4b4
+SHA256: bcc64f55db72a7966548decac1934adbdea32359e48d45c946c0da3e412e0c25
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/diagnostics_analysis
+Description: The diagnostic_analysis package can convert a log of diagnostics data into a series of CSV files.
+ Robot logs are recorded with rosbag, and can be processed offline using the scripts in this package.
+
+Package: ros-noetic-diagnostic-common-diagnostics
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Installed-Size: 192
+Depends: hddtemp, lm-sensors, python3-psutil, ros-noetic-diagnostic-updater, ros-noetic-rospy, ros-noetic-tf
+Filename: pool/main/arm64/ros-noetic-diagnostic-common-diagnostics_1.12.1-0bookworm_arm64.deb
+Size: 34824
+MD5sum: bc574b1e5485becdf884909bb0ff2f9c
+SHA1: 19dc910409f7686e16cce67f6e12e40cea639ab1
+SHA256: d7fe8d95d77a401f23ae09e30078535b42a39b8636ad560504df124d6b57d179
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/diagnostic_common_diagnostics
+Description: diagnostic_common_diagnostics
+
 Package: ros-noetic-diagnostic-msgs
 Version: 1.13.2-0focal
 Architecture: arm64
@@ -498,6 +629,39 @@ Priority: optional
 Homepage: http://wiki.ros.org/diagnostic_msgs
 Description: This package holds the diagnostic messages which provide the standardized interface for the diagnostic and runtime monitoring systems in ROS.
  These messages are currently used by the diagnostics Stack, which provides libraries for simple ways to set and access the messages, as well as automated ways to process the diagnostic data. These messages are used for long term logging and will not be changed unless there is a very important reason.
+
+Package: ros-noetic-diagnostic-updater
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Installed-Size: 313
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), ros-noetic-diagnostic-msgs, ros-noetic-roscpp, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-diagnostic-updater_1.12.1-0bookworm_arm64.deb
+Size: 60360
+MD5sum: 658420f0c457aff0dbf9cb161a565f59
+SHA1: 384a012098e9da5d24fb5e76aae6e68a7228f0e9
+SHA256: 5cffe0bc668d0361e34581df319a627fb09e4bce9fa0a5831c1b06516d7ee4fb
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/diagnostic_updater
+Description: diagnostic_updater contains tools for easily updating diagnostics.
+ it is commonly used in device drivers to keep track of the status of output topics, device status, etc.
+
+Package: ros-noetic-diagnostics
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Installed-Size: 15
+Depends: ros-noetic-diagnostic-aggregator, ros-noetic-diagnostic-analysis, ros-noetic-diagnostic-common-diagnostics, ros-noetic-diagnostic-updater, ros-noetic-self-test
+Filename: pool/main/arm64/ros-noetic-diagnostics_1.12.1-0bookworm_arm64.deb
+Size: 3036
+MD5sum: c68ca8b538edadcb43af396fe715a1ea
+SHA1: b1e7346afb1d9f93efe3e61ffa55d61e40f6fbf1
+SHA256: 4ad36c4fc606420e4a57cb713b13cfccb2af0fab800da5c8e0244ff3489d8d6a
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/diagnostics
+Description: diagnostics
 
 Package: ros-noetic-dynamic-reconfigure
 Version: 1.7.6-0focal
@@ -826,6 +990,71 @@ Homepage: http://www.ros.org/wiki/image_geometry
 Description: `image_geometry` contains C++ and Python libraries for interpreting images geometrically.
  It interfaces the calibration parameters in sensor_msgs/CameraInfo messages with OpenCV functions such as image rectification, much as cv_bridge interfaces ROS sensor_msgs/Image with OpenCV data types.
 
+Package: ros-noetic-image-pipeline
+Version: 1.17.0-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 16
+Depends: ros-noetic-camera-calibration, ros-noetic-depth-image-proc, ros-noetic-image-proc, ros-noetic-image-publisher, ros-noetic-image-rotate, ros-noetic-image-view, ros-noetic-stereo-image-proc
+Filename: pool/main/arm64/ros-noetic-image-pipeline_1.17.0-0bookworm_arm64.deb
+Size: 3144
+MD5sum: 3cc4e36973e14ce1899be0e60919c904
+SHA1: 46d26c4da5c5bed3d9de629927eefcc263048465
+SHA256: 0756ddeb410fb78f0454b9116da9ab7375391b34cfb975fb8217abe3785218ac
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/image_pipeline
+Description: image_pipeline fills the gap between getting raw images from a camera driver and higher-level vision processing.
+
+Package: ros-noetic-image-proc
+Version: 1.17.0-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 907
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), ros-noetic-cv-bridge, ros-noetic-dynamic-reconfigure, ros-noetic-image-geometry, ros-noetic-image-transport, ros-noetic-nodelet, ros-noetic-nodelet-topic-tools, ros-noetic-roscpp, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-image-proc_1.17.0-0bookworm_arm64.deb
+Size: 167772
+MD5sum: de800347ec034f008694041e9118e505
+SHA1: 020d6cb9d275f1f069bf557e853f531260323b34
+SHA256: 16dc8ad9e760dd996e41dbff077d0b66f0d8b1209b6c3281fa5a7c9d0f975e89
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/image_proc
+Description: Single image rectification and color processing.
+
+Package: ros-noetic-image-publisher
+Version: 1.17.0-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 399
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgcodecs406 (>= 4.6.0+dfsg), libopencv-videoio406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), ros-noetic-camera-info-manager, ros-noetic-cv-bridge, ros-noetic-dynamic-reconfigure, ros-noetic-image-transport, ros-noetic-nodelet, ros-noetic-roscpp, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-image-publisher_1.17.0-0bookworm_arm64.deb
+Size: 77892
+MD5sum: a494dd250344d6e22ebaee5cf6dd3c3b
+SHA1: dc6a6a39a9f97075773e4d43c6d5930693f53927
+SHA256: 8ce329016e436db8fb7f38dfda2e355409768ff55a7241346bfdfecd1f172b68
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/image_publisher
+Description: Contains a node publish an image stream from single image file or avi motion file.
+
+Package: ros-noetic-image-rotate
+Version: 1.17.0-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 484
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), ros-noetic-cv-bridge, ros-noetic-dynamic-reconfigure, ros-noetic-image-transport, ros-noetic-nodelet, ros-noetic-roscpp, ros-noetic-tf2, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-image-rotate_1.17.0-0bookworm_arm64.deb
+Size: 90392
+MD5sum: 66581211beb9bcb73e66cbadf4db9c92
+SHA1: 447974d2e8c2293a4f947c27d5aca8e419d76e29
+SHA256: e8f11acbdff2fbb724bd1ff78a0e374c67bdf7b96fab320625eca93661bdc74f
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/image_rotate
+Description: Contains a node that rotates an image stream in a way that minimizes the angle between a vector in some arbitrary frame and a vector in the camera frame.
+ The frame of the outgoing image is published by the node. This node is intended to allow camera images to be visualized in an orientation that is more intuitive than the hardware-constrained orientation of the physical camera. This is particularly helpful, for example, to show images from the PR2's forearm cameras with a consistent up direction, despite the fact that the forearms need to rotate in arbitrary ways during manipulation. It is not recommended to use the output from this node for further computation, as it interpolates the source image, introduces black borders, and does not output a camera_info.
+
 Package: ros-noetic-image-transport
 Version: 1.12.1-0focal
 Architecture: arm64
@@ -861,6 +1090,23 @@ Priority: optional
 Description: debug symbols for ros-noetic-image-transport
 Build-Ids: 288a1c413836cc0cb0326ecc9a4039a83ed0525b 361adef61fb41ea9f95b5be6c5d75451b86cea05 4f308ec258b1601413dd10f92547983ab866ab52 e2c8f2799f851a1bfe8d831175b6fd9726ac7763
 
+Package: ros-noetic-image-view
+Version: 1.17.0-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 1658
+Depends: libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-core406 (>= 4.6.0+dfsg), libopencv-highgui406 (>= 4.6.0+dfsg), libopencv-imgcodecs406 (>= 4.6.0+dfsg), libopencv-videoio406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), ros-noetic-camera-calibration-parsers, ros-noetic-cv-bridge (>= 1.11.13), ros-noetic-dynamic-reconfigure, ros-noetic-image-transport, ros-noetic-message-filters, ros-noetic-nodelet, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-std-srvs
+Filename: pool/main/arm64/ros-noetic-image-view_1.17.0-0bookworm_arm64.deb
+Size: 268448
+MD5sum: e45ca000f3016449b40ee7d40ab7af03
+SHA1: 8e3573ebc8d802fd52f6bc3bc7f266a414750b78
+SHA256: a2d4bf090e3299cb73e96c636459cf9732b1796b0c2527b2d0d22bac572890fa
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/image_view
+Description: A simple viewer for ROS image topics.
+ Includes a specialized viewer for stereo + disparity images.
+
 Package: ros-noetic-kdl-conversions
 Version: 1.13.4-0focal
 Architecture: arm64
@@ -894,6 +1140,22 @@ Section: debug
 Priority: optional
 Description: debug symbols for ros-noetic-kdl-conversions
 Build-Ids: ed7a9f01fc3eda1071bd405eac99adceb95374c9
+
+Package: ros-noetic-led-msgs
+Version: 0.0.15-0focal
+Architecture: arm64
+Maintainer: Oleg Kalachev <okalachev@gmail.com>
+Installed-Size: 273
+Depends: ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-led-msgs_0.0.15-0bookworm_arm64.deb
+Size: 24692
+MD5sum: 8e714f28d4eae4a336d3d8a617608991
+SHA1: 1f97a8cd1c867ae5a2cb7bc0ff0b398f9a8ea1d5
+SHA256: 8157310779f72a16bf0ce5cfda0df78e7b18bad08738585e3b1f6dd1090752dd
+Section: misc
+Priority: optional
+Homepage: https://github.com/CopterExpress/ros_led
+Description: Messages for LEDs and LED strips
 
 Package: ros-noetic-mavlink
 Version: 2021.3.3-0focal
@@ -1238,6 +1500,22 @@ Section: misc
 Priority: optional
 Description: The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`, `ROS_PACKAGE_PATH`, and `ROS_ETC_DIR`.
 
+Package: ros-noetic-rosapi
+Version: 0.11.18-0focal
+Architecture: arm64
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Installed-Size: 1789
+Depends: ros-noetic-message-runtime, ros-noetic-rosbridge-library, ros-noetic-rosgraph, ros-noetic-rosnode, ros-noetic-rospy
+Filename: pool/main/arm64/ros-noetic-rosapi_0.11.18-0bookworm_arm64.deb
+Size: 102652
+MD5sum: f05057fd4290bd47a8a6a12a55c4ab07
+SHA1: 7317c0b8ba8dd582f117322d200b258b43eed7b8
+SHA256: 9040883d8d55b6f91df769d3f069f8662a28b31d133e573b9e0bbd5b7f2f76e6
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosapi
+Description: Provides service calls for getting ros meta-information, like list of topics, services, params, etc.
+
 Package: ros-noetic-rosbag
 Version: 1.17.4-0focal
 Architecture: arm64
@@ -1352,6 +1630,70 @@ Priority: optional
 Homepage: http://ros.org/wiki/rosboost_cfg
 Description: Contains scripts used by the rosboost-cfg tool for determining cflags/lflags/etc.
  of boost on your system
+
+Package: ros-noetic-rosbridge-library
+Version: 0.11.18-0focal
+Architecture: arm64
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Installed-Size: 1304
+Depends: python3-bson, python3-pil, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-roscpp, ros-noetic-rosgraph, ros-noetic-rospy, ros-noetic-rosservice, ros-noetic-rostopic, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-rosbridge-library_0.11.18-0bookworm_arm64.deb
+Size: 150752
+MD5sum: aef84c6aabe23419ac022c9bd6ffb93b
+SHA1: 1f583b7052d384c3780e60f1a244358677a24cea
+SHA256: f736520ab817cc60758feef4db2cd6a3a6d0f1759003672d5278f6c4a01f10cb
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosbridge_library
+Description: The core rosbridge package, responsible for interpreting JSON and performing the appropriate ROS action, like subscribe, publish, call service, and interact with params.
+
+Package: ros-noetic-rosbridge-msgs
+Version: 0.11.18-0focal
+Architecture: arm64
+Maintainer: Hans-Joachim Krauch <achim@intermodalics.eu>
+Installed-Size: 134
+Depends: ros-noetic-message-runtime, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-rosbridge-msgs_0.11.18-0bookworm_arm64.deb
+Size: 18292
+MD5sum: 88e59054d77e5f7bca6ae2028e205400
+SHA1: ea4446e923867aad7b54b0e39885143e5b9faa87
+SHA256: 79036d33c22d608aa0b8bebbf588ce1a23ffb22a7f50558b1b00fdfa0074d86c
+Section: misc
+Priority: optional
+Description: Package containing message files
+
+Package: ros-noetic-rosbridge-server
+Version: 0.11.18-0focal
+Architecture: arm64
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Installed-Size: 178
+Depends: python3-autobahn, python3-tornado, python3-twisted, ros-noetic-rosapi, ros-noetic-rosauth, ros-noetic-rosbridge-library, ros-noetic-rosbridge-msgs, ros-noetic-rospy
+Filename: pool/main/arm64/ros-noetic-rosbridge-server_0.11.18-0bookworm_arm64.deb
+Size: 40896
+MD5sum: 5f586984e777ed19e4a98ae8e06dc0ee
+SHA1: c5efd92966b59fe5c1ac5a6684a00ef021eabe37
+SHA256: 15f8ff0b02bd59760b701544a4aafe045db73aaae98274b1fe959476ac3928ac
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosbridge_server
+Description: A WebSocket interface to rosbridge.
+
+Package: ros-noetic-rosbridge-suite
+Version: 0.11.18-0focal
+Architecture: arm64
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Installed-Size: 17
+Depends: ros-noetic-rosapi, ros-noetic-rosbridge-library, ros-noetic-rosbridge-server
+Filename: pool/main/arm64/ros-noetic-rosbridge-suite_0.11.18-0bookworm_arm64.deb
+Size: 4068
+MD5sum: a3c1d133329f62a8dc2b188decd44549
+SHA1: 8c684fa62f6f78702ea8503bccef0b7d67855b05
+SHA256: d511ecb52dc7db83d1d5433cca0f1d6281f0172bf5c240c6fba2b73e390252be
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosbridge_suite
+Description: Rosbridge provides a JSON API to ROS functionality for non-ROS programs.
+ There are a variety of front ends that interface with rosbridge, including a WebSocket server for web browsers to interact with. Rosbridge_suite is a meta-package containing rosbridge, various front end packages for rosbridge like a WebSocket package, and helper packages.
 
 Package: ros-noetic-rosbuild
 Version: 1.15.10-0focal
@@ -1574,6 +1916,21 @@ Homepage: http://wiki.ros.org/roscreate
 Description: roscreate contains a tool that assists in the creation of ROS filesystem resources.
  It provides: roscreate-pkg, which creates a new package directory, including the appropriate build and manifest files.
 
+Package: ros-noetic-rosdiagnostic
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Guillaume Autran <gautran@clearpath.ai>
+Installed-Size: 63
+Depends: ros-noetic-diagnostic-msgs, ros-noetic-rospy
+Filename: pool/main/arm64/ros-noetic-rosdiagnostic_1.12.1-0bookworm_arm64.deb
+Size: 12924
+MD5sum: f15b67eae47cd85d7297fa625c0da259
+SHA1: 0cd97917b79840165ee2ae79c353e2d4e31a3e63
+SHA256: 9c4092c0ad94a235b770ac385c7a1a4b4683f40744e9fe02c0f2f3c4252ff346
+Section: misc
+Priority: optional
+Description: Command to print aggregated diagnostic contents to the command line
+
 Package: ros-noetic-rosgraph
 Version: 1.17.4-0focal
 Architecture: arm64
@@ -1676,6 +2033,22 @@ Section: debug
 Priority: optional
 Description: debug symbols for ros-noetic-roslib
 Build-Ids: 1c398eca54f1241955c6eeaeeff96c263490622d
+
+Package: ros-noetic-roslint
+Version: 0.12.0-0focal
+Architecture: arm64
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Installed-Size: 737
+Filename: pool/main/arm64/ros-noetic-roslint_0.12.0-0bookworm_arm64.deb
+Size: 189300
+MD5sum: 52369c891be64be6291274d8eb416d45
+SHA1: 44f816c6935e3d07b3c027577c7ae5eff6e1681f
+SHA256: 8689be2eef867997ac7139c38c57727f593d8fc4d50e5cb50adb659103b3d387
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/roslint
+Description: CMake lint commands for ROS packages.
+ The lint commands perform static checking of Python or C++ source code for errors and standards compliance.
 
 Package: ros-noetic-roslisp
 Version: 1.9.25-0focal
@@ -2013,6 +2386,22 @@ Homepage: http://wiki.ros.org/roswtf
 Description: roswtf is a tool for diagnosing issues with a running ROS system.
  Think of it as a FAQ implemented in code.
 
+Package: ros-noetic-self-test
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Installed-Size: 631
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), ros-noetic-diagnostic-msgs, ros-noetic-diagnostic-updater, ros-noetic-roscpp
+Filename: pool/main/arm64/ros-noetic-self-test_1.12.1-0bookworm_arm64.deb
+Size: 150184
+MD5sum: 541f2cc7487fe1c708e5ca958285f693
+SHA1: 858e48b98be57d7ef14a4257cc4ebbe2ab5ba7bf
+SHA256: 50a8ecedfe3e23d518f1acedba4dd46d6b97e0c79bc23563a061db8ab72a43ee
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/self_test
+Description: self_test
+
 Package: ros-noetic-sensor-msgs
 Version: 1.13.2-0focal
 Architecture: arm64
@@ -2094,6 +2483,22 @@ Priority: optional
 Homepage: http://ros.org/wiki/std_srvs
 Description: Common service definitions.
 
+Package: ros-noetic-stereo-image-proc
+Version: 1.17.0-0focal
+Architecture: arm64
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Installed-Size: 1142
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-calib3d406 (>= 4.6.0+dfsg), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), ros-noetic-cv-bridge, ros-noetic-dynamic-reconfigure, ros-noetic-image-geometry, ros-noetic-image-proc, ros-noetic-image-transport, ros-noetic-message-filters, ros-noetic-nodelet, ros-noetic-sensor-msgs, ros-noetic-stereo-msgs
+Filename: pool/main/arm64/ros-noetic-stereo-image-proc_1.17.0-0bookworm_arm64.deb
+Size: 182676
+MD5sum: dc1ae4668b054f443363bbfe4f660ecd
+SHA1: 3d1bfa95b2709c09e1def81269576af5e002d170
+SHA256: 64e2eb90f78480a5ce5d524016ce061fa773ec3e7da4b8b33acbaffe2bc71bc8
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/stereo_image_proc
+Description: Stereo and single image rectification and disparity processing.
+
 Package: ros-noetic-stereo-msgs
 Version: 1.13.2-0focal
 Architecture: arm64
@@ -2109,6 +2514,22 @@ Section: misc
 Priority: optional
 Homepage: http://wiki.ros.org/stereo_msgs
 Description: stereo_msgs contains messages specific to stereo processing, such as disparity images.
+
+Package: ros-noetic-test-diagnostic-aggregator
+Version: 1.12.1-0focal
+Architecture: arm64
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Installed-Size: 41
+Depends: ros-noetic-diagnostic-aggregator (>= 1.8.9), ros-noetic-diagnostic-msgs, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-rospy
+Filename: pool/main/arm64/ros-noetic-test-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb
+Size: 8440
+MD5sum: f0295110a8083e2fc75b3c5cd3c7e3ac
+SHA1: ce8ec46d80c420b54cbe577d575d5d7dd60901b7
+SHA256: 6342aa25d4820cf1099b9bd3e83c9af4d4f090e0b330a2667586ce99debda07c
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/test_diagnostic_aggregator
+Description: Basic diagnostic_aggregator tests are in the
 
 Package: ros-noetic-test-tf2
 Version: 0.7.10-0focal
@@ -2357,6 +2778,22 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/tf2_tools
 Description: tf2_tools
 
+Package: ros-noetic-tf2-web-republisher
+Version: 0.3.2-0focal
+Architecture: arm64
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Installed-Size: 1059
+Depends: libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), ros-noetic-actionlib, ros-noetic-actionlib-msgs, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-roscpp, ros-noetic-tf, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-tf2-web-republisher_0.3.2-0bookworm_arm64.deb
+Size: 123312
+MD5sum: b2cf3bdc89320815d6caaaf2db759b90
+SHA1: 5ff48094d628395c0a830c0ad07185773d51005d
+SHA256: 161e0d24130aabe35a4d2fa92ee3c53121343998617ea4a85963bb54e5b37c78
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/tf2_web_republisher
+Description: Republishing of Selected TFs
+
 Package: ros-noetic-topic-tools
 Version: 1.17.4-0focal
 Architecture: arm64
@@ -2490,6 +2927,53 @@ Priority: optional
 Homepage: http://ros.org/wiki/visualization_msgs
 Description: visualization_msgs is a set of messages used by higher level packages, such as rviz, that deal in visualization-specific data.
  The main messages in visualization_msgs is visualization_msgs/Marker. The marker message is used to send visualization &quot;markers&quot; such as boxes, spheres, arrows, lines, etc. to a visualization environment such as rviz. See the rviz tutorial rviz tutorials for more information.
+
+Package: ros-noetic-vl53l1x
+Version: 1.0.0-0focal
+Architecture: arm64
+Maintainer: Oleg Kalachev <okalachev@gmail.com>
+Installed-Size: 273
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), ros-noetic-message-generation, ros-noetic-message-runtime, ros-noetic-roscpp, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-vl53l1x_1.0.0-0bookworm_arm64.deb
+Size: 60040
+MD5sum: 191dbee0784e367e5088352183e297ab
+SHA1: 603e2ff16277fc99f2f4105d84909826a218be8d
+SHA256: 3f3b949becfdb832c2df004cf46fc041b2940f6aeb0de5afd4ee2ceb6d307713
+Section: misc
+Priority: optional
+Description: VL53L1X ToF rangefinder driver
+
+Package: ros-noetic-web-video-server
+Version: 0.2.2-0focal
+Architecture: arm64
+Maintainer: Błażej Sowa <blazej@fictionlab.pl>
+Installed-Size: 384
+Depends: libavcodec59 (>= 7:5.0), libavformat59 (>= 7:5.0), libavutil57 (>= 7:5.0), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgcodecs406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), libswscale6 (>= 7:5.0), ffmpeg, libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev, ros-noetic-async-web-server-cpp, ros-noetic-cv-bridge, ros-noetic-image-transport, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-web-video-server_0.2.2-0bookworm_arm64.deb
+Size: 88760
+MD5sum: b05aa14fa60402978cdb1a2ed96b39ef
+SHA1: 608e4dbdc82e0ce4afadf11fe986957a5714bd49
+SHA256: b42173b06e52bc965687f9cb44496a7c346cea1734b47a958827b00872108d2d
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/web_video_server
+Description: HTTP Streaming of ROS Image Topics in Multiple Formats
+
+Package: ros-noetic-ws281x
+Version: 0.0.15-0focal
+Architecture: arm64
+Maintainer: Oleg Kalachev <okalachev@gmail.com>
+Installed-Size: 252
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), ros-noetic-led-msgs, ros-noetic-message-generation, ros-noetic-roscpp
+Filename: pool/main/arm64/ros-noetic-ws281x_0.0.15-0bookworm_arm64.deb
+Size: 49816
+MD5sum: 2ef1e01fd1bf55013f0d822340e68e0a
+SHA1: 840cfd68a02eba4f58f5abc759a8225691cf58f6
+SHA256: 693b47351c50d4ec459a302561610a9bb54fad4bd05f7381d7589e435840ceec
+Section: misc
+Priority: optional
+Homepage: https://github.com/CopterExpress/ros_led
+Description: ROS node for rpi_ws281x LED strip driver
 
 Package: ros-noetic-xmlrpcpp
 Version: 1.17.4-0focal
