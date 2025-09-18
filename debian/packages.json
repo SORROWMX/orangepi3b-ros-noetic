@@ -545,12 +545,52 @@
       "url": "ros-noetic-led-msgs_0.0.15-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-libmavconn_1.20.1-0focal_arm64.deb",
+      "size": "0.11 MB",
+      "size_bytes": 112508,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-libmavconn_1.20.1-0focal_arm64.deb"
+    },
+    {
       "name": "ros-noetic-mavlink_2021.3.3-0bookworm_arm64.deb",
       "size": "0.76 MB",
       "size_bytes": 801836,
       "category": "other",
       "description": "",
       "url": "ros-noetic-mavlink_2021.3.3-0bookworm_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-mavlink_2021.3.3-0focal_arm64.deb",
+      "size": "0.76 MB",
+      "size_bytes": 801812,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-mavlink_2021.3.3-0focal_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-mavros-extras_1.20.1-0focal_arm64.deb",
+      "size": "0.40 MB",
+      "size_bytes": 423336,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-mavros-extras_1.20.1-0focal_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-mavros-msgs_1.20.1-0focal_arm64.deb",
+      "size": "0.39 MB",
+      "size_bytes": 406420,
+      "category": "messages",
+      "description": "Message definitions for ROS",
+      "url": "ros-noetic-mavros-msgs_1.20.1-0focal_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-mavros_1.20.1-0focal_arm64.deb",
+      "size": "0.81 MB",
+      "size_bytes": 845492,
+      "category": "core",
+      "description": "",
+      "url": "ros-noetic-mavros_1.20.1-0focal_arm64.deb"
     },
     {
       "name": "ros-noetic-message-filters-dbgsym_1.17.4-0bookworm_arm64.deb",
@@ -1209,6 +1249,14 @@
       "url": "ros-noetic-test-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-test-mavros_1.20.1-0focal_arm64.deb",
+      "size": "0.05 MB",
+      "size_bytes": 50824,
+      "category": "core",
+      "description": "",
+      "url": "ros-noetic-test-mavros_1.20.1-0focal_arm64.deb"
+    },
+    {
       "name": "ros-noetic-test-tf2_0.7.10-0bookworm_arm64.deb",
       "size": "0.01 MB",
       "size_bytes": 9912,
@@ -1377,6 +1425,22 @@
       "url": "ros-noetic-unique-identifier_1.0.6-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-urdf-parser-plugin_1.13.4-0focal_arm64.deb",
+      "size": "0.01 MB",
+      "size_bytes": 6896,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-urdf-parser-plugin_1.13.4-0focal_arm64.deb"
+    },
+    {
+      "name": "ros-noetic-urdf_1.13.4-0focal_arm64.deb",
+      "size": "0.06 MB",
+      "size_bytes": 65420,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-urdf_1.13.4-0focal_arm64.deb"
+    },
+    {
       "name": "ros-noetic-uuid-msgs_1.0.6-0bookworm_arm64.deb",
       "size": "0.01 MB",
       "size_bytes": 13456,
@@ -1441,7 +1505,7 @@
       "url": "ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb"
     }
   ],
-  "total_count": 180,
-  "generated_at": "2025-09-18T10:52:05Z",
+  "total_count": 188,
+  "generated_at": "2025-09-18T12:40:29Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }

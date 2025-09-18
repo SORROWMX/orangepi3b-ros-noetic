@@ -1157,6 +1157,23 @@ Priority: optional
 Homepage: https://github.com/CopterExpress/ros_led
 Description: Messages for LEDs and LED strips
 
+Package: ros-noetic-libmavconn
+Version: 1.20.1-0focal
+Architecture: arm64
+Maintainer: Vladimir Ermakov <vooon341@gmail.com>
+Installed-Size: 527
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libboost-all-dev, libconsole-bridge-dev, ros-noetic-mavlink
+Filename: pool/main/arm64/ros-noetic-libmavconn_1.20.1-0focal_arm64.deb
+Size: 112508
+MD5sum: 6120544036cb0d7a4cb6957353401688
+SHA1: 500efee78115c5c7ddbf8d02e2ff272ea42168d2
+SHA256: 821fc2497891d3ff8c3510442b8bbc346edcadf18b632495998cb412fdcb353a
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/mavros
+Description: MAVLink communication library.
+ This library provide unified connection handling classes and URL to connection object mapper. This library can be used in standalone programs.
+
 Package: ros-noetic-mavlink
 Version: 2021.3.3-0focal
 Architecture: arm64
@@ -1173,6 +1190,71 @@ Priority: optional
 Homepage: https://mavlink.io/en/
 Description: MAVLink message marshaling library.
  This package provides C-headers and C++11 library for both 1.0 and 2.0 versions of protocol. For pymavlink use separate install via rosdep (python-pymavlink).
+
+Package: ros-noetic-mavlink
+Version: 2021.3.3-0focal
+Architecture: arm64
+Maintainer: Vladimir Ermakov <vooon341@gmail.com>
+Installed-Size: 17291
+Depends: ros-noetic-catkin
+Filename: pool/main/arm64/ros-noetic-mavlink_2021.3.3-0focal_arm64.deb
+Size: 801812
+MD5sum: 2de248f92a7acc8b1c1c132b68fbf830
+SHA1: ca425dde5e8ccbe4afecd73f678105237b568626
+SHA256: 474188e82d8e8a6e5782708ef96599b999875d18479340e3328a39b7c9baa8ad
+Section: misc
+Priority: optional
+Homepage: https://mavlink.io/en/
+Description: MAVLink message marshaling library.
+ This package provides C-headers and C++11 library for both 1.0 and 2.0 versions of protocol. For pymavlink use separate install via rosdep (python-pymavlink).
+
+Package: ros-noetic-mavros
+Version: 1.20.1-0focal
+Architecture: arm64
+Maintainer: Vladimir Ermakov <vooon341@gmail.com>
+Installed-Size: 4807
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libgeographiclib23 (>= 1.46), libstdc++6 (>= 11), libtinyxml2-9 (>= 8.0.0), geographiclib-tools, libboost-all-dev, libeigen3-dev, libgeographic-dev, ros-noetic-diagnostic-msgs, ros-noetic-diagnostic-updater, ros-noetic-eigen-conversions, ros-noetic-geographic-msgs, ros-noetic-geometry-msgs, ros-noetic-libmavconn, ros-noetic-mavlink, ros-noetic-mavros-msgs, ros-noetic-message-runtime, ros-noetic-nav-msgs, ros-noetic-pluginlib, ros-noetic-rosconsole-bridge, ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-std-srvs, ros-noetic-tf2-eigen, ros-noetic-tf2-ros, ros-noetic-trajectory-msgs
+Filename: pool/main/arm64/ros-noetic-mavros_1.20.1-0focal_arm64.deb
+Size: 845492
+MD5sum: 0c8e98037764e3f373a2bac19224d04a
+SHA1: 27dff8226cbec00acb7604acc5d5f2e780f86496
+SHA256: 96022347f9d1378bb1beadc21ad1ac200ec051cb5829fcb72622ca88e57f50c3
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/mavros
+Description: MAVROS -- MAVLink extendable communication node for ROS with proxy for Ground Control Station.
+
+Package: ros-noetic-mavros-extras
+Version: 1.20.1-0focal
+Architecture: arm64
+Maintainer: Vladimir Ermakov <vooon341@gmail.com>
+Installed-Size: 2465
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libgeographiclib23 (>= 1.46), libstdc++6 (>= 11), liburdfdom-world3.0 (>= 3.0.1), ros-noetic-geometry-msgs, ros-noetic-mavros, ros-noetic-mavros-msgs, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-std-srvs, ros-noetic-tf, ros-noetic-tf2-eigen, ros-noetic-urdf, ros-noetic-visualization-msgs
+Filename: pool/main/arm64/ros-noetic-mavros-extras_1.20.1-0focal_arm64.deb
+Size: 423336
+MD5sum: 7ba42d536dcf15d65ac6e33169d54ba0
+SHA1: 91438db0e1b51d2245784bc8d5f39a4c0a06debc
+SHA256: cc36d288573e9b1ef681a3fb0fb77fab34a3d9924c15f214b43532e856aba407
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/mavros_extras
+Description: Extra nodes and plugins for MAVROS.
+
+Package: ros-noetic-mavros-msgs
+Version: 1.20.1-0focal
+Architecture: arm64
+Maintainer: Vladimir Ermakov <vooon341@gmail.com>
+Installed-Size: 6979
+Depends: ros-noetic-geographic-msgs, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-sensor-msgs, ros-noetic-std-msgs
+Filename: pool/main/arm64/ros-noetic-mavros-msgs_1.20.1-0focal_arm64.deb
+Size: 406420
+MD5sum: edbe579e8afd7b45f2be35157df2a38a
+SHA1: b1c5672a5334045a3491db59846c15766b363eeb
+SHA256: b4df63351a1df2205ed0a5eb71e220c4a484d627e024913cb1476567fb76f4cf
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/mavros_msgs
+Description: mavros_msgs defines messages for MAVROS.
 
 Package: ros-noetic-message-filters
 Version: 1.17.4-0focal
@@ -2531,6 +2613,21 @@ Priority: optional
 Homepage: http://ros.org/wiki/test_diagnostic_aggregator
 Description: Basic diagnostic_aggregator tests are in the
 
+Package: ros-noetic-test-mavros
+Version: 1.20.1-0focal
+Architecture: arm64
+Maintainer: Vladimir Ermakov <vooon341@gmail.com>
+Installed-Size: 271
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libeigen3-dev, ros-noetic-control-toolbox, ros-noetic-eigen-conversions, ros-noetic-geometry-msgs, ros-noetic-mavros, ros-noetic-mavros-extras, ros-noetic-roscpp, ros-noetic-std-msgs, ros-noetic-tf2-ros
+Filename: pool/main/arm64/ros-noetic-test-mavros_1.20.1-0focal_arm64.deb
+Size: 50824
+MD5sum: 03896d1e1fe4c2f81b547480dc9f553d
+SHA1: dffeed4eb8b1050a9930b508b3a516f5ec65ba3f
+SHA256: 28313c0d81f54527871066d4f4742dfa602296ba188aa7dab9ceb5a3de1b480d
+Section: misc
+Priority: optional
+Description: Tests for MAVROS package
+
 Package: ros-noetic-test-tf2
 Version: 0.7.10-0focal
 Architecture: arm64
@@ -2878,6 +2975,39 @@ Priority: optional
 Homepage: http://ros.org/wiki/unique_identifier
 Description: ROS messages and interfaces for universally unique identifiers.
  Not needed for wet packages, use only to resolve dry stack dependencies.
+
+Package: ros-noetic-urdf
+Version: 1.13.4-0focal
+Architecture: arm64
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Installed-Size: 308
+Depends: libboost-filesystem1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.32), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libtinyxml2-9 (>= 8.0.0), libtinyxml2.6.2v5 (>= 2.6.2), liburdfdom-model3.0 (>= 3.0.1), libtinyxml-dev, libtinyxml2-dev, liburdfdom-dev, liburdfdom-headers-dev, ros-noetic-pluginlib, ros-noetic-rosconsole-bridge, ros-noetic-roscpp
+Filename: pool/main/arm64/ros-noetic-urdf_1.13.4-0focal_arm64.deb
+Size: 65420
+MD5sum: 3af4c9c3eb449b62a5597382ff47ba77
+SHA1: e9281956b532f8e13d2349dc1f337b456856f03e
+SHA256: f00c98aab04b8307307f32cac977e051869a155789dfa22b5e99adb5d02a5736
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/urdf
+Description: This package contains a C++ parser for the Unified Robot Description Format (URDF), which is an XML format for representing a robot model.
+ The code API of the parser has been through our review process and will remain backwards compatible in future releases.
+
+Package: ros-noetic-urdf-parser-plugin
+Version: 1.13.4-0focal
+Architecture: arm64
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Installed-Size: 35
+Depends: liburdfdom-headers-dev
+Filename: pool/main/arm64/ros-noetic-urdf-parser-plugin_1.13.4-0focal_arm64.deb
+Size: 6896
+MD5sum: 89ce5f1bff977ff5119e5e5503dc2783
+SHA1: 1707df126447e86c7c37e9012be4d86803cf134b
+SHA256: c72d828e61944e310e7c473a52236222574797ae21b8aa16680b29596aa604d6
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/urdf
+Description: This package contains a C++ base class for URDF parsers.
 
 Package: ros-noetic-uuid-msgs
 Version: 1.0.6-0focal
