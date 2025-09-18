@@ -761,6 +761,14 @@
       "url": "ros-noetic-rosapi_0.11.18-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-rosauth_0.1.7-0focal_arm64.deb",
+      "size": "0.04 MB",
+      "size_bytes": 38256,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-rosauth_0.1.7-0focal_arm64.deb"
+    },
+    {
       "name": "ros-noetic-rosbag-dbgsym_1.17.4-0bookworm_arm64.deb",
       "size": "4.37 MB",
       "size_bytes": 4577916,
@@ -1505,7 +1513,7 @@
       "url": "ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb"
     }
   ],
-  "total_count": 188,
-  "generated_at": "2025-09-18T12:40:29Z",
+  "total_count": 189,
+  "generated_at": "2025-09-18T15:11:57Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }

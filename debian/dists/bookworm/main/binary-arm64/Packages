@@ -1598,6 +1598,22 @@ Priority: optional
 Homepage: http://ros.org/wiki/rosapi
 Description: Provides service calls for getting ros meta-information, like list of topics, services, params, etc.
 
+Package: ros-noetic-rosauth
+Version: 0.1.7-0focal
+Architecture: arm64
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Installed-Size: 282
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0), libstdc++6 (>= 5.2), ros-noetic-message-runtime, ros-noetic-roscpp
+Filename: pool/main/arm64/ros-noetic-rosauth_0.1.7-0focal_arm64.deb
+Size: 38256
+MD5sum: 468a3f2e4dae23f3f6b356a6697ce392
+SHA1: 58ceeb0896d5f285fa648ed915f6e910d4981fa0
+SHA256: 71b8f43494eb1d41d7c45d48f29ab0d06720e5316ce17558cc2417e5f1d68223
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/rosauth
+Description: Server Side tools for Authorization and Authentication of ROS Clients
+
 Package: ros-noetic-rosbag
 Version: 1.17.4-0focal
 Architecture: arm64
