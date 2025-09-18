@@ -4,7 +4,7 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 188
+- **Всего .deb файлов**: 189
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
@@ -240,6 +240,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-realtime-tools_1.16.1-0bookworm_arm64.deb`
 - `ros-noetic-ros-environment_1.3.2-0bookworm_arm64.deb`
 - `ros-noetic-rosapi_0.11.18-0bookworm_arm64.deb`
+- `ros-noetic-rosauth_0.1.7-0focal_arm64.deb`
 - `ros-noetic-rosbash_1.15.10-0bookworm_arm64.deb`
 - `ros-noetic-rosboost-cfg_1.15.10-0bookworm_arm64.deb`
 - `ros-noetic-rosbridge-library_0.11.18-0bookworm_arm64.deb`
@@ -340,7 +341,7 @@ python3 rename_packages.py
 
 **Автоматически сгенерировано**: 2025-09-18  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 188 .deb файлов  
+**Количество пакетов**: 189 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
