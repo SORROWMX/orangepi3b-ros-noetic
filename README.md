@@ -4,7 +4,7 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 210
+- **Всего .deb файлов**: 180
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
@@ -28,21 +28,21 @@
 - catkin, cmake-modules, rospack
 - rosmake, rosbuild, rosclean
 
-### Типы сообщений (21 пакетов)
+### Типы сообщений (19 пакетов)
 - std-msgs, geometry-msgs, sensor-msgs, nav-msgs
 - trajectory-msgs, visualization-msgs и другие
 
-### Библиотека трансформаций (13 пакетов)
+### Библиотека трансформаций (11 пакетов)
 - tf, tf2 и все связанные пакеты tf2
 
-### Обработка изображений (31 пакетов)
+### Обработка изображений (20 пакетов)
 - cv-bridge, image-transport, camera packages
 - opencv-tests
 
 ### Утилиты (6 пакетов)
 - rosbag, roslaunch, roswtf, rosunit
 
-### Отладочные символы (27 пакетов)
+### Отладочные символы (22 пакетов)
 - Пакеты с отладочными символами для разработки
 
 ## 🛠 Установка
@@ -105,11 +105,10 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-control-msgs_1.5.2-0bookworm_arm64.deb`
 - `ros-noetic-diagnostic-msgs_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-geographic-msgs_0.5.6-0bookworm_arm64.deb`
-- `ros-noetic-geographic-msgs_0.5.6-0focal_arm64.deb`
 - `ros-noetic-geometry-msgs_1.13.2-0bookworm_arm64.deb`
-- `ros-noetic-led-msgs_0.0.15-0focal_arm64.deb`
+- `ros-noetic-led-msgs_0.0.15-0bookworm_arm64.deb`
 - `ros-noetic-nav-msgs_1.13.2-0bookworm_arm64.deb`
-- `ros-noetic-rosbridge-msgs_0.11.18-0focal_arm64.deb`
+- `ros-noetic-rosbridge-msgs_0.11.18-0bookworm_arm64.deb`
 - `ros-noetic-sensor-msgs_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-shape-msgs_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-std-msgs_0.5.14-0bookworm_arm64.deb`
@@ -119,56 +118,42 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-tf2-sensor-msgs_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-trajectory-msgs_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-uuid-msgs_1.0.6-0bookworm_arm64.deb`
-- `ros-noetic-uuid-msgs_1.0.6-0focal_arm64.deb`
 - `ros-noetic-visualization-msgs_1.13.2-0bookworm_arm64.deb`
 
 ### Библиотека трансформаций
 - `ros-noetic-roswtf_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-test-tf2_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-tf-conversions_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-tf-conversions_1.13.4-0focal_arm64.deb`
 - `ros-noetic-tf2-bullet_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-tf2-eigen_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-tf2-kdl_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-tf2-py_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-tf2-tools_0.7.10-0bookworm_arm64.deb`
-- `ros-noetic-tf2-web-republisher_0.3.2-0focal_arm64.deb`
+- `ros-noetic-tf2-web-republisher_0.3.2-0bookworm_arm64.deb`
 - `ros-noetic-tf2_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-tf_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-tf_1.13.4-0focal_arm64.deb`
 
 ### Обработка изображений
 - `ros-noetic-camera-calibration-parsers-dbgsym_1.12.1-0bookworm_arm64.deb`
-- `ros-noetic-camera-calibration-parsers-dbgsym_1.12.1-0focal_arm64.deb`
 - `ros-noetic-camera-calibration-parsers_1.12.1-0bookworm_arm64.deb`
-- `ros-noetic-camera-calibration-parsers_1.12.1-0focal_arm64.deb`
-- `ros-noetic-camera-calibration_1.17.0-0focal_arm64.deb`
+- `ros-noetic-camera-calibration_1.17.0-0bookworm_arm64.deb`
 - `ros-noetic-camera-info-manager-dbgsym_1.12.1-0bookworm_arm64.deb`
-- `ros-noetic-camera-info-manager-dbgsym_1.12.1-0focal_arm64.deb`
 - `ros-noetic-camera-info-manager_1.12.1-0bookworm_arm64.deb`
-- `ros-noetic-camera-info-manager_1.12.1-0focal_arm64.deb`
-- `ros-noetic-cv-camera_0.6.0-0focal_arm64.deb`
-- `ros-noetic-depth-image-proc_1.17.0-0focal_arm64.deb`
+- `ros-noetic-cv-camera_0.6.0-0bookworm_arm64.deb`
+- `ros-noetic-depth-image-proc_1.17.0-0bookworm_arm64.deb`
 - `ros-noetic-image-common_1.12.1-0bookworm_arm64.deb`
-- `ros-noetic-image-common_1.12.1-0focal_arm64.deb`
 - `ros-noetic-image-geometry_1.16.2-0bookworm_arm64.deb`
-- `ros-noetic-image-geometry_1.16.2-0focal_arm64.deb`
-- `ros-noetic-image-pipeline_1.17.0-0focal_arm64.deb`
-- `ros-noetic-image-proc_1.17.0-0focal_arm64.deb`
-- `ros-noetic-image-publisher_1.17.0-0focal_arm64.deb`
-- `ros-noetic-image-rotate_1.17.0-0focal_arm64.deb`
+- `ros-noetic-image-pipeline_1.17.0-0bookworm_arm64.deb`
+- `ros-noetic-image-proc_1.17.0-0bookworm_arm64.deb`
+- `ros-noetic-image-publisher_1.17.0-0bookworm_arm64.deb`
+- `ros-noetic-image-rotate_1.17.0-0bookworm_arm64.deb`
 - `ros-noetic-image-transport-dbgsym_1.12.1-0bookworm_arm64.deb`
-- `ros-noetic-image-transport-dbgsym_1.12.1-0focal_arm64.deb`
 - `ros-noetic-image-transport_1.12.1-0bookworm_arm64.deb`
-- `ros-noetic-image-transport_1.12.1-0focal_arm64.deb`
-- `ros-noetic-image-view_1.17.0-0focal_arm64.deb`
+- `ros-noetic-image-view_1.17.0-0bookworm_arm64.deb`
 - `ros-noetic-opencv-tests_1.16.2-0bookworm_arm64.deb`
-- `ros-noetic-opencv-tests_1.16.2-0focal_arm64.deb`
 - `ros-noetic-polled-camera_1.12.1-0bookworm_arm64.deb`
-- `ros-noetic-polled-camera_1.12.1-0focal_arm64.deb`
-- `ros-noetic-stereo-image-proc_1.17.0-0focal_arm64.deb`
+- `ros-noetic-stereo-image-proc_1.17.0-0bookworm_arm64.deb`
 - `ros-noetic-vision-opencv_1.16.2-0bookworm_arm64.deb`
-- `ros-noetic-vision-opencv_1.16.2-0focal_arm64.deb`
 
 ### Утилиты
 - `ros-noetic-rosbag-dbgsym_1.17.4-0bookworm_arm64.deb`
@@ -186,11 +171,8 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-cpp-common-dbgsym_0.7.3-0bookworm_arm64.deb`
 - `ros-noetic-dynamic-reconfigure-dbgsym_1.7.6-0bookworm_arm64.deb`
 - `ros-noetic-eigen-conversions-dbgsym_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-eigen-conversions-dbgsym_1.13.4-0focal_arm64.deb`
 - `ros-noetic-geodesy-dbgsym_0.5.6-0bookworm_arm64.deb`
-- `ros-noetic-geodesy-dbgsym_0.5.6-0focal_arm64.deb`
 - `ros-noetic-kdl-conversions-dbgsym_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-kdl-conversions-dbgsym_1.13.4-0focal_arm64.deb`
 - `ros-noetic-message-filters-dbgsym_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-nodelet-dbgsym_1.11.2-0bookworm_arm64.deb`
 - `ros-noetic-realtime-tools-dbgsym_1.16.1-0bookworm_arm64.deb`
@@ -201,9 +183,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-rosout-dbgsym_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-rostime-dbgsym_0.7.3-0bookworm_arm64.deb`
 - `ros-noetic-tf-conversions-dbgsym_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-tf-conversions-dbgsym_1.13.4-0focal_arm64.deb`
 - `ros-noetic-tf-dbgsym_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-tf-dbgsym_1.13.4-0focal_arm64.deb`
 - `ros-noetic-topic-tools-dbgsym_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-xmlrpcpp-dbgsym_1.17.4-0bookworm_arm64.deb`
 
@@ -213,8 +193,8 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `libboost-system1.71.0_1.71.0-6ubuntu6_arm64.deb`
 - `libboost-thread1.71.0_1.71.0-6ubuntu6_arm64.deb`
 - `ros-noetic-actionlib_1.14.3-0bookworm_arm64.deb`
-- `ros-noetic-angles_1.9.14-0focal_arm64.deb`
-- `ros-noetic-async-web-server-cpp_1.0.3-0focal_arm64.deb`
+- `ros-noetic-angles_1.9.14-0bookworm_arm64.deb`
+- `ros-noetic-async-web-server-cpp_1.0.3-0bookworm_arm64.deb`
 - `ros-noetic-bond-core_1.8.7-0bookworm_arm64.deb`
 - `ros-noetic-bond_1.8.7-0bookworm_arm64.deb`
 - `ros-noetic-bondcpp_1.8.7-0bookworm_arm64.deb`
@@ -223,16 +203,13 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-control-toolbox_1.19.0-0bookworm_arm64.deb`
 - `ros-noetic-cpp-common_0.7.3-0bookworm_arm64.deb`
 - `ros-noetic-cv-bridge_1.16.2-0bookworm_arm64.deb`
-- `ros-noetic-cv-bridge_1.16.2-0focal_arm64.deb`
-- `ros-noetic-diagnostic-aggregator_1.12.1-0focal_arm64.deb`
-- `ros-noetic-diagnostic-analysis_1.12.1-0focal_arm64.deb`
-- `ros-noetic-diagnostic-common-diagnostics_1.12.1-0focal_arm64.deb`
-- `ros-noetic-diagnostic-updater_1.12.1-0focal_arm64.deb`
-- `ros-noetic-diagnostics_1.12.1-0focal_arm64.deb`
+- `ros-noetic-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb`
+- `ros-noetic-diagnostic-analysis_1.12.1-0bookworm_arm64.deb`
+- `ros-noetic-diagnostic-common-diagnostics_1.12.1-0bookworm_arm64.deb`
+- `ros-noetic-diagnostic-updater_1.12.1-0bookworm_arm64.deb`
+- `ros-noetic-diagnostics_1.12.1-0bookworm_arm64.deb`
 - `ros-noetic-dynamic-reconfigure_1.7.6-0bookworm_arm64.deb`
-- `ros-noetic-dynamic-reconfigure_1.7.6-0focal_arm64.deb`
 - `ros-noetic-eigen-conversions_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-eigen-conversions_1.13.4-0focal_arm64.deb`
 - `ros-noetic-eigen-stl-containers_0.1.8-0bookworm_arm64.deb`
 - `ros-noetic-gencpp_0.7.2-0bookworm_arm64.deb`
 - `ros-noetic-geneus_3.0.0-0bookworm_arm64.deb`
@@ -241,14 +218,10 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-gennodejs_2.0.2-0bookworm_arm64.deb`
 - `ros-noetic-genpy_0.6.18-0bookworm_arm64.deb`
 - `ros-noetic-geodesy_0.5.6-0bookworm_arm64.deb`
-- `ros-noetic-geodesy_0.5.6-0focal_arm64.deb`
 - `ros-noetic-geographic-info_0.5.6-0bookworm_arm64.deb`
-- `ros-noetic-geographic-info_0.5.6-0focal_arm64.deb`
 - `ros-noetic-geometry2_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-geometry_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-geometry_1.13.4-0focal_arm64.deb`
 - `ros-noetic-kdl-conversions_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-kdl-conversions_1.13.4-0focal_arm64.deb`
 - `ros-noetic-mavlink_2021.3.3-0bookworm_arm64.deb`
 - `ros-noetic-message-filters_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-message-generation_0.4.1-0bookworm_arm64.deb`
@@ -260,21 +233,20 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-pluginlib_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-realtime-tools_1.16.1-0bookworm_arm64.deb`
 - `ros-noetic-ros-environment_1.3.2-0bookworm_arm64.deb`
-- `ros-noetic-ros-environment_1.3.2-0focal_arm64.deb`
-- `ros-noetic-rosapi_0.11.18-0focal_arm64.deb`
+- `ros-noetic-rosapi_0.11.18-0bookworm_arm64.deb`
 - `ros-noetic-rosbash_1.15.10-0bookworm_arm64.deb`
 - `ros-noetic-rosboost-cfg_1.15.10-0bookworm_arm64.deb`
-- `ros-noetic-rosbridge-library_0.11.18-0focal_arm64.deb`
-- `ros-noetic-rosbridge-server_0.11.18-0focal_arm64.deb`
-- `ros-noetic-rosbridge-suite_0.11.18-0focal_arm64.deb`
+- `ros-noetic-rosbridge-library_0.11.18-0bookworm_arm64.deb`
+- `ros-noetic-rosbridge-server_0.11.18-0bookworm_arm64.deb`
+- `ros-noetic-rosbridge-suite_0.11.18-0bookworm_arm64.deb`
 - `ros-noetic-rosclean_1.15.10-0bookworm_arm64.deb`
 - `ros-noetic-rosconsole-bridge_0.5.5-0bookworm_arm64.deb`
 - `ros-noetic-rosconsole_1.14.4-0bookworm_arm64.deb`
 - `ros-noetic-roscreate_1.15.10-0bookworm_arm64.deb`
-- `ros-noetic-rosdiagnostic_1.12.1-0focal_arm64.deb`
+- `ros-noetic-rosdiagnostic_1.12.1-0bookworm_arm64.deb`
 - `ros-noetic-roslang_1.15.10-0bookworm_arm64.deb`
 - `ros-noetic-roslib_1.15.10-0bookworm_arm64.deb`
-- `ros-noetic-roslint_0.12.0-0focal_arm64.deb`
+- `ros-noetic-roslint_0.12.0-0bookworm_arm64.deb`
 - `ros-noetic-roslisp_1.9.25-0bookworm_arm64.deb`
 - `ros-noetic-roslz4_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-rosmake_1.15.10-0bookworm_arm64.deb`
@@ -287,18 +259,16 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-rostime_0.7.3-0bookworm_arm64.deb`
 - `ros-noetic-rostopic_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-rosunit_1.15.10-0bookworm_arm64.deb`
-- `ros-noetic-self-test_1.12.1-0focal_arm64.deb`
+- `ros-noetic-self-test_1.12.1-0bookworm_arm64.deb`
 - `ros-noetic-smclib_1.8.7-0bookworm_arm64.deb`
 - `ros-noetic-std-srvs_1.11.4-0bookworm_arm64.deb`
-- `ros-noetic-test-diagnostic-aggregator_1.12.1-0focal_arm64.deb`
+- `ros-noetic-test-diagnostic-aggregator_1.12.1-0bookworm_arm64.deb`
 - `ros-noetic-topic-tools_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-unique-id_1.0.6-0bookworm_arm64.deb`
-- `ros-noetic-unique-id_1.0.6-0focal_arm64.deb`
 - `ros-noetic-unique-identifier_1.0.6-0bookworm_arm64.deb`
-- `ros-noetic-unique-identifier_1.0.6-0focal_arm64.deb`
-- `ros-noetic-vl53l1x_1.0.0-0focal_arm64.deb`
-- `ros-noetic-web-video-server_0.2.2-0focal_arm64.deb`
-- `ros-noetic-ws281x_0.0.15-0focal_arm64.deb`
+- `ros-noetic-vl53l1x_1.0.0-0bookworm_arm64.deb`
+- `ros-noetic-web-video-server_0.2.2-0bookworm_arm64.deb`
+- `ros-noetic-ws281x_0.0.15-0bookworm_arm64.deb`
 - `ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb`
 
 ## 🔧 Зависимости
@@ -362,7 +332,7 @@ python3 rename_packages.py
 
 **Автоматически сгенерировано**: 2025-09-18  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 210 .deb файлов  
+**Количество пакетов**: 180 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
