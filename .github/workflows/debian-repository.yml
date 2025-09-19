@@ -160,46 +160,35 @@ jobs:
 
     - name: Generate Release file
       run: |
-        cd debian/dists/bookworm
-        
-        # Создаем Release файл
-        cat > Release << EOF
-        Origin: Orange Pi 3B ROS Noetic Repository
-        Label: Orange Pi 3B ROS Noetic
-        Suite: bookworm
-        Version: 12
-        Codename: bookworm
-        Date: $(date -R)
-        Architectures: arm64
-        Components: main
-        Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
+        cd debian
+
+        # Генерируем корректный Release с использованием apt-ftparchive (с размерами и хешами)
+        cat > apt-ftparchive-release.conf << 'EOF'
+        APT::FTPArchive::Release::Origin "Orange Pi 3B ROS Noetic Repository";
+        APT::FTPArchive::Release::Label "Orange Pi 3B ROS Noetic";
+        APT::FTPArchive::Release::Suite "bookworm";
+        APT::FTPArchive::Release::Version "12";
+        APT::FTPArchive::Release::Codename "bookworm";
+        APT::FTPArchive::Release::Architectures "arm64";
+        APT::FTPArchive::Release::Components "main";
+        APT::FTPArchive::Release::Description "Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)";
+        APT::FTPArchive::Release::Acquire-By-Hash "yes";
         EOF
-        
-        # Добавляем MD5 суммы
-        echo "MD5Sum:" >> Release
-        find . -type f -name "Packages*" -exec md5sum {} \; | sed 's/^/ /' >> Release
-        
-        # Добавляем SHA256 суммы
-        echo "SHA256:" >> Release
-        find . -type f -name "Packages*" -exec sha256sum {} \; | sed 's/^/ /' >> Release
-        
-        echo "📋 Release file generated"
+
+        apt-ftparchive -c apt-ftparchive-release.conf release dists/bookworm > dists/bookworm/Release
+
+        echo "📋 Release file generated via apt-ftparchive"
 
     - name: Sign Release file (if GPG available)
       if: env.GPG_PRIVATE_KEY != ''
       run: |
-        cd debian/dists/bookworm
-        
-        # Подписываем Release файл
-        gpg --batch --yes --clearsign Release
-        
-        # Создаем InRelease файл (переименовываем Release.asc в InRelease)
-        mv Release.asc InRelease
-        
-        # Создаем Release.gpg файл
-        gpg --batch --yes --detach-sign --armor Release
-        
-        echo "🔐 Release file signed with GPG key: ${{ secrets.GPG_KEY_ID }}"
+        cd debian
+
+        # Подписываем Release файл корректно в InRelease и Release.gpg
+        gpg --batch --yes --clearsign -o dists/bookworm/InRelease dists/bookworm/Release
+        gpg --batch --yes --detach-sign --armor -o dists/bookworm/Release.gpg dists/bookworm/Release
+
+        echo "🔐 Release & InRelease signed with GPG key: ${{ secrets.GPG_KEY_ID }}"
 
     - name: Count packages
       id: count
