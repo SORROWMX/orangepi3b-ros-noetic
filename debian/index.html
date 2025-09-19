@@ -283,7 +283,9 @@
             <div class="step">
                 <h3>Step 1: Add GPG Key</h3>
                 <div class="code-block">
-                    <code>wget -qO - https://sorrowmx.github.io/orangepi3b-ros-noetic/public-key.asc | sudo apt-key add -</code>
+                    <code>sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://sorrowmx.github.io/orangepi3b-ros-noetic/public-key.asc | sudo gpg --dearmor -o /etc/apt/keyrings/orangepi-ros-noetic.gpg
+sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                     <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
                 </div>
             </div>
@@ -291,7 +293,7 @@
             <div class="step">
                 <h3>Step 2: Add Repository</h3>
                 <div class="code-block">
-                    <code>echo "deb [trusted=yes] https://sorrowmx.github.io/orangepi3b-ros-noetic/debian/ /" | sudo tee /etc/apt/sources.list.d/ros-noetic-orangepi.list</code>
+                    <code>echo "deb [arch=arm64 signed-by=/etc/apt/keyrings/orangepi-ros-noetic.gpg] https://sorrowmx.github.io/orangepi3b-ros-noetic/debian bookworm main" | sudo tee /etc/apt/sources.list.d/ros-noetic-orangepi.list</code>
                     <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
                 </div>
             </div>
