@@ -1,15 +1,26 @@
-Origin: Orange Pi 3B ROS Noetic Repository
+Acquire-By-Hash: yes
+Architectures: arm64
+Codename: bookworm
+Components: main
+Date: Fri, 19 Sep 2025 12:27:19 +0000
+Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
 Label: Orange Pi 3B ROS Noetic
+Origin: Orange Pi 3B ROS Noetic Repository
 Suite: bookworm
 Version: 12
-Codename: bookworm
-Date: Fri, 19 Sep 2025 07:20:30 +0000
-Architectures: arm64
-Components: main
-Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
 MD5Sum:
- b845db4043329ed3a5251976ba6b056a  ./main/binary-arm64/Packages
- 55650de552b1641e113ec78f001b123d  ./main/binary-arm64/Packages.gz
+ 8a4c557e814cdb16ff1d62da11024e9c              289 Release
+ b845db4043329ed3a5251976ba6b056a           147697 main/binary-arm64/Packages
+ 55650de552b1641e113ec78f001b123d            40289 main/binary-arm64/Packages.gz
+SHA1:
+ 9016bfbcc73db3dabed738a5cd745b1b334cc5ce              289 Release
+ 53937ed1def33dfae67f869a8941d3b37a58817c           147697 main/binary-arm64/Packages
+ 7e0dfaaf0238ae2bce0dcfeb5f1a104873e82058            40289 main/binary-arm64/Packages.gz
 SHA256:
- 26892a8d326cb0a9789dcc52d2291c9ce7d97a912d5e36033141cd735d17e1f8  ./main/binary-arm64/Packages
- a4389df19a1752a899016a693373b20bcaa7c1af29bf085a12d5fd43532c270b  ./main/binary-arm64/Packages.gz
+ 1efaedfe1863bbfe02e7d3e4b0ab331213470fe24950e13839583ab6ae5e2c8f              289 Release
+ 26892a8d326cb0a9789dcc52d2291c9ce7d97a912d5e36033141cd735d17e1f8           147697 main/binary-arm64/Packages
+ a4389df19a1752a899016a693373b20bcaa7c1af29bf085a12d5fd43532c270b            40289 main/binary-arm64/Packages.gz
+SHA512:
+ c2acb6ff9323d530dfbe3cf21d0a8c906c30166ffd3515d00df50ec24873843bd679bdf14a5881dc3fe0bced93f10f39cc00efd1850d035e565115aa1bc13317              289 Release
+ 218f9733abe5a1c96bf00265499a865d49f676969e0891fd0df7866860e06a1a5c2d37db7dca160766ee46d01819f4053d004ae3ac0dc42ffa3969cdced9996c           147697 main/binary-arm64/Packages
+ 81c00cc0a62adca6468e7922c7a9f0ad4e974f575da39fb3ba6749a97006f6294f3c9293f91609cfdca2239097976c0fffa47a176f999c0f8733945d4bc5fd63            40289 main/binary-arm64/Packages.gz
