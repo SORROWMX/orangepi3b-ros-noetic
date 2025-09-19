@@ -4,11 +4,11 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 189
+- **Всего .deb файлов**: 188
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
-- **Дата обновления**: 2025-09-18
+- **Дата обновления**: 2025-09-19
 
 ## 🚀 Что включено
 
@@ -74,12 +74,12 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 ## 📋 Детальная статистика пакетов
 
 ### Основные пакеты ROS
-- `ros-noetic-mavros_1.20.1-0focal_arm64.deb`
+- `ros-noetic-mavros_1.20.1-0bookworm_arm64.deb`
 - `ros-noetic-ros-base_1.5.0-0bookworm_arm64.deb`
 - `ros-noetic-ros-comm_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-ros-core_1.5.0-0bookworm_arm64.deb`
 - `ros-noetic-ros_1.15.10-0bookworm_arm64.deb`
-- `ros-noetic-test-mavros_1.20.1-0focal_arm64.deb`
+- `ros-noetic-test-mavros_1.20.1-0bookworm_arm64.deb`
 - `ros-noetic-tf2-ros_0.7.10-0bookworm_arm64.deb`
 
 ### Система коммуникации
@@ -109,7 +109,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-geographic-msgs_0.5.6-0bookworm_arm64.deb`
 - `ros-noetic-geometry-msgs_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-led-msgs_0.0.15-0bookworm_arm64.deb`
-- `ros-noetic-mavros-msgs_1.20.1-0focal_arm64.deb`
+- `ros-noetic-mavros-msgs_1.20.1-0bookworm_arm64.deb`
 - `ros-noetic-nav-msgs_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-rosbridge-msgs_0.11.18-0bookworm_arm64.deb`
 - `ros-noetic-sensor-msgs_1.13.2-0bookworm_arm64.deb`
@@ -225,10 +225,9 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-geometry2_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-geometry_1.13.4-0bookworm_arm64.deb`
 - `ros-noetic-kdl-conversions_1.13.4-0bookworm_arm64.deb`
-- `ros-noetic-libmavconn_1.20.1-0focal_arm64.deb`
+- `ros-noetic-libmavconn_1.20.1-0bookworm_arm64.deb`
 - `ros-noetic-mavlink_2021.3.3-0bookworm_arm64.deb`
-- `ros-noetic-mavlink_2021.3.3-0focal_arm64.deb`
-- `ros-noetic-mavros-extras_1.20.1-0focal_arm64.deb`
+- `ros-noetic-mavros-extras_1.20.1-0bookworm_arm64.deb`
 - `ros-noetic-message-filters_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-message-generation_0.4.1-0bookworm_arm64.deb`
 - `ros-noetic-message-runtime_0.4.13-0bookworm_arm64.deb`
@@ -240,7 +239,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-realtime-tools_1.16.1-0bookworm_arm64.deb`
 - `ros-noetic-ros-environment_1.3.2-0bookworm_arm64.deb`
 - `ros-noetic-rosapi_0.11.18-0bookworm_arm64.deb`
-- `ros-noetic-rosauth_0.1.7-0focal_arm64.deb`
+- `ros-noetic-rosauth_0.1.7-0bookworm_arm64.deb`
 - `ros-noetic-rosbash_1.15.10-0bookworm_arm64.deb`
 - `ros-noetic-rosboost-cfg_1.15.10-0bookworm_arm64.deb`
 - `ros-noetic-rosbridge-library_0.11.18-0bookworm_arm64.deb`
@@ -273,8 +272,8 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-topic-tools_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-unique-id_1.0.6-0bookworm_arm64.deb`
 - `ros-noetic-unique-identifier_1.0.6-0bookworm_arm64.deb`
-- `ros-noetic-urdf-parser-plugin_1.13.4-0focal_arm64.deb`
-- `ros-noetic-urdf_1.13.4-0focal_arm64.deb`
+- `ros-noetic-urdf-parser-plugin_1.13.4-0bookworm_arm64.deb`
+- `ros-noetic-urdf_1.13.4-0bookworm_arm64.deb`
 - `ros-noetic-vl53l1x_1.0.0-0bookworm_arm64.deb`
 - `ros-noetic-web-video-server_0.2.2-0bookworm_arm64.deb`
 - `ros-noetic-ws281x_0.0.15-0bookworm_arm64.deb`
@@ -339,9 +338,9 @@ python3 rename_packages.py
 
 ---
 
-**Автоматически сгенерировано**: 2025-09-18  
+**Автоматически сгенерировано**: 2025-09-19  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 189 .deb файлов  
+**Количество пакетов**: 188 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
