@@ -6,29 +6,29 @@ Label: Orange Pi 3B ROS Noetic
 Suite: bookworm
 Version: 12
 Codename: bookworm
-Date: Thu, 18 Sep 2025 15:11:57 +0000
+Date: Fri, 19 Sep 2025 07:20:30 +0000
 Architectures: arm64
 Components: main
 Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
 MD5Sum:
- 8e2f6afdc365007011bae9f121a62757  ./main/binary-arm64/Packages
- 26b8a183cc4ea947039a73f07df8a8a0  ./main/binary-arm64/Packages.gz
+ b845db4043329ed3a5251976ba6b056a  ./main/binary-arm64/Packages
+ 55650de552b1641e113ec78f001b123d  ./main/binary-arm64/Packages.gz
 SHA256:
- d0542bd3dd4069523790734b9e044c682762702aef6e227ba28aa5fc4cf0e04c  ./main/binary-arm64/Packages
- 5fd3a1f267f58605b2759178b6af1ef210a4c8132cf9a1ba05211db8d26513e4  ./main/binary-arm64/Packages.gz
+ 26892a8d326cb0a9789dcc52d2291c9ce7d97a912d5e36033141cd735d17e1f8  ./main/binary-arm64/Packages
+ a4389df19a1752a899016a693373b20bcaa7c1af29bf085a12d5fd43532c270b  ./main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEZdjwhMAWvwDptARQd6AJ/Dr/AAAFAmjMIT0ACgkQd6AJ/Dr/
-AAA/CA//VCafqMhQ6R9eXRXHeS+deZeEgXVrFyKsNfS81NE4NLAx2l2qdzdlW6zB
-zTf/UQO2wpy+bkQbHHr+LkIp7lJJ66h3nwh6pcr43Le8tvNYchpeQnYknFXO+1ul
-s4Gl0Gxm2fgMdLG5AvlWQd/eQttQ2Z0kqjpB5cwoFM4vNTKH6zi2Tid87fPqmuFM
-13agwLdJINDqUHMgMJ+bVYMwcpa5KQQgDs40k/DiFjCODG/66fFKkcPhPsY6WVX/
-lhuvFa8U8zkMdPr+xVE4uC+NGzjk8GyEhq/Y7XO/tELjXoUmYLmr2cIngKl7FYYU
-Vc/m91aUHVqcW3XJx5KzGqFoW/zTUzcKzLVpX8fJevgBa2PnGhASgbIFq2VAIHGi
-9CPXppvCR8NYfg0GzzhXkN/sZrK9ANXqOvFlrOIamSkv5cGJJP8cxygOSh8eSYL7
-MeK41aOKK+AGNBSCR50w9Mc7k/ox2EWtmQEN15Z5qqDfws1+U4GCvkQnfIAXQhhH
-D2VV/Pwq4NtQfrUUqUqoqjmVebMKP1cjj1cW6w+SpBnwBvs+A8gEmAc9/aAXjrMm
-LxRl5Ti+GI/qm58UkQmuqHXPMAqTwfChIjJt7kILGTVA6uq6iph8cDuYJO6/9uA2
-H0KYsnqYrNKVpp63zwFLYoQA+QEvfQ5/7o2+gjs1yPEuR/ktlqM=
-=jcyw
+iQIzBAEBCgAdFiEEZdjwhMAWvwDptARQd6AJ/Dr/AAAFAmjNBD4ACgkQd6AJ/Dr/
+AABsEQ//dQVCghz9NabeJZS3jvUfu31Yfq4nHcy6UatmCR1hkrrkag+VU7fGsOpK
+eM89nCsdgcDP+TYXuA7pZqXi+VFBVBrwrhWnoXRJcYLVrSwMRINQm5UIzZLV0PPi
+g+ShTDq0eDcl2XPbkFiTIEKGVvMtJTpaGtZcLvzEwpC0OvztcRLJAmsGilMvQ5gd
+Z3wzlOaR73YQfvvQ0gPVaQ8wmjMIk2ug3YfjVXjcBoYBG+vm2Ri6MxSS872CDKDy
+8ykVlBar3AQHcEv9Efy1/F23F4VoOcWQdeXTMjKw7aWHo0uwccsS89GvNfI6E98E
+DOy/0QGqqQclhlTZWrwoVY9SmN6naqQHZTFb+QAMgh2bR/aKoAkk6SQ0XFCMfcHU
+PYhiSapkYAKIXhpuVL5do7G+8uwjnZYefwW+2S0r0OYZAGCagQEIlcD0keWRbqF/
+lOIQaeo6O96olfVATdfVnj/xsiS8nWUEExK6tcrGwDMXfnXr9o93brsBbYEG1qy0
+am9YWDr+sqjgcAoLP2YTz6MlUxxH1uxsPKlTks9SYnFr6vZ8vcILIny6fJpmQmR8
+wiQLb7Fhm82k9gMMrLzmRULQ7GHosspcocXSAsnmvtkvRgRBnsDX1stCbxVWwZoz
+alPXajoh3MIoUq/sMhFS379yh2zRe25Ch1An7TnAsmqqVaozivM=
+=SGQz
 -----END PGP SIGNATURE-----
