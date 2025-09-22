@@ -4,7 +4,7 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 197
+- **Всего .deb файлов**: 199
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
@@ -20,7 +20,7 @@
 - `ros-noetic-ros-comm` - Библиотеки коммуникации ROS
 - `ros-noetic-ros` - Основной метапакет ROS
 
-### Система коммуникации (10 пакетов)
+### Система коммуникации (11 пакетов)
 - roscpp, rospy, rosgraph, rosmaster
 - rosparam, rostopic, rosservice, rostest
 
@@ -28,7 +28,7 @@
 - catkin, cmake-modules, rospack
 - rosmake, rosbuild, rosclean
 
-### Типы сообщений (20 пакетов)
+### Типы сообщений (21 пакетов)
 - std-msgs, geometry-msgs, sensor-msgs, nav-msgs
 - trajectory-msgs, visualization-msgs и другие
 
@@ -83,6 +83,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-tf2-ros_0.7.10-0bookworm_arm64.deb`
 
 ### Система коммуникации
+- `libros-rosgraph-msgs-dev_1.11.4-1_arm64.deb`
 - `ros-noetic-roscpp-core_0.7.3-0bookworm_arm64.deb`
 - `ros-noetic-roscpp-dbgsym_1.17.4-0bookworm_arm64.deb`
 - `ros-noetic-roscpp-serialization-dbgsym_0.7.3-0bookworm_arm64.deb`
@@ -104,6 +105,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-rospack_2.6.4-0bookworm_arm64.deb`
 
 ### Типы сообщений
+- `libstd-msgs-dev_0.5.14-1_arm64.deb`
 - `ros-noetic-actionlib-msgs_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-common-msgs_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-control-msgs_1.5.2-0bookworm_arm64.deb`
@@ -349,7 +351,7 @@ python3 rename_packages.py
 
 **Автоматически сгенерировано**: 2025-09-22  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 197 .deb файлов  
+**Количество пакетов**: 199 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
