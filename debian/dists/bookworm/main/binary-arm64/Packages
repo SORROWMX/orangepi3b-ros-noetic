@@ -1,3 +1,20 @@
+Package: dhcpcd5
+Version: 9.4.1-24~deb12u4
+Architecture: all
+Maintainer: Martin-Éric Racine <martin-eric.racine@iki.fi>
+Installed-Size: 22
+Depends: dhcpcd
+Filename: pool/main/arm64/dhcpcd5_9.4.1-24~deb12u4_all.deb
+Size: 8644
+MD5sum: 7ee12f71fd8a275b0137ba9fe8d016ce
+SHA1: d08a60040b8e8d2483c295d8f32c88ed16a08e16
+SHA256: c8886ec7a041839285974faaf5ccb0c3e9eb178f3fccf7685d236beadfe3c542
+Section: oldlibs
+Priority: optional
+Homepage: https://roy.marples.name/projects/dhcpcd
+Description: DHCPv4 and DHCPv6 dual-stack client (dummy transitional package)
+ This package depends on dhcpcd. It can safely be removed after upgrades.
+
 Package: hddtemp
 Version: 0.3-beta15-54
 Architecture: arm64

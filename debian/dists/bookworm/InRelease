@@ -5,41 +5,41 @@ Acquire-By-Hash: yes
 Architectures: arm64
 Codename: bookworm
 Components: main
-Date: Mon, 22 Sep 2025 20:20:42 +0000
+Date: Mon, 22 Sep 2025 20:38:59 +0000
 Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
 Label: Orange Pi 3B ROS Noetic
 Origin: Orange Pi 3B ROS Noetic Repository
 Suite: bookworm
 Version: 12
 MD5Sum:
- c49208904cccb72e48e3b577b51e1093              289 Release
- d990b7b902f62ee77e260dc0127e8dae           157164 main/binary-arm64/Packages
- b6b6d9470f188ed48ce79da1c9944ac8            42980 main/binary-arm64/Packages.gz
+ 43855f2d6fc83d26b679100a130584fe              289 Release
+ 7b694cec0cbffb873fc094a52dc14240           157791 main/binary-arm64/Packages
+ 4a489a16bc6d125be8f6c72914657b4c            43286 main/binary-arm64/Packages.gz
 SHA1:
- 65666472dd9632d0b0a6f4e0ad1402d0af5a5b68              289 Release
- 3346243df74df04b44ab6b5581d5ad35d281229e           157164 main/binary-arm64/Packages
- eb2473bba6f4d764d8c106111bba5434e4130b94            42980 main/binary-arm64/Packages.gz
+ a85ee23b74c89b009f44417fbfd4fa585aae5179              289 Release
+ 2cd69193dd5b0d2efa1c42250baba4c5a45d8267           157791 main/binary-arm64/Packages
+ 00c38d78af8f72d10b63df5633deca3392806aab            43286 main/binary-arm64/Packages.gz
 SHA256:
- 360145a53b98f1fb2fb8bdf2105a608b35c4fe9bba9d0046244c45415054d53b              289 Release
- 1f70cc39732a7ac1be30f4c1520fafcee1799a2066e7293b6e432825abe0306c           157164 main/binary-arm64/Packages
- 274609b25c1ad40953029a24045b26602f6920366727d2ad148322729df9a927            42980 main/binary-arm64/Packages.gz
+ c2d4accba6710e100aef25a29fa70abe4454ff0f803db19e998f42ffd379dbca              289 Release
+ f61bc7bbf9f589b05339eeebaa11f4c1bdceee83d48f4050f830c2282c2e41c2           157791 main/binary-arm64/Packages
+ 2b8fb4de70b06a43492e9496c7472019accf873767c99fad5e8b426df2bb07af            43286 main/binary-arm64/Packages.gz
 SHA512:
- e984577b3bdd9dc2fcd0284ff29dd38a28eb6c7d9a024b2bd111d324fbc1ed7c4c868da248d2b4a1e823ba2beb39b4f4d0cfa71dacedd43cb4cb10838ba89bd8              289 Release
- 3db0505387c9ded77479f19aaeba5d42f30103bd143575d4f0ef1cc2c53f689c53c9bb939b54137bc38a30273c4d705005e6f608e5616bb95dbc06926833e8a6           157164 main/binary-arm64/Packages
- 9b1b3c8c8e9bc7185820a0260c6a6471dc80e824929c9301cdbb2aecca9a99c749b6c3caa5e1d01a3a3bac5443a4143dacbcf267698a0826918e92e8d3b04dfb            42980 main/binary-arm64/Packages.gz
+ 36940120b8b0b8bf3826833a08208393ddf6d20bcb380e36c2de9f3469b345e400586709622f7f453dca6c2438ab658f08dbec980ef6e55fb00caa57609d4bc2              289 Release
+ 801c3784467c788eb9bef30f212946701574994d49c49af8d259f3d1d1a6f0277fb5e236a7f8f2713d807b2336fd19332af500e5fde173a119d29a43c78cd15f           157791 main/binary-arm64/Packages
+ 1e17fba2ee50faef9e48b5ff629114a720945b78584c8536afdad88f947631f56b093b5d7506df1d279c7e74b7a7e959d6f7afe5b6de4b5d14efebd9e0491d2c            43286 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEZdjwhMAWvwDptARQd6AJ/Dr/AAAFAmjRr5oACgkQd6AJ/Dr/
-AAA0HA/+O2HmMNJ8HOs8oxXyHV0yfR2cUhs/LytEieNcf9CqWfmDw8ZG3NS61IXm
-2bRVRD5TMIMZJinEa9hqrMyI00OHiORb2vqAlTkDPZw98pXg1PMDimkvOD/xbq6L
-I2EQrajFlKbWLH4oxJKj3O9SskfW1zpB9nBq5ymVbbbqawiRlKbV0Pm8WsQFuiE1
-kQ7zhWT5wb0jKAFjZkYzUuqEX51qjWrPDec9QYvAigoOLsDg7g3PKkIwMF5panjG
-2+lWEE3sTvY8m/+i7R7b/Fv8+HbRlpt49wLOWf8zx5gY2Dm5Uh4lGl8o9Tpt4Z0J
-WjCKmA+rtoqYdC5wR56d0atgrcUygbz3G4Z5PPuIYN5S3pJ6r160cuCqiXFf7M5E
-tU8nxNLzLqBGjsFsZHk8XklBHkD2CpVRJBqfMHYCSFd90hnYixqOGTQjkjWot79f
-znY0wS62s/GDEs+j0GtzARl3n/b8yw57slMZUcPX1zGv6vC0DATi4sd0DsVJf7PF
-Azq5dIaBzxf4sDuTDvOWIJoXBjVu6UV5+1bilxZIBNukIUshteKZLybnNMh0FjWf
-YZZt+WiyE5+w7qkg8mdZSEnmoShGcoUC6ZmvKMU7+hBXmJjPUcMdkRstKY2TTpc1
-fn4mc6FAZtzMYi0INlS+DHiXYvxYh0OxVQnG1xDrLVWZJ0E40M0=
-=4IhT
+iQIzBAEBCgAdFiEEZdjwhMAWvwDptARQd6AJ/Dr/AAAFAmjRs+MACgkQd6AJ/Dr/
+AAAS0g/+IUA2tmadaN714gm8aX4Yom48CGZlHNuvOJEmvECJqb5K0wVUaNP1qCG9
+qXF8dR0Evns6c+1VS4p4+gdJa2aQJZdKsm+DfvA/j18tETpbyhGzbjefapBK1OPh
+DdFdYjnIvvcG+eLWqLL1OP1kpuyq16fcjWC+he67wOKQp3opS0+lJDhRfN8CVCZj
+BG5TBU8g6nLd78J2z9NB8wCNXjm8mOn6xjTf7RBcz3uoWel/1hgmBADXy7crFG8J
+yVWZNTkiG7tBsf4jIJcB1jpl5zWs1uZpTq6cieCdzZ0KcLJBLHzW26QCZ+21KDNE
+Y7U3/RbNQgSsshftEBr4v/mLSW+Hzo/WuGmEtymIQ2Vwvd5QFCfKM3CnA2n+jKyJ
+5ksyHrwN0q+QetExslX5T4RMiMhA7oV7W1q4iTdoUi5wqDhqDovD8vQPe7yC1ww3
+iNVTnWZplHJ+tjDb/ugrwXNGd9oj9RacMfoUB3gvM9a887teP3xOwtxIrL7qCzhs
+CQm3D1qazUjyZeBTbNVkEIOFTFPc7GDtXK8wZOXnQvBkxWqPA4t8H16sS5OqQEPp
+WrSIFYfZXgzDrFB8lYE3AB7Bt2W2cilyxyX2byEW1MbIi/qDqtUcUkJAAfD2wRWs
+YPCicsNRX1btXF0M62nj/yV8n5mNdfIFMaO1UjQFHF2aIKjnOIs=
+=mOee
 -----END PGP SIGNATURE-----

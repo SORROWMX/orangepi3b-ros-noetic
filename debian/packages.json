@@ -1,6 +1,14 @@
 {
   "packages": [
     {
+      "name": "dhcpcd5_9.4.1-24~deb12u4_all.deb",
+      "size": "0.01 MB",
+      "size_bytes": 8644,
+      "category": "other",
+      "description": "",
+      "url": "dhcpcd5_9.4.1-24~deb12u4_all.deb"
+    },
+    {
       "name": "hddtemp_0.3-beta15-54_arm64.deb",
       "size": "0.05 MB",
       "size_bytes": 47744,
@@ -1593,7 +1601,7 @@
       "url": "ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb"
     }
   ],
-  "total_count": 199,
-  "generated_at": "2025-09-22T20:20:42Z",
+  "total_count": 200,
+  "generated_at": "2025-09-22T20:38:59Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }
