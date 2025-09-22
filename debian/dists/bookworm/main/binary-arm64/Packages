@@ -93,6 +93,100 @@ Description: portable C++ multi-threading
  registers.
 Original-Maintainer: Debian Boost Team <team+boost@tracker.debian.org>
 
+Package: python3-catkin-pkg
+Version: 1.0.0-100
+Architecture: all
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 26
+Depends: python3:any (>= 3.6~), python3-catkin-pkg-modules (>= 1.0.0), python3-dateutil, python3-docutils
+Conflicts: catkin, python-catkin-pkg
+Filename: pool/main/arm64/python3-catkin-pkg_1.0.0-100_all.deb
+Size: 3920
+MD5sum: c6ee57fde962060de41361f69f0a394c
+SHA1: 012538d8985466141b1112e8bb8748ea8bdd7599
+SHA256: df38f24e396c6664f2759fb4b9bd18e9c7a61e2b35450e787807a28ef3be5b91
+Section: python
+Priority: optional
+Homepage: http://wiki.ros.org/catkin_pkg
+Description: catkin package library
+ Library for retrieving information about catkin packages.
+
+Package: python3-catkin-pkg-modules
+Version: 1.0.0-1
+Architecture: all
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Installed-Size: 252
+Depends: python3:any (>= 3.6~), python3-dateutil, python3-docutils, python3-pyparsing
+Conflicts: catkin, python3-catkin-pkg (<< 0.3.0)
+Replaces: python3-catkin-pkg (<< 0.3.0)
+Filename: pool/main/arm64/python3-catkin-pkg-modules_1.0.0-1_all.deb
+Size: 43200
+MD5sum: 641e147ddf41a4f138e57f526a63709f
+SHA1: eda57e4ba03c098e782d5e47f0bbdbedff7baef3
+SHA256: 303148fbacb632aba1335677d2c26c2e7cc89b6001e689bdca1024de2f9e6b32
+Section: python
+Priority: optional
+Homepage: http://wiki.ros.org/catkin_pkg
+Description: catkin package library
+ Library for retrieving information about catkin packages.
+
+Package: python3-rosdep-modules
+Version: 0.23.1-1
+Architecture: all
+Maintainer: Tully Foote, Ken Conley <tfoote@osrfoundation.org>
+Installed-Size: 328
+Depends: python3:any (>= 3.6~), ca-certificates, python3-rospkg-modules (>= 1.4.0), python3-yaml, python3-catkin-pkg-modules (>= 0.4.0), python3-rosdistro-modules (>= 0.7.5), python3-setuptools, sudo
+Conflicts: python3-rosdep (<< 0.18.0), python3-rosdep2
+Replaces: python3-rosdep (<< 0.18.0)
+Filename: pool/main/arm64/python3-rosdep-modules_0.23.1-1_all.deb
+Size: 52680
+MD5sum: 44505401f270bc304f1788e935d42fa1
+SHA1: 2a0ca3745322b4302aaf7211558c6ad1de262d88
+SHA256: 962c21d420455e64468b1e6cab67ac122ef8f276e92659ca1d20fb0c08c882d2
+Section: python
+Priority: optional
+Homepage: http://wiki.ros.org/rosdep
+Description: rosdep package manager abstraction tool for ROS
+ Command-line tool for installing system dependencies on a variety of platforms.
+
+Package: python3-rosdistro-modules
+Version: 0.9.0-1
+Architecture: all
+Maintainer: Wim Meeussen, Dirk Thomas <wim@hidof.com, dthomas@osrfoundation.org>
+Installed-Size: 259
+Depends: python3-pkg-resources, python3-yaml, python3:any (>= 3.4~), ca-certificates, python3-catkin-pkg-modules, python3-rospkg-modules, python3-setuptools
+Conflicts: python3-rosdistro (<< 0.6.0)
+Replaces: python3-rosdistro (<< 0.6.0)
+Filename: pool/main/arm64/python3-rosdistro-modules_0.9.0-1_all.deb
+Size: 31924
+MD5sum: 64f883d244deb137eef6682d24a33e70
+SHA1: 58ef15db22cf846944c279fd8889974c51556495
+SHA256: a7b981c174a3b30d7e84d518c3bf3f3c38d52e64b4cf7f8483765aebe465606a
+Section: python
+Priority: optional
+Homepage: http://wiki.ros.org/rosdistro
+Description: A tool to work with rosdistro files
+ A tool to work with rosdistro files
+
+Package: python3-rospkg-modules
+Version: 1.5.0-1
+Architecture: all
+Maintainer: Ken Conley <kwc@willowgarage.com>
+Installed-Size: 132
+Depends: python3:any (>= 3.4~), python3-catkin-pkg-modules, python3-distro (>= 1.4.0) | python3 (<< 3.8), python3-yaml, lsb-release
+Conflicts: python3-rospkg (<< 1.1.0)
+Replaces: python3-rospkg (<< 1.1.0)
+Filename: pool/main/arm64/python3-rospkg-modules_1.5.0-1_all.deb
+Size: 24240
+MD5sum: 75b9164679ee2ac0ea44d21d3ceceb67
+SHA1: 049f474fa510f3f3bfb578baf89c324aeb2a9e12
+SHA256: dda61ccc7dafa1a7ca8dcc61a6de3322bc379790cea95cbf618f016aac4132bb
+Section: python
+Priority: optional
+Homepage: http://wiki.ros.org/rospkg
+Description: ROS package library
+         Library for retrieving information about ROS packages and stacks.
+
 Package: ros-noetic-actionlib
 Version: 1.14.3-0focal
 Architecture: arm64
