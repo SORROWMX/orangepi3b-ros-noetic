@@ -4,7 +4,7 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 188
+- **Всего .deb файлов**: 193
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
@@ -24,7 +24,7 @@
 - roscpp, rospy, rosgraph, rosmaster
 - rosparam, rostopic, rosservice, rostest
 
-### Система сборки (5 пакетов)
+### Система сборки (7 пакетов)
 - catkin, cmake-modules, rospack
 - rosmake, rosbuild, rosclean
 
@@ -95,6 +95,8 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-rospy_1.17.4-0bookworm_arm64.deb`
 
 ### Система сборки
+- `python3-catkin-pkg-modules_1.0.0-1_all.deb`
+- `python3-catkin-pkg_1.0.0-100_all.deb`
 - `ros-noetic-catkin_0.8.12-0bookworm_arm64.deb`
 - `ros-noetic-cmake-modules_0.5.2-0bookworm_arm64.deb`
 - `ros-noetic-rosbuild_1.15.10-0bookworm_arm64.deb`
@@ -195,6 +197,9 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `libboost-filesystem1.71.0_1.71.0-6ubuntu6_arm64.deb`
 - `libboost-system1.71.0_1.71.0-6ubuntu6_arm64.deb`
 - `libboost-thread1.71.0_1.71.0-6ubuntu6_arm64.deb`
+- `python3-rosdep-modules_0.23.1-1_all.deb`
+- `python3-rosdistro-modules_0.9.0-1_all.deb`
+- `python3-rospkg-modules_1.5.0-1_all.deb`
 - `ros-noetic-actionlib_1.14.3-0bookworm_arm64.deb`
 - `ros-noetic-angles_1.9.14-0bookworm_arm64.deb`
 - `ros-noetic-async-web-server-cpp_1.0.3-0bookworm_arm64.deb`
@@ -340,7 +345,7 @@ python3 rename_packages.py
 
 **Автоматически сгенерировано**: 2025-09-22  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 188 .deb файлов  
+**Количество пакетов**: 193 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
