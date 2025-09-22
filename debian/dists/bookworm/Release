@@ -2,25 +2,25 @@ Acquire-By-Hash: yes
 Architectures: arm64
 Codename: bookworm
 Components: main
-Date: Mon, 22 Sep 2025 07:30:20 +0000
+Date: Mon, 22 Sep 2025 07:34:15 +0000
 Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
 Label: Orange Pi 3B ROS Noetic
 Origin: Orange Pi 3B ROS Noetic Repository
 Suite: bookworm
 Version: 12
 MD5Sum:
- fcbbfab6eec2e4a9cd17824f24fc9cd7              289 Release
- 341922743248d9d0a7765e2d2508f946           151579 main/binary-arm64/Packages
- f2a87e92c9718a14513ab64fe494031b            41378 main/binary-arm64/Packages.gz
+ 30b08f8668d09e02079dbba06a4a86f9              289 Release
+ b83cba0260b2f1284aa04a01cb589010           150822 main/binary-arm64/Packages
+ 347bf5f59a7001193df24f78ad690b4d            41171 main/binary-arm64/Packages.gz
 SHA1:
- 0aae0f4977ebd81622c1668fb96841ada3217097              289 Release
- 6ca982a74d43f8f00a598d20b00b63bbd75f2265           151579 main/binary-arm64/Packages
- adceb933d09b3b18cc1295dca64d553f5aac3516            41378 main/binary-arm64/Packages.gz
+ 50e870ff64969ef3bf36a086c09e38db81b41f16              289 Release
+ d21f1f48349257ef163ccff6046f1021057db92f           150822 main/binary-arm64/Packages
+ 575f8953d91da381968e4d1ab131368f1c173351            41171 main/binary-arm64/Packages.gz
 SHA256:
- 00661e28ddeac0db357b6e80c6f92ab8ba19addcc929313c4a9d59bc141032af              289 Release
- 47d89bd131ac25df64038716c6123db895f620fb1bcae9e2ca2b583ecf30e92e           151579 main/binary-arm64/Packages
- 4adbe3cb95648c85b313f4448804c813cf229541a9ee58474fb999a72a16d376            41378 main/binary-arm64/Packages.gz
+ a1fb10c15caec81e7743217f81d19de02c9996bcd253d6457d5708fe7fe3f1f2              289 Release
+ 17d24b6c5d7a93573801a6f78c42b6765a92fb01daeeb1dfa4a2f623770fa463           150822 main/binary-arm64/Packages
+ 1ce67b005fa2aab4060b9cc744d4341b389e1c55d48c817d5ba4d7f9a74bc33b            41171 main/binary-arm64/Packages.gz
 SHA512:
- 98e199edeb265582ac6130d1da06d81c31ed60a155d6cee9ec1429224bb6d68792d755faa9889f6791d57dfbf5fc673623a46e4b1ebed03d852a45dbee4592c3              289 Release
- 7494b139b47b71341eaa57204a705ea0adaa7ed3243b9a6f9bad77d4a74eca7b9e455fea9fe339dece51dc4b332e31af1b485c7be2144167419a32793b704b7c           151579 main/binary-arm64/Packages
- aefc92e9cbc51a91d71e0459cf590b746f31d3c0afd5e0cf47e49360a89f23c6ca865e67aba9f4458e0c5b557d06b1b6897f3d9673f377875fe4c51b194badd0            41378 main/binary-arm64/Packages.gz
+ 709938ec7b83c72035ea8905363b3e30db8bf58d29f8ba549c23c93bd2a98f0cb004004abef33fb618c68e151cd6b6d98fc573de56e34be0d5303936e017e19e              289 Release
+ d1d4f2e05a0c698c7fad83b1351bf6d1625702931f6c201d6eb1ec35003d77afa097d7b6c8b1fde45f1af1895d3aad4b5e2b135429aef74b7b0763c17f2f7107           150822 main/binary-arm64/Packages
+ 0e69219585de4853ac76f8ae4e92fb5be822907ee809df517c9c0ae073533fa4c2a00e3c8619d4187fd5e30ab635a82e90a2a4ff099d42176f320449b5a010eb            41171 main/binary-arm64/Packages.gz

@@ -168,25 +168,6 @@ Homepage: http://wiki.ros.org/rosdistro
 Description: A tool to work with rosdistro files
  A tool to work with rosdistro files
 
-Package: python3-rospkg-modules
-Version: 1.5.0-1
-Architecture: all
-Maintainer: Ken Conley <kwc@willowgarage.com>
-Installed-Size: 132
-Depends: python3:any (>= 3.4~), python3-catkin-pkg-modules, python3-distro (>= 1.4.0) | python3 (<< 3.8), python3-yaml, lsb-release
-Conflicts: python3-rospkg (<< 1.1.0)
-Replaces: python3-rospkg (<< 1.1.0)
-Filename: pool/main/arm64/python3-rospkg-modules_1.5.0-1_all.deb
-Size: 24240
-MD5sum: 75b9164679ee2ac0ea44d21d3ceceb67
-SHA1: 049f474fa510f3f3bfb578baf89c324aeb2a9e12
-SHA256: dda61ccc7dafa1a7ca8dcc61a6de3322bc379790cea95cbf618f016aac4132bb
-Section: python
-Priority: optional
-Homepage: http://wiki.ros.org/rospkg
-Description: ROS package library
-         Library for retrieving information about ROS packages and stacks.
-
 Package: ros-noetic-actionlib
 Version: 1.14.3-0focal
 Architecture: arm64
