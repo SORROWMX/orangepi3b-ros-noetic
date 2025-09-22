@@ -93,6 +93,128 @@ Description: portable C++ multi-threading
  registers.
 Original-Maintainer: Debian Boost Team <team+boost@tracker.debian.org>
 
+Package: libgeographic-dev
+Source: geographiclib
+Version: 1.51-1
+Architecture: arm64
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 2250
+Depends: libgeographic19 (= 1.51-1)
+Suggests: geographiclib-doc
+Conflicts: libgeographiclib-dev
+Replaces: libgeographiclib-dev
+Filename: pool/main/arm64/libgeographic-dev_1.51-1_arm64.deb
+Size: 382248
+MD5sum: f3f997aa73849487670a6a8cb08694c9
+SHA1: 4611374ff00f0d663bcff7b239dd962b09a9bce6
+SHA256: e2f69b8c2797a2498b8dd07129f1641908c64a2478b40161ccc94a23ddd5c6ac
+Section: libdevel
+Priority: optional
+Homepage: https://geographiclib.sourceforge.io/
+Description: C++ library to solve some geodesic problems -- development files
+ GeographicLib is a small set of C++ classes for converting between
+ geographic, UTM, UPS, MGRS, geocentric, and local cartesian coordinates,
+ for geoid calculations, and for computing geodesic. It is a suitable
+ replacement for the core functionality provided by NGA Geotrans.
+ .
+ This package contains the files used to develop applications that use the
+ GeographicLib library.
+
+Package: libgeographic19
+Source: geographiclib
+Version: 1.51-1
+Architecture: arm64
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 639
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 4.5), libstdc++6 (>= 5.2)
+Suggests: geographiclib-tools
+Conflicts: libgeographic13, libgeographiclib10
+Replaces: libgeographic13, libgeographiclib10
+Filename: pool/main/arm64/libgeographic19_1.51-1_arm64.deb
+Size: 236368
+MD5sum: 8a5f65d74515045cdb7d66a49c17aabc
+SHA1: c5f1925350b767e34b1b37024351037c39871a95
+SHA256: 1442ddb635cfbde5f18c71bff1a4f9ccaf8ab6d26f15146fce26a12f1d668001
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://geographiclib.sourceforge.io/
+Description: C++ library to solve some geodesic problems -- library
+ GeographicLib is a small set of C++ classes for converting between
+ geographic, UTM, UPS, MGRS, geocentric, and local cartesian coordinates,
+ for geoid calculations, and for computing geodesic. It is a suitable
+ replacement for the core functionality provided by NGA Geotrans.
+ .
+ This package contains the GeographicLib shared library used at run-time
+ by applications.
+
+Package: liborocos-kdl1.4
+Source: orocos-kdl (1.4.0-11)
+Version: 1.4.0-11+b2
+Architecture: arm64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 922
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Filename: pool/main/arm64/liborocos-kdl1.4_1.4.0-11+b2_arm64.deb
+Size: 237484
+MD5sum: c6449af14ba9c55d6d4d005aabe88b93
+SHA1: 1c09cc725bfe358bad3d1bbff9c24ab56eb74d01
+SHA256: 26b9a94d2ea267913334dbf4403b0bff0804962e38c9fcdbb2f9f29f558a6322
+Section: libs
+Priority: optional
+Homepage: http://www.orocos.org/kdl
+Description: Kinematics and Dynamics Library runtime
+ Orocos project to supply RealTime usable kinematics and dynamics code,
+ it contains code for rigid body kinematics calculations and
+ representations for kinematic structures and their inverse and forward
+ kinematic solvers. This package contains the library itself.
+
+Package: libros-rosgraph-msgs-dev
+Source: ros-ros-comm-msgs
+Version: 1.11.4-1
+Architecture: arm64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 55
+Depends: libstd-msgs-dev
+Filename: pool/main/arm64/libros-rosgraph-msgs-dev_1.11.4-1_arm64.deb
+Size: 10272
+MD5sum: 9ba9aca432d37f3388eb8b9de820df80
+SHA1: 4cb20ece0c6f55357f903b851186fd9b9109bc85
+SHA256: 56f03f62ce7aa2fc09b853d4b5b23927e3397dbfd2016cf99c543f67c7e55ff2
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://wiki.ros.org/common_msgs
+Description: Messages relating to the Robot OS Computation Graph
+ This package is part of Robot OS (ROS). rosgraph_msgs contains
+ messages relating to the ROS Computation Graph. Most users are not
+ expected to interact with the messages in this package, and it is
+ strongly advised against. These messages are generally wrapped in
+ higher level APIs.
+
+Package: libstd-msgs-dev
+Source: ros-std-msgs
+Version: 0.5.14-1
+Architecture: arm64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 264
+Depends: ros-message-runtime
+Filename: pool/main/arm64/libstd-msgs-dev_0.5.14-1_arm64.deb
+Size: 19396
+MD5sum: 2f4798f2ed774d2ab73c7a8ad9170b79
+SHA1: 8f30bf2ee42bec518c09220ffdd6c52208effcaf
+SHA256: 5174a434938453c051a7f33629f492385e4963c73c42724913b187c7f2d44d80
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://wiki.ros.org/std_msgs
+Description: C/C++ headers for Standard Robot OS Messages
+ This package is part of Robot OS (ROS). It contains development C++
+ headers for the ROS std_msgs library. This library provides wrappers
+ for ROS primitive types, which are documented in the msg
+ specification. It also contains the Empty type, which is useful for
+ sending an empty signal.
+
 Package: python3-catkin-pkg
 Version: 1.0.0-100
 Architecture: all

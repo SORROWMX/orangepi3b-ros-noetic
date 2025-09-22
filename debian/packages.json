@@ -33,6 +33,46 @@
       "url": "libboost-thread1.71.0_1.71.0-6ubuntu6_arm64.deb"
     },
     {
+      "name": "libgeographic-dev_1.51-1_arm64.deb",
+      "size": "0.36 MB",
+      "size_bytes": 382248,
+      "category": "other",
+      "description": "",
+      "url": "libgeographic-dev_1.51-1_arm64.deb"
+    },
+    {
+      "name": "libgeographic19_1.51-1_arm64.deb",
+      "size": "0.23 MB",
+      "size_bytes": 236368,
+      "category": "other",
+      "description": "",
+      "url": "libgeographic19_1.51-1_arm64.deb"
+    },
+    {
+      "name": "liborocos-kdl1.4_1.4.0-11+b2_arm64.deb",
+      "size": "0.23 MB",
+      "size_bytes": 237484,
+      "category": "other",
+      "description": "",
+      "url": "liborocos-kdl1.4_1.4.0-11+b2_arm64.deb"
+    },
+    {
+      "name": "libros-rosgraph-msgs-dev_1.11.4-1_arm64.deb",
+      "size": "0.01 MB",
+      "size_bytes": 10272,
+      "category": "communication",
+      "description": "Message definitions for ROS",
+      "url": "libros-rosgraph-msgs-dev_1.11.4-1_arm64.deb"
+    },
+    {
+      "name": "libstd-msgs-dev_0.5.14-1_arm64.deb",
+      "size": "0.02 MB",
+      "size_bytes": 19396,
+      "category": "messages",
+      "description": "Message definitions for ROS",
+      "url": "libstd-msgs-dev_0.5.14-1_arm64.deb"
+    },
+    {
       "name": "python3-catkin-pkg-modules_1.0.0-1_all.deb",
       "size": "0.04 MB",
       "size_bytes": 43200,
@@ -1553,7 +1593,7 @@
       "url": "ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb"
     }
   ],
-  "total_count": 194,
-  "generated_at": "2025-09-22T07:50:23Z",
+  "total_count": 199,
+  "generated_at": "2025-09-22T15:56:14Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }
