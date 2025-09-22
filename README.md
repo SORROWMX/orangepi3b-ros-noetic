@@ -4,7 +4,7 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 199
+- **Всего .deb файлов**: 200
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
@@ -195,6 +195,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-xmlrpcpp-dbgsym_1.17.4-0bookworm_arm64.deb`
 
 ### Прочие пакеты
+- `dhcpcd5_9.4.1-24~deb12u4_all.deb`
 - `hddtemp_0.3-beta15-54_arm64.deb`
 - `libboost-filesystem1.71.0_1.71.0-6ubuntu6_arm64.deb`
 - `libboost-system1.71.0_1.71.0-6ubuntu6_arm64.deb`
@@ -351,7 +352,7 @@ python3 rename_packages.py
 
 **Автоматически сгенерировано**: 2025-09-22  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 199 .deb файлов  
+**Количество пакетов**: 200 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
