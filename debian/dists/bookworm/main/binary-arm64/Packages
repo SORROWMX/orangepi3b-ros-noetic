@@ -271,6 +271,35 @@ Homepage: http://wiki.ros.org/rosdep
 Description: rosdep package manager abstraction tool for ROS
  Command-line tool for installing system dependencies on a variety of platforms.
 
+Package: python3-rosdistro
+Source: ros-rosdistro
+Version: 0.9.0-1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 286
+Depends: python3-catkin-pkg, python3-pkg-resources, python3-rospkg, python3-yaml, python3:any
+Filename: pool/main/arm64/python3-rosdistro_0.9.0-1_all.deb
+Size: 36050
+MD5sum: b3ac9619b622f08440f495fc785bdfad
+SHA1: e7ffbf46e997e7d9662c54686dd5ceb9a69c674d
+SHA256: 4653414baa996f786d7202afe44f08543843ed6c2004aeea38ae60ac8cd2cf4e
+Section: python
+Priority: optional
+Homepage: https://wiki.ros.org/rosdistro
+Description: Tool to work with rosdistro files (for Robot OS, Python 3)
+ This package is part of Robot OS (ROS). The rosdistro tool allows you
+ to get access to the full dependency tree and the vcs information of
+ all packages and repositories.
+ .
+ rosdistro is a file format for managing ROS Distributions and the ROS
+ stacks they contain. This file format is used as input to a variety
+ of tools in the ROS build and release toolchain, from stack release
+ tools to rosdoc. The rosdistro format has changed for Catkin-based
+ repositories.
+ .
+ This package installs the library for Python 3.
+Original-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+
 Package: python3-rosdistro-modules
 Version: 0.9.0-1
 Architecture: all
