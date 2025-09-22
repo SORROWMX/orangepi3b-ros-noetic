@@ -105,14 +105,6 @@
       "url": "python3-rosdistro-modules_0.9.0-1_all.deb"
     },
     {
-      "name": "python3-rosdistro_0.9.0-1_all.deb",
-      "size": "0.03 MB",
-      "size_bytes": 36050,
-      "category": "other",
-      "description": "",
-      "url": "python3-rosdistro_0.9.0-1_all.deb"
-    },
-    {
       "name": "python3-rospkg-modules_1.5.0-1_all.deb",
       "size": "0.02 MB",
       "size_bytes": 24240,
@@ -1601,7 +1593,7 @@
       "url": "ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb"
     }
   ],
-  "total_count": 200,
-  "generated_at": "2025-09-22T20:06:03Z",
+  "total_count": 199,
+  "generated_at": "2025-09-22T20:20:42Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }
