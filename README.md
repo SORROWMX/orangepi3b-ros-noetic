@@ -4,7 +4,7 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 200
+- **Всего .deb файлов**: 202
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
@@ -204,7 +204,9 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `libgeographic19_1.51-1_arm64.deb`
 - `liborocos-kdl1.4_1.4.0-11+b2_arm64.deb`
 - `python3-rosdep-modules_0.23.1-1_all.deb`
+- `python3-rosdep_0.23.1-1_all.deb`
 - `python3-rosdistro-modules_0.9.0-1_all.deb`
+- `python3-rosdistro_0.9.0-100_all.deb`
 - `python3-rospkg-modules_1.5.0-1_all.deb`
 - `python3-rospkg_1.5.0-100_all.deb`
 - `ros-noetic-actionlib_1.14.3-0bookworm_arm64.deb`
@@ -352,7 +354,7 @@ python3 rename_packages.py
 
 **Автоматически сгенерировано**: 2025-09-22  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 200 .deb файлов  
+**Количество пакетов**: 202 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
