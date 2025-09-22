@@ -269,6 +269,24 @@ Homepage: http://wiki.ros.org/catkin_pkg
 Description: catkin package library
  Library for retrieving information about catkin packages.
 
+Package: python3-rosdep
+Version: 0.23.1-1
+Architecture: all
+Maintainer: Tully Foote, Ken Conley <tfoote@osrfoundation.org>
+Installed-Size: 21
+Depends: python3:any (>= 3.6~), python3-rosdep-modules (>= 0.23.1)
+Conflicts: python-rosdep, python-rosdep2, python3-rosdep2
+Filename: pool/main/arm64/python3-rosdep_0.23.1-1_all.deb
+Size: 3532
+MD5sum: b66dcccd6d4a7e5b985ed793426a8480
+SHA1: 195900d00b5a3cfd40892c0b93ea4ebd4c209541
+SHA256: 10af5ffdaaaacc3bfb160e27efd8452fe42744b4a9946a63652718c826bf8b16
+Section: python
+Priority: optional
+Homepage: http://wiki.ros.org/rosdep
+Description: rosdep package manager abstraction tool for ROS
+ Command-line tool for installing system dependencies on a variety of platforms.
+
 Package: python3-rosdep-modules
 Version: 0.23.1-1
 Architecture: all
@@ -287,6 +305,24 @@ Priority: optional
 Homepage: http://wiki.ros.org/rosdep
 Description: rosdep package manager abstraction tool for ROS
  Command-line tool for installing system dependencies on a variety of platforms.
+
+Package: python3-rosdistro
+Version: 0.9.0-100
+Architecture: all
+Maintainer: Wim Meeussen, Dirk Thomas <wim@hidof.com, dthomas@osrfoundation.org>
+Installed-Size: 39
+Depends: python3-pkg-resources, python3-yaml, python3:any (>= 3.4~), ca-certificates, python3-rosdistro-modules (>= 0.9.0), python3-setuptools
+Conflicts: python-rosdistro
+Filename: pool/main/arm64/python3-rosdistro_0.9.0-100_all.deb
+Size: 6384
+MD5sum: 2dd841c803682107366474f4a54fe233
+SHA1: 9790b3cd57c1b0974cdb1db8746723a5014ee53e
+SHA256: 01244d939c99ed8eabd0e037749109de421576b304cdf388fb6388c5ff795b74
+Section: python
+Priority: optional
+Homepage: http://wiki.ros.org/rosdistro
+Description: A tool to work with rosdistro files
+ A tool to work with rosdistro files
 
 Package: python3-rosdistro-modules
 Version: 0.9.0-1
