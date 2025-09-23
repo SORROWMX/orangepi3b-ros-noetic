@@ -270,7 +270,6 @@
         .tutorial-section {
             background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
             border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             padding: 40px;
             margin-bottom: 30px;
             position: relative;
@@ -614,6 +613,49 @@
         .package-tab-content.active {
             display: block;
         }
+        
+        /* Pagination Styles */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .pagination-btn {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            color: #666;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+        
+        .pagination-btn:hover {
+            background: #f8f9fa;
+            border-color: #667eea;
+        }
+        
+        .pagination-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .pagination-info {
+            color: #666;
+            font-size: 14px;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
@@ -808,6 +850,8 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
         let allPackages = [];
         let filteredPackages = [];
         let currentLanguage = 'ru';
+        let currentPage = 1;
+        let packagesPerPage = 15;
         
         // Auto-detect browser language
         function detectBrowserLanguage() {
@@ -927,11 +971,26 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
             const core = allPackages.filter(p => p.category === 'core').length;
             const debug = allPackages.filter(p => p.category === 'debug').length;
             
-            // Calculate total size (simplified)
+            // Calculate total size (convert to bytes first)
             const totalSize = allPackages.reduce((sum, pkg) => {
-                const sizeStr = pkg.size.replace(/[^\d.]/g, '');
-                const size = parseFloat(sizeStr) || 0;
-                return sum + size;
+                const sizeStr = pkg.size || '0';
+                let sizeInBytes = 0;
+                
+                if (sizeStr.includes('KB')) {
+                    const kb = parseFloat(sizeStr.replace(/[^\d.]/g, '')) || 0;
+                    sizeInBytes = kb * 1024;
+                } else if (sizeStr.includes('MB')) {
+                    const mb = parseFloat(sizeStr.replace(/[^\d.]/g, '')) || 0;
+                    sizeInBytes = mb * 1024 * 1024;
+                } else if (sizeStr.includes('GB')) {
+                    const gb = parseFloat(sizeStr.replace(/[^\d.]/g, '')) || 0;
+                    sizeInBytes = gb * 1024 * 1024 * 1024;
+                } else {
+                    // Assume bytes if no unit
+                    sizeInBytes = parseFloat(sizeStr.replace(/[^\d.]/g, '')) || 0;
+                }
+                
+                return sum + sizeInBytes;
             }, 0);
             
             // Animate stats cards
@@ -974,18 +1033,69 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                 return;
             }
             
-            const html = filteredPackages.map(pkg => `
+            // Calculate pagination
+            const totalPages = Math.ceil(filteredPackages.length / packagesPerPage);
+            const startIndex = (currentPage - 1) * packagesPerPage;
+            const endIndex = startIndex + packagesPerPage;
+            const pagePackages = filteredPackages.slice(startIndex, endIndex);
+            
+            // Render packages
+            const html = pagePackages.map(pkg => `
                 <div class="package-item">
                     <div>
                         <div class="package-name">${pkg.name}</div>
                         ${pkg.description ? `<div class="package-description">${pkg.description}</div>` : ''}
                         <div class="package-size">${pkg.size}</div>
                     </div>
-                    <a href="./pool/main/arm64/${pkg.url}" class="package-link" download>Download</a>
+                    <a href="./pool/main/arm64/${pkg.url}" class="package-link" download data-en="Download" data-ru="Скачать">Download</a>
                 </div>
             `).join('');
             
-            container.innerHTML = html;
+            // Add pagination
+            const paginationHtml = createPaginationHtml(totalPages, startIndex + 1, endIndex, filteredPackages.length);
+            
+            container.innerHTML = html + paginationHtml;
+        }
+        
+        // Create pagination HTML
+        function createPaginationHtml(totalPages, startItem, endItem, totalItems) {
+            if (totalPages <= 1) return '';
+            
+            const prevText = currentLanguage === 'ru' ? 'Назад' : 'Previous';
+            const nextText = currentLanguage === 'ru' ? 'Вперед' : 'Next';
+            const showingText = currentLanguage === 'ru' ? 'Показано' : 'Showing';
+            const ofText = currentLanguage === 'ru' ? 'из' : 'of';
+            
+            let paginationHtml = `
+                <div class="pagination">
+                    <button class="pagination-btn" onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>${prevText}</button>
+            `;
+            
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                    paginationHtml += `<button class="pagination-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+                } else if (i === currentPage - 3 || i === currentPage + 3) {
+                    paginationHtml += `<span class="pagination-info">...</span>`;
+                }
+            }
+            
+            paginationHtml += `
+                    <button class="pagination-btn" onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>${nextText}</button>
+                    <div class="pagination-info">${showingText} ${startItem}-${endItem} ${ofText} ${totalItems}</div>
+                </div>
+            `;
+            
+            return paginationHtml;
+        }
+        
+        // Change page function
+        function changePage(page) {
+            const totalPages = Math.ceil(filteredPackages.length / packagesPerPage);
+            if (page >= 1 && page <= totalPages) {
+                currentPage = page;
+                renderPackages();
+            }
         }
         
         // Filter packages
@@ -1004,6 +1114,8 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                 return matchesSearch && matchesCategory;
             });
             
+            // Reset to first page when filtering
+            currentPage = 1;
             renderPackages();
         }
         
@@ -1171,6 +1283,14 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
             document.querySelectorAll('.copy-btn').forEach(button => {
                 if (!button.classList.contains('copied')) {
                     button.textContent = lang === 'ru' ? 'Копировать' : 'Copy';
+                }
+            });
+            
+            // Update download button texts
+            document.querySelectorAll('.package-link').forEach(link => {
+                const text = link.getAttribute(`data-${lang}`);
+                if (text) {
+                    link.textContent = text;
                 }
             });
         }
