@@ -16,71 +16,145 @@
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 30px;
-            border-radius: 10px;
+            padding: 40px 30px;
+            border-radius: 15px;
             margin-bottom: 30px;
             text-align: center;
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
         }
         
         .header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
         }
         
         .header p {
-            margin: 10px 0 0 0;
-            font-size: 1.2em;
-            opacity: 0.9;
+            margin: 15px 0 0 0;
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
         }
         
         .stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
             margin-bottom: 30px;
+            padding: 20px;
         }
         
         .stat-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 30px 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
         }
         
         .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #667eea;
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            display: block;
         }
         
         .stat-label {
             color: #666;
-            margin-top: 5px;
+            font-size: 1.1em;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        
+        /* Animation for stats loading */
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .stat-card.animate {
+            animation: countUp 0.6s ease-out;
         }
         
         .search-container {
             margin-bottom: 30px;
+            text-align: center;
         }
         
         .search-box {
             width: 100%;
-            padding: 15px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
+            max-width: 500px;
+            padding: 18px 24px;
+            border: 2px solid #e1e5e9;
+            border-radius: 25px;
             font-size: 16px;
             box-sizing: border-box;
+            background: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
         .search-box:focus {
             outline: none;
             border-color: #667eea;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .search-box::placeholder {
+            color: #9ca3af;
+            font-weight: 400;
         }
         
         .package-list {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             overflow: hidden;
         }
         
@@ -132,18 +206,31 @@
             color: white;
         }
         
-        .loading {
+        .loading, .error, .no-results {
             text-align: center;
             padding: 40px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .loading {
             color: #666;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
         }
         
         .error {
             background-color: #ffebee;
             color: #c62828;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+            border: 1px solid #ffcdd2;
+        }
+        
+        .no-results {
+            background-color: #fff3e0;
+            color: #f57c00;
+            border: 1px solid #ffcc02;
         }
         
         .category-filter {
@@ -181,18 +268,36 @@
         }
         
         .tutorial-section {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 30px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            padding: 40px;
             margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
         }
+  
         
         .tutorial-section h2 {
             margin-top: 0;
             color: #333;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
+            font-size: 2.2em;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .tutorial-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
         }
         
         .tutorial-steps {
@@ -200,16 +305,57 @@
         }
         
         .step {
-            margin-bottom: 25px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+        
+        .step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .step:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
         }
         
         .step h3 {
-            margin: 0 0 15px 0;
+            margin: 0 0 20px 0;
             color: #333;
+            font-size: 1.4em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+        }
+        
+        .step h3::before {
+            content: attr(data-step);
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            font-weight: 700;
+            flex-shrink: 0;
         }
         
         .code-block {
@@ -218,8 +364,23 @@
             padding: 15px;
             border-radius: 6px;
             font-family: 'Courier New', monospace;
-            position: relative;
             overflow-x: auto;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            min-height: 50px;
+        }
+        
+        .code-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+        
+        .code-wrapper {
+            flex: 1;
         }
         
         .code-block code {
@@ -231,147 +392,449 @@
         }
         
         .copy-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #667eea;
+            background: rgba(102, 126, 234, 0.9);
             color: white;
             border: none;
-            padding: 5px 10px;
-            border-radius: 4px;
+            padding: 12px 18px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 12px;
-            transition: background-color 0.2s;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            min-width: 80px;
+            text-align: center;
+            flex-shrink: 0;
+            height: fit-content;
+            align-self: center;
         }
         
         .copy-btn:hover {
-            background: #5a67d8;
+            background: rgba(90, 103, 216, 0.95);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         
         .copy-btn.copied {
-            background: #48bb78;
+            background: rgba(72, 187, 120, 0.9);
+            animation: pulse 0.6s ease-in-out;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
         
         .tutorial-note {
-            background: #e6fffa;
-            border: 1px solid #81e6d9;
-            border-radius: 8px;
-            padding: 20px;
-            margin-top: 20px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 25px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(14, 165, 233, 0.15);
+            border: 1px solid rgba(14, 165, 233, 0.1);
+        }
+        
+        .tutorial-note::before {
+            content: '💡';
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5em;
         }
         
         .tutorial-note h4 {
-            margin: 0 0 10px 0;
-            color: #234e52;
+            margin: 0 0 15px 0;
+            color: #0c4a6e;
+            font-size: 1.3em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .tutorial-note h4::before {
+            content: '💡';
+            font-size: 1.2em;
         }
         
         .tutorial-note p {
             margin: 0 0 15px 0;
-            color: #234e52;
+            color: #0c4a6e;
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+        
+        /* Language Switcher Styles */
+        .header-top {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        
+        .language-switcher {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .lang-btn {
+            padding: 10px 18px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .lang-btn:hover,
+        .lang-btn.active {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Tabs Styles */
+        .tabs-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .tabs-nav {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .tab-btn {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666;
+        }
+        
+        .tab-btn:hover {
+            background: #e9ecef;
+            color: #333;
+        }
+        
+        .tab-btn.active {
+            background: white;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 30px;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Package Tabs Styles */
+        .packages-tabs-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .packages-tabs-nav {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .package-tab-btn {
+            padding: 12px 20px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            border-radius: 20px;
+            margin: 2px;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .package-tab-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+        
+        .package-tab-btn:hover::before {
+            left: 100%;
+        }
+        
+        .package-tab-btn:hover {
+            background: #e9ecef;
+            color: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .package-tab-btn.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .package-tab-content {
+            display: none;
+            padding: 20px;
+        }
+        
+        .package-tab-content.active {
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>🤖 ROS Noetic Packages</h1>
-        <p>Debian Repository for Orange Pi 3B (ARM64)</p>
+        <div class="header-top">
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="ru">🇷🇺 Русский</button>
+                <button class="lang-btn" data-lang="en">🇺🇸 English</button>
+            </div>
+        </div>
+        <h1 data-en="🤖 ROS Noetic Packages" data-ru="🤖 ROS Noetic Пакеты">🤖 ROS Noetic Packages</h1>
+        <p data-en="Debian Repository for Orange Pi 3B (ARM64)" data-ru="Debian Репозиторий для Orange Pi 3B (ARM64)">Debian Repository for Orange Pi 3B (ARM64)</p>
     </div>
     
-    <div class="tutorial-section">
-        <h2>📋 Repository Setup Tutorial</h2>
+    <div class="tabs-container">
+        <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="tutorial">
+                <span data-en="📋 Setup Tutorial" data-ru="📋 Установка">📋 Setup Tutorial</span>
+            </button>
+            <button class="tab-btn" data-tab="packages">
+                <span data-en="📦 Packages" data-ru="📦 Пакеты">📦 Packages</span>
+            </button>
+            <button class="tab-btn" data-tab="stats">
+                <span data-en="📊 Statistics" data-ru="📊 Статистика">📊 Statistics</span>
+            </button>
+        </div>
+        
+        <div class="tab-content active" id="tutorial">
+            <div class="tutorial-section">
+                <h2 data-en="📋 Repository Setup Tutorial" data-ru="📋 Руководство по настройке репозитория">📋 Repository Setup Tutorial</h2>
         <div class="tutorial-steps">
             <div class="step">
-                <h3>Step 1: Add GPG Key</h3>
-                <div class="code-block">
-                    <code>sudo install -d -m 0755 /etc/apt/keyrings
+                <h3 data-step="1" data-en="Add GPG Key" data-ru="Добавить GPG ключ">Add GPG Key</h3>
+                <div class="code-container">
+                    <div class="code-wrapper">
+                        <div class="code-block">
+                            <code>sudo install -d -m 0755 /etc/apt/keyrings
 curl -fsSL https://sorrowmx.github.io/orangepi3b-ros-noetic/public-key.asc | sudo gpg --dearmor -o /etc/apt/keyrings/orangepi-ros-noetic.gpg
 sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
+                        </div>
+                    </div>
                     <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
                 </div>
             </div>
             
             <div class="step">
-                <h3>Step 2: Add Repository</h3>
-                <div class="code-block">
-                    <code>echo "deb [arch=arm64 signed-by=/etc/apt/keyrings/orangepi-ros-noetic.gpg] https://sorrowmx.github.io/orangepi3b-ros-noetic/debian bookworm main" | sudo tee /etc/apt/sources.list.d/ros-noetic-orangepi.list</code>
+                <h3 data-step="2" data-en="Add Repository" data-ru="Добавить репозиторий">Add Repository</h3>
+                <div class="code-container">
+                    <div class="code-wrapper">
+                        <div class="code-block">
+                            <code>echo "deb [arch=arm64 signed-by=/etc/apt/keyrings/orangepi-ros-noetic.gpg] https://sorrowmx.github.io/orangepi3b-ros-noetic/debian bookworm main" | sudo tee /etc/apt/sources.list.d/ros-noetic-orangepi.list</code>
+                        </div>
+                    </div>
                     <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
                 </div>
             </div>
             
             <div class="step">
-                <h3>Step 3: Update Package List</h3>
-                <div class="code-block">
-                    <code>sudo apt update</code>
+                <h3 data-step="3" data-en="Update Package List" data-ru="Обновить список пакетов">Update Package List</h3>
+                <div class="code-container">
+                    <div class="code-wrapper">
+                        <div class="code-block">
+                            <code>sudo apt update</code>
+                        </div>
+                    </div>
                     <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
                 </div>
             </div>
             
             <div class="step">
-                <h3>Step 4: Install ROS Packages</h3>
-                <div class="code-block">
-                    <code>sudo apt install ros-noetic-ros-core ros-noetic-ros-base</code>
+                <h3 data-step="4" data-en="Install ROS Packages" data-ru="Установить ROS пакеты">Install ROS Packages</h3>
+                <div class="code-container">
+                    <div class="code-wrapper">
+                        <div class="code-block">
+                            <code>sudo apt install ros-noetic-ros-core ros-noetic-ros-base</code>
+                        </div>
+                    </div>
                     <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
                 </div>
             </div>
         </div>
         
         <div class="tutorial-note">
-            <h4>💡 Alternative: Manual Installation</h4>
-            <p>You can also download individual .deb files from the list below and install them manually:</p>
+            <h4 data-en="💡 Alternative: Manual Installation" data-ru="💡 Альтернатива: Ручная установка">💡 Alternative: Manual Installation</h4>
+            <p data-en="You can also download individual .deb files from the list below and install them manually:" data-ru="Вы также можете скачать отдельные .deb файлы из списка ниже и установить их вручную:">You can also download individual .deb files from the list below and install them manually:</p>
             <div class="code-block">
                 <code>sudo dpkg -i *.deb && sudo apt-get install -f</code>
                 <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
             </div>
         </div>
-    </div>
-    
-    <div class="stats">
+            </div>
+        </div>
+        
+        <div class="tab-content" id="packages">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchBox" placeholder="Search packages..." data-en-placeholder="Search packages..." data-ru-placeholder="Поиск пакетов...">
+            </div>
+            
+            <div class="packages-tabs-container">
+                <div class="packages-tabs-nav">
+                    <button class="package-tab-btn active" data-package-tab="all" data-en="All Packages" data-ru="Все пакеты">All Packages</button>
+                    <button class="package-tab-btn" data-package-tab="core" data-en="Core" data-ru="Основные">Core</button>
+                    <button class="package-tab-btn" data-package-tab="communication" data-en="Communication" data-ru="Связь">Communication</button>
+                    <button class="package-tab-btn" data-package-tab="messages" data-en="Messages" data-ru="Сообщения">Messages</button>
+                    <button class="package-tab-btn" data-package-tab="tf" data-en="Transform" data-ru="Трансформации">Transform</button>
+                    <button class="package-tab-btn" data-package-tab="image" data-en="Image" data-ru="Изображения">Image</button>
+                    <button class="package-tab-btn" data-package-tab="utilities" data-en="Utilities" data-ru="Утилиты">Utilities</button>
+                    <button class="package-tab-btn" data-package-tab="debug" data-en="Debug" data-ru="Отладка">Debug</button>
+                </div>
+                
+                <div class="package-tab-content active" id="package-tab-all">
+                    <div class="package-list" id="packageList">
+                        <div class="loading" data-en="Loading packages..." data-ru="Загрузка пакетов...">Loading packages...</div>
+                    </div>
+                </div>
+                
+                <div class="package-tab-content" id="package-tab-core">
+                    <div class="package-list" id="packageListCore">
+                        <div class="loading" data-en="Loading core packages..." data-ru="Загрузка основных пакетов...">Loading core packages...</div>
+                    </div>
+                </div>
+                
+                <div class="package-tab-content" id="package-tab-communication">
+                    <div class="package-list" id="packageListCommunication">
+                        <div class="loading" data-en="Loading communication packages..." data-ru="Загрузка пакетов связи...">Loading communication packages...</div>
+                    </div>
+                </div>
+                
+                <div class="package-tab-content" id="package-tab-messages">
+                    <div class="package-list" id="packageListMessages">
+                        <div class="loading" data-en="Loading message packages..." data-ru="Загрузка пакетов сообщений...">Loading message packages...</div>
+                    </div>
+                </div>
+                
+                <div class="package-tab-content" id="package-tab-tf">
+                    <div class="package-list" id="packageListTf">
+                        <div class="loading" data-en="Loading transform packages..." data-ru="Загрузка пакетов трансформаций...">Loading transform packages...</div>
+                    </div>
+                </div>
+                
+                <div class="package-tab-content" id="package-tab-image">
+                    <div class="package-list" id="packageListImage">
+                        <div class="loading" data-en="Loading image packages..." data-ru="Загрузка пакетов изображений...">Loading image packages...</div>
+                    </div>
+                </div>
+                
+                <div class="package-tab-content" id="package-tab-utilities">
+                    <div class="package-list" id="packageListUtilities">
+                        <div class="loading" data-en="Loading utility packages..." data-ru="Загрузка утилит...">Loading utility packages...</div>
+                    </div>
+                </div>
+                
+                <div class="package-tab-content" id="package-tab-debug">
+                    <div class="package-list" id="packageListDebug">
+                        <div class="loading" data-en="Loading debug packages..." data-ru="Загрузка отладочных пакетов...">Loading debug packages...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="stats">
+            <div class="stats">
         <div class="stat-card">
             <div class="stat-number" id="total-packages">-</div>
-            <div class="stat-label">Total Packages</div>
+            <div class="stat-label" data-en="Total Packages" data-ru="Всего пакетов">Total Packages</div>
         </div>
         <div class="stat-card">
             <div class="stat-number" id="core-packages">-</div>
-            <div class="stat-label">Core Packages</div>
+            <div class="stat-label" data-en="Core Packages" data-ru="Основные пакеты">Core Packages</div>
         </div>
         <div class="stat-card">
             <div class="stat-number" id="debug-packages">-</div>
-            <div class="stat-label">Debug Symbols</div>
+            <div class="stat-label" data-en="Debug Symbols" data-ru="Отладочные символы">Debug Symbols</div>
         </div>
         <div class="stat-card">
             <div class="stat-number" id="total-size">-</div>
-            <div class="stat-label">Total Size</div>
+            <div class="stat-label" data-en="Total Size" data-ru="Общий размер">Total Size</div>
         </div>
-    </div>
-    
-    <div class="search-container">
-        <input type="text" class="search-box" id="searchBox" placeholder="Search packages...">
-    </div>
-    
-    <div class="category-filter">
-        <div class="category-buttons">
-            <button class="category-btn active" data-category="all">All</button>
-            <button class="category-btn" data-category="core">Core</button>
-            <button class="category-btn" data-category="communication">Communication</button>
-            <button class="category-btn" data-category="messages">Messages</button>
-            <button class="category-btn" data-category="tf">Transform</button>
-            <button class="category-btn" data-category="image">Image</button>
-            <button class="category-btn" data-category="utilities">Utilities</button>
-            <button class="category-btn" data-category="debug">Debug</button>
+            </div>
         </div>
-    </div>
-    
-    <div class="package-list" id="packageList">
-        <div class="loading">Loading packages...</div>
     </div>
     
     <div class="footer">
-        <p>Generated automatically by GitHub Actions | Last updated: <span id="lastUpdated">-</span></p>
+        <p data-en="Generated automatically by GitHub Actions | Last updated:" data-ru="Автоматически сгенерировано GitHub Actions | Последнее обновление:">Generated automatically by GitHub Actions | Last updated: <span id="lastUpdated">-</span></p>
     </div>
 
     <script>
         let allPackages = [];
         let filteredPackages = [];
+        let currentLanguage = 'ru';
+        
+        // Auto-detect browser language
+        function detectBrowserLanguage() {
+            // Check if user has previously selected a language
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang && (savedLang === 'en' || savedLang === 'ru')) {
+                return savedLang;
+            }
+            
+            // Get browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            
+            // Get all preferred languages
+            const preferredLangs = navigator.languages || [browserLang];
+            
+            // Check if Russian is preferred
+            for (let lang of preferredLangs) {
+                if (lang.toLowerCase().startsWith('ru')) {
+                    return 'ru';
+                }
+            }
+            
+            // Default to Russian (since it's first in the list)
+            return 'ru';
+        }
         
         // Load packages from the repository
         async function loadPackages() {
@@ -428,8 +891,8 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                 
             } catch (error) {
                 console.error('Error loading packages:', error);
-                document.getElementById('packageList').innerHTML = 
-                    '<div class="error">Error loading packages. Please try again later.</div>';
+                const noResultsText = currentLanguage === 'ru' ? 'Пакеты не найдены.' : 'No packages found.';
+                document.getElementById('packageList').innerHTML = `<div class="no-results">${noResultsText}</div>`;
             }
         }
         
@@ -473,6 +936,14 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                 return sum + size;
             }, 0);
             
+            // Animate stats cards
+            const statCards = document.querySelectorAll('.stat-card');
+            statCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('animate');
+                }, index * 100);
+            });
+            
             document.getElementById('total-packages').textContent = total;
             document.getElementById('core-packages').textContent = core;
             document.getElementById('debug-packages').textContent = debug;
@@ -490,10 +961,15 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
         
         // Render packages
         function renderPackages() {
-            const container = document.getElementById('packageList');
+            const activeTab = document.querySelector('.package-tab-btn.active');
+            const tabId = activeTab ? activeTab.dataset.packageTab : 'all';
+            const container = document.getElementById(`packageList${tabId === 'all' ? '' : tabId.charAt(0).toUpperCase() + tabId.slice(1)}`);
+            
+            if (!container) return;
             
             if (filteredPackages.length === 0) {
-                container.innerHTML = '<div class="loading">No packages found.</div>';
+                const noResultsText = currentLanguage === 'ru' ? 'Пакеты не найдены.' : 'No packages found.';
+                container.innerHTML = `<div class="no-results">${noResultsText}</div>`;
                 return;
             }
             
@@ -514,7 +990,7 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
         // Filter packages
         function filterPackages() {
             const searchTerm = document.getElementById('searchBox').value.toLowerCase();
-            const activeCategory = document.querySelector('.category-btn.active').dataset.category;
+            const activeCategory = document.querySelector('.package-tab-btn.active').dataset.packageTab;
             
             filteredPackages = allPackages.filter(pkg => {
                 const matchesSearch = pkg.name.toLowerCase().includes(searchTerm);
@@ -523,6 +999,37 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
             });
             
             renderPackages();
+        }
+        
+        // Switch package tab
+        function switchPackageTab(tabId) {
+            // Hide all package tab contents
+            document.querySelectorAll('.package-tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all package tab buttons
+            document.querySelectorAll('.package-tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(`package-tab-${tabId}`).classList.add('active');
+            
+            // Add active class to clicked tab button
+            document.querySelector(`[data-package-tab="${tabId}"]`).classList.add('active');
+            
+            // Filter and render packages for this category
+            filterPackages();
+        }
+        
+        // Initialize package filters
+        function initializePackageFilters() {
+            // Set "All" as default active filter for package tabs
+            document.querySelectorAll('.package-tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector('.package-tab-btn[data-package-tab="all"]').classList.add('active');
         }
         
         // Update last updated time
@@ -544,14 +1051,18 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
         
         // Copy to clipboard function
         function copyToClipboard(button) {
-            const codeBlock = button.parentElement;
+            const codeContainer = button.parentElement;
+            const codeBlock = codeContainer.querySelector('.code-block');
             const code = codeBlock.querySelector('code').textContent;
             
+            const copyText = currentLanguage === 'ru' ? 'Копировать' : 'Copy';
+            const copiedText = currentLanguage === 'ru' ? 'Скопировано!' : 'Copied!';
+            
             navigator.clipboard.writeText(code).then(() => {
-                button.textContent = 'Copied!';
+                button.textContent = copiedText;
                 button.classList.add('copied');
                 setTimeout(() => {
-                    button.textContent = 'Copy';
+                    button.textContent = copyText;
                     button.classList.remove('copied');
                 }, 2000);
             }).catch(err => {
@@ -564,17 +1075,161 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                 document.execCommand('copy');
                 document.body.removeChild(textArea);
                 
-                button.textContent = 'Copied!';
+                button.textContent = copiedText;
                 button.classList.add('copied');
                 setTimeout(() => {
-                    button.textContent = 'Copy';
+                    button.textContent = copyText;
                     button.classList.remove('copied');
                 }, 2000);
             });
         }
         
+        // Language switching functionality
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Save language preference
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update language buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+            
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-en], [data-ru]').forEach(element => {
+                const text = element.getAttribute(`data-${lang}`);
+                if (text) {
+                    element.textContent = text;
+                }
+            });
+            
+            // Update placeholders
+            document.querySelectorAll('[data-en-placeholder], [data-ru-placeholder]').forEach(element => {
+                const placeholder = element.getAttribute(`data-${lang}-placeholder`);
+                if (placeholder) {
+                    element.placeholder = placeholder;
+                }
+            });
+            
+            // Update error and loading states
+            updateStateMessages(lang);
+        }
+        
+        // Update state messages based on language
+        function updateStateMessages(lang) {
+            // Update loading messages
+            document.querySelectorAll('.loading').forEach(element => {
+                if (element.textContent.includes('Loading packages')) {
+                    element.textContent = lang === 'ru' ? 'Загрузка пакетов...' : 'Loading packages...';
+                } else if (element.textContent.includes('Loading core packages')) {
+                    element.textContent = lang === 'ru' ? 'Загрузка основных пакетов...' : 'Loading core packages...';
+                } else if (element.textContent.includes('Loading communication packages')) {
+                    element.textContent = lang === 'ru' ? 'Загрузка пакетов связи...' : 'Loading communication packages...';
+                } else if (element.textContent.includes('Loading message packages')) {
+                    element.textContent = lang === 'ru' ? 'Загрузка пакетов сообщений...' : 'Loading message packages...';
+                } else if (element.textContent.includes('Loading transform packages')) {
+                    element.textContent = lang === 'ru' ? 'Загрузка пакетов трансформаций...' : 'Loading transform packages...';
+                } else if (element.textContent.includes('Loading image packages')) {
+                    element.textContent = lang === 'ru' ? 'Загрузка пакетов изображений...' : 'Loading image packages...';
+                } else if (element.textContent.includes('Loading utility packages')) {
+                    element.textContent = lang === 'ru' ? 'Загрузка утилит...' : 'Loading utility packages...';
+                } else if (element.textContent.includes('Loading debug packages')) {
+                    element.textContent = lang === 'ru' ? 'Загрузка отладочных пакетов...' : 'Loading debug packages...';
+                }
+            });
+            
+            // Update error messages (now showing as no results)
+            document.querySelectorAll('.error').forEach(element => {
+                if (element.textContent.includes('Error loading packages')) {
+                    element.textContent = lang === 'ru' ? 'Пакеты не найдены.' : 'No packages found.';
+                    element.className = 'no-results';
+                }
+            });
+            
+            // Update no results messages
+            document.querySelectorAll('.no-results').forEach(element => {
+                if (element.textContent.includes('No packages found') || element.textContent.includes('Пакеты не найдены')) {
+                    element.textContent = lang === 'ru' ? 'Пакеты не найдены.' : 'No packages found.';
+                }
+            });
+            
+            // Update copy button texts
+            document.querySelectorAll('.copy-btn').forEach(button => {
+                if (!button.classList.contains('copied')) {
+                    button.textContent = lang === 'ru' ? 'Копировать' : 'Copy';
+                }
+            });
+        }
+        
+        // Tab switching functionality
+        function switchTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabId).classList.add('active');
+            
+            // Add active class to clicked tab button
+            document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
+        }
+        
+        // Initialize page
+        function initializePage() {
+            // Auto-detect and set language
+            const detectedLang = detectBrowserLanguage();
+            currentLanguage = detectedLang;
+            
+            // Set language without triggering events
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-lang="${detectedLang}"]`).classList.add('active');
+            
+            // Update all text content
+            switchLanguage(detectedLang);
+            
+            // Initialize package filters
+            initializePackageFilters();
+            
+            // Load packages
+            loadPackages();
+        }
+        
         // Load packages when page loads
-        loadPackages();
+        initializePage();
+        
+        // Event listeners for language switching
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                switchLanguage(lang);
+            });
+        });
+        
+        // Event listeners for tab switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                switchTab(tabId);
+            });
+        });
+        
+        // Event listeners for package tab switching
+        document.querySelectorAll('.package-tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-package-tab');
+                switchPackageTab(tabId);
+            });
+        });
     </script>
 </body>
 </html>
