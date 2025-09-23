@@ -438,13 +438,7 @@
             border: 1px solid rgba(14, 165, 233, 0.1);
         }
         
-        .tutorial-note::before {
-            content: '💡';
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 1.5em;
-        }
+    
         
         .tutorial-note h4 {
             margin: 0 0 15px 0;
@@ -703,10 +697,14 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
         </div>
         
         <div class="tutorial-note">
-            <h4 data-en="💡 Alternative: Manual Installation" data-ru="💡 Альтернатива: Ручная установка">💡 Alternative: Manual Installation</h4>
+            <h4 data-en=" Alternative: Manual Installation" data-ru="Альтернатива: Ручная установка">💡 Alternative: Manual Installation</h4>
             <p data-en="You can also download individual .deb files from the list below and install them manually:" data-ru="Вы также можете скачать отдельные .deb файлы из списка ниже и установить их вручную:">You can also download individual .deb files from the list below and install them manually:</p>
-            <div class="code-block">
-                <code>sudo dpkg -i *.deb && sudo apt-get install -f</code>
+            <div class="code-container">
+                <div class="code-wrapper">
+                    <div class="code-block">
+                        <code>sudo dpkg -i *.deb && sudo apt-get install -f</code>
+                    </div>
+                </div>
                 <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
             </div>
         </div>
@@ -944,19 +942,22 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                 }, index * 100);
             });
             
-            document.getElementById('total-packages').textContent = total;
-            document.getElementById('core-packages').textContent = core;
-            document.getElementById('debug-packages').textContent = debug;
-            document.getElementById('total-size').textContent = formatSize(totalSize);
+            const totalPackagesEl = document.getElementById('total-packages');
+            const corePackagesEl = document.getElementById('core-packages');
+            const debugPackagesEl = document.getElementById('debug-packages');
+            const totalSizeEl = document.getElementById('total-size');
+            
+            if (totalPackagesEl) totalPackagesEl.textContent = total;
+            if (corePackagesEl) corePackagesEl.textContent = core;
+            if (debugPackagesEl) debugPackagesEl.textContent = debug;
+            if (totalSizeEl) totalSizeEl.textContent = formatSize(totalSize);
         }
         
         // Format file size
         function formatSize(bytes) {
-            if (bytes === 0) return '0 B';
-            const k = 1024;
-            const sizes = ['B', 'KB', 'MB', 'GB'];
-            const i = Math.floor(Math.log(bytes) / Math.log(k));
-            return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+            if (bytes === 0) return '0 MB';
+            const mb = bytes / (1024 * 1024);
+            return parseFloat(mb.toFixed(1)) + ' MB';
         }
         
         // Render packages
@@ -989,8 +990,13 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
         
         // Filter packages
         function filterPackages() {
-            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
-            const activeCategory = document.querySelector('.package-tab-btn.active').dataset.packageTab;
+            const searchBox = document.getElementById('searchBox');
+            const activeTab = document.querySelector('.package-tab-btn.active');
+            
+            if (!searchBox || !activeTab) return;
+            
+            const searchTerm = searchBox.value.toLowerCase();
+            const activeCategory = activeTab.dataset.packageTab;
             
             filteredPackages = allPackages.filter(pkg => {
                 const matchesSearch = pkg.name.toLowerCase().includes(searchTerm);
@@ -1034,12 +1040,18 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
         
         // Update last updated time
         function updateLastUpdated() {
-            const now = new Date();
-            document.getElementById('lastUpdated').textContent = now.toLocaleString();
+            const lastUpdatedElement = document.getElementById('lastUpdated');
+            if (lastUpdatedElement) {
+                const now = new Date();
+                lastUpdatedElement.textContent = now.toLocaleString();
+            }
         }
         
         // Event listeners
-        document.getElementById('searchBox').addEventListener('input', filterPackages);
+        const searchBox = document.getElementById('searchBox');
+        if (searchBox) {
+            searchBox.addEventListener('input', filterPackages);
+        }
         
         document.querySelectorAll('.category-btn').forEach(btn => {
             btn.addEventListener('click', () => {
