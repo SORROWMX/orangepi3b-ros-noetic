@@ -897,6 +897,9 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                     updateStats();
                     renderPackages();
                     updateLastUpdated();
+                    
+                    // Update language for rendered elements
+                    updateLanguageForRenderedElements();
                     return;
                 }
                 
@@ -927,6 +930,9 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
                     updateStats();
                     renderPackages();
                     updateLastUpdated();
+                    
+                    // Update language for rendered elements
+                    updateLanguageForRenderedElements();
                 } else {
                     throw new Error('No packages found in directory');
                 }
@@ -1095,6 +1101,9 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
             if (page >= 1 && page <= totalPages) {
                 currentPage = page;
                 renderPackages();
+                
+                // Update language for rendered elements
+                updateLanguageForRenderedElements();
             }
         }
         
@@ -1117,6 +1126,9 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
             // Reset to first page when filtering
             currentPage = 1;
             renderPackages();
+            
+            // Update language for rendered elements
+            updateLanguageForRenderedElements();
         }
         
         // Switch package tab
@@ -1139,6 +1151,9 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
             
             // Filter and render packages for this category
             filterPackages();
+            
+            // Update language for rendered elements
+            updateLanguageForRenderedElements();
         }
         
         // Initialize package filters
@@ -1239,6 +1254,17 @@ sudo chmod 0644 /etc/apt/keyrings/orangepi-ros-noetic.gpg</code>
             
             // Update error and loading states
             updateStateMessages(lang);
+        }
+        
+        // Update language for rendered elements
+        function updateLanguageForRenderedElements() {
+            // Update download button texts
+            document.querySelectorAll('.package-link').forEach(link => {
+                const text = link.getAttribute(`data-${currentLanguage}`);
+                if (text) {
+                    link.textContent = text;
+                }
+            });
         }
         
         // Update state messages based on language
