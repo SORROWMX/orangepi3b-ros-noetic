@@ -4,7 +4,7 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 202
+- **Всего .deb файлов**: 204
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
@@ -211,6 +211,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `python3-rospkg_1.5.0-100_all.deb`
 - `ros-noetic-actionlib_1.14.3-0bookworm_arm64.deb`
 - `ros-noetic-angles_1.9.14-0bookworm_arm64.deb`
+- `ros-noetic-aruco-pose_0.25.0-0focal_arm64.deb`
 - `ros-noetic-async-web-server-cpp_1.0.3-0bookworm_arm64.deb`
 - `ros-noetic-bond-core_1.8.7-0bookworm_arm64.deb`
 - `ros-noetic-bond_1.8.7-0bookworm_arm64.deb`
@@ -252,6 +253,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-pluginlib_1.13.2-0bookworm_arm64.deb`
 - `ros-noetic-realtime-tools_1.16.1-0bookworm_arm64.deb`
 - `ros-noetic-ros-environment_1.3.2-0bookworm_arm64.deb`
+- `ros-noetic-ros-pytest_0.2.1-0focal_arm64.deb`
 - `ros-noetic-rosapi_0.11.18-0bookworm_arm64.deb`
 - `ros-noetic-rosauth_0.1.7-0bookworm_arm64.deb`
 - `ros-noetic-rosbash_1.15.10-0bookworm_arm64.deb`
@@ -354,7 +356,7 @@ python3 rename_packages.py
 
 **Автоматически сгенерировано**: 2025-09-24  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 202 .deb файлов  
+**Количество пакетов**: 204 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
