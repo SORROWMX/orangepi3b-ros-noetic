@@ -448,6 +448,21 @@ Homepage: http://wiki.ros.org/angles
 Description: This package provides a set of simple math utilities to work with angles.
  The utilities cover simple things like normalizing an angle and conversion between degrees and radians. But even if you're trying to calculate things like the shortest angular distance between two joint space positions of your robot, but the joint motion is constrained by joint limits, this package is what you need. The code in this package is stable and well tested. There are no plans for major changes in the near future.
 
+Package: ros-noetic-aruco-pose
+Version: 0.25.0-0focal
+Architecture: arm64
+Maintainer: Package Maintainer <maintainer@example.com>
+Installed-Size: 1328
+Depends: libc6 (>= 2.35), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-calib3d406 (>= 4.6.0+dfsg), libopencv-contrib406 (>= 4.6.0+dfsg), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), python3-docopt, ros-noetic-cv-bridge, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-image-transport, ros-noetic-message-generation, ros-noetic-message-runtime, ros-noetic-nodelet, ros-noetic-roscpp, ros-noetic-rostest, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-tf, ros-noetic-tf2, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-ros, ros-noetic-visualization-msgs
+Filename: pool/main/arm64/ros-noetic-aruco-pose_0.25.0-0focal_arm64.deb
+Size: 244944
+MD5sum: a8b1660c7af81169f2c3f4d36814df06
+SHA1: 254c6ed2d83f69ab4fcd1488bdd114fec5b22c48
+SHA256: fd13cd216acf1d3b1b8d2c80b0359f4040504cca0da5b2f9f4374fb069297f7f
+Section: misc
+Priority: optional
+Description: Positioning with ArUco markers
+
 Package: ros-noetic-async-web-server-cpp
 Version: 1.0.3-0focal
 Architecture: arm64
@@ -1851,6 +1866,21 @@ SHA256: 19f965374e0d4d43f759218628de6cd6ffd7e7ceca7f26468c8220b7fc7c2d90
 Section: misc
 Priority: optional
 Description: The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`, `ROS_PACKAGE_PATH`, and `ROS_ETC_DIR`.
+
+Package: ros-noetic-ros-pytest
+Version: 0.2.1-0focal
+Architecture: arm64
+Maintainer: Alexander Rössler <alex@machinekoder.com>
+Installed-Size: 52
+Depends: python3-pytest, python3-pytest-cov, ros-noetic-rospy
+Filename: pool/main/arm64/ros-noetic-ros-pytest_0.2.1-0focal_arm64.deb
+Size: 10332
+MD5sum: cd8126854f46db5e0e98301c07e62951
+SHA1: e8fde9154ab9d6b4f0c442ddb0006f857ca71f14
+SHA256: 3e715ec0ed5542e345c4307c874d2158079476026b52b8ea52380d512647d06e
+Section: misc
+Priority: optional
+Description: The ros_pytest package
 
 Package: ros-noetic-rosapi
 Version: 0.11.18-0focal
