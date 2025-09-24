@@ -48,6 +48,23 @@
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
             position: relative;
             z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .header h1 img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        
+        .header h1 img:hover {
+            transform: scale(1.1);
         }
         
         .header p {
@@ -658,6 +675,31 @@
             font-size: 14px;
             margin: 0 10px;
         }
+        
+        /* Responsive styles for header image */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2em;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .header h1 img {
+                width: 90px;
+                height: 90px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .header h1 img {
+                width: 80px;
+                height: 80px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -668,7 +710,10 @@
                 <button class="lang-btn" data-lang="en">🇺🇸 English</button>
             </div>
         </div>
-        <h1 data-en="🤖 ROS Noetic Packages" data-ru="🤖 ROS Noetic Пакеты">🤖 ROS Noetic Packages</h1>
+        <h1>
+            <img src="ros-logo.png" alt="ROS">
+            <span data-en="ROS Noetic Packages" data-ru="ROS Noetic Пакеты">ROS Noetic Packages</span>
+        </h1>
         <p data-en="Debian Repository for Orange Pi 3B (ARM64)" data-ru="Debian Репозиторий для Orange Pi 3B (ARM64)">Debian Repository for Orange Pi 3B (ARM64)</p>
     </div>
     
