@@ -781,6 +781,21 @@ Priority: optional
 Description: debug symbols for ros-noetic-control-toolbox
 Build-Ids: b5ea0891633ae7eb0066bc67c4dcf70c38403d6c
 
+Package: ros-noetic-coptra-blocks
+Version: 0.25.0-0focal
+Architecture: arm64
+Maintainer: Package Maintainer <maintainer@example.com>
+Installed-Size: 2537
+Depends: ros-noetic-message-generation, ros-noetic-message-runtime, ros-noetic-rospy
+Filename: pool/main/arm64/ros-noetic-coptra-blocks_0.25.0-0focal_arm64.deb.deb
+Size: 507052
+MD5sum: e0338b85b8cb3075a6e687f1ac47b109
+SHA1: 93f3ffeeea4388aa739e0d836375b9c9ada34b46
+SHA256: 8d637dc1ec3156c83ea688bebf2b61baa44af3029cb2b9240e5c64fdefddc188
+Section: misc
+Priority: optional
+Description: Blockly programming support for Coptra
+
 Package: ros-noetic-cpp-common
 Version: 0.7.3-0focal
 Architecture: arm64
