@@ -2784,6 +2784,20 @@ Homepage: http://wiki.ros.org/roswtf
 Description: roswtf is a tool for diagnosing issues with a running ROS system.
  Think of it as a FAQ implemented in code.
 
+Package: ros-noetic-roswww-static
+Version: 0.25.0-0focal
+Architecture: arm64
+Maintainer: Oleg Kalachev <okalachev@gmail.com>
+Installed-Size: 34
+Filename: pool/main/arm64/ros-noetic-roswww-static_0.25.0-0focal_arm64.deb
+Size: 6076
+MD5sum: becbd22a78fd95a20f0f1d09f11e5b0d
+SHA1: c393947550353ec4fa344be5617a8b746c48bdb2
+SHA256: 0c37944a6e218015bf70fc2179d15da03ecd5c4cdbb383d72bb043ca0d05d4bc
+Section: misc
+Priority: optional
+Description: Static web pages for ROS packages
+
 Package: ros-noetic-self-test
 Version: 1.12.1-0focal
 Architecture: arm64
