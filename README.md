@@ -4,7 +4,7 @@
 
 ## 📦 Статистика пакетов
 
-- **Всего .deb файлов**: 206
+- **Всего .deb файлов**: 207
 - **Архитектура**: ARM64 (aarch64)
 - **Целевая ОС**: Debian Bookworm (12)
 - **Дистрибуция ROS**: Noetic Ninjemys
@@ -240,6 +240,7 @@ sudo dpkg -i ros-noetic-tf2_*.deb
 - `ros-noetic-geographic-info_0.5.6-0bookworm_arm64.deb`
 - `ros-noetic-geometry2_0.7.10-0bookworm_arm64.deb`
 - `ros-noetic-geometry_1.13.4-0bookworm_arm64.deb`
+- `ros-noetic-gscam_1.0.1-0focal_arm64.deb`
 - `ros-noetic-kdl-conversions_1.13.4-0bookworm_arm64.deb`
 - `ros-noetic-libmavconn_1.20.1-0bookworm_arm64.deb`
 - `ros-noetic-mavlink_2021.3.3-0bookworm_arm64.deb`
@@ -358,7 +359,7 @@ python3 rename_packages.py
 
 **Автоматически сгенерировано**: 2025-10-17  
 **Версия ROS**: Noetic Ninjemys  
-**Количество пакетов**: 206 .deb файлов  
+**Количество пакетов**: 207 .deb файлов  
 **Скрипт генерации**: generate_readme.py  
 **Целевая ОС**: Debian Bookworm (12)  
 **Auto-updated**: ✅ GitHub Actions v4/v5 enabled
