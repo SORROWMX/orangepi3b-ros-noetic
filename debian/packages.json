@@ -577,6 +577,14 @@
       "url": "ros-noetic-geometry_1.13.4-0bookworm_arm64.deb"
     },
     {
+      "name": "ros-noetic-gscam_1.0.1-0focal_arm64.deb",
+      "size": "0.06 MB",
+      "size_bytes": 67308,
+      "category": "other",
+      "description": "",
+      "url": "ros-noetic-gscam_1.0.1-0focal_arm64.deb"
+    },
+    {
       "name": "ros-noetic-image-common_1.12.1-0bookworm_arm64.deb",
       "size": "0.00 MB",
       "size_bytes": 2908,
@@ -1649,7 +1657,7 @@
       "url": "ros-noetic-xmlrpcpp_1.17.4-0bookworm_arm64.deb"
     }
   ],
-  "total_count": 206,
-  "generated_at": "2025-10-17T07:19:03Z",
+  "total_count": 207,
+  "generated_at": "2025-10-17T15:13:43Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }

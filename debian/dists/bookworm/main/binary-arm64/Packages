@@ -1274,6 +1274,21 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/geometry2
 Description: A metapackage to bring in the default packages second generation Transform Library in ros, tf2.
 
+Package: ros-noetic-gscam
+Version: 1.0.1-0focal
+Architecture: arm64
+Maintainer: Jonathan Bohren <jbo@jhu.edu>
+Installed-Size: 379
+Depends: libboost-thread1.74.0 (>= 1.74.0+ds1), libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.16.0), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.6.0), libstdc++6 (>= 11), ros-noetic-camera-calibration-parsers, ros-noetic-camera-info-manager, ros-noetic-cv-bridge, ros-noetic-image-transport, ros-noetic-nodelet, ros-noetic-roscpp, ros-noetic-sensor-msgs
+Filename: pool/main/arm64/ros-noetic-gscam_1.0.1-0focal_arm64.deb
+Size: 67308
+MD5sum: f4a8b004f68523399b27669dbb0c2d59
+SHA1: a31b20fb242d0fff4bbd2b820be5e772c477e051
+SHA256: 41d9b85303abb3b148b9bcdffe801b9f63d6848bed85e00ea3dd572edd8ccdcd
+Section: misc
+Priority: optional
+Description: A ROS camera driver that uses gstreamer to connect to devices such as webcams.
+
 Package: ros-noetic-image-common
 Version: 1.12.1-0focal
 Architecture: arm64
