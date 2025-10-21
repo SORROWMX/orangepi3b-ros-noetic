@@ -452,13 +452,13 @@ Package: ros-noetic-aruco-pose
 Version: 0.25.0-0focal
 Architecture: arm64
 Maintainer: Package Maintainer <maintainer@example.com>
-Installed-Size: 1328
+Installed-Size: 1226
 Depends: libc6 (>= 2.35), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.0), libopencv-calib3d406 (>= 4.6.0+dfsg), libopencv-contrib406 (>= 4.6.0+dfsg), libopencv-core406 (>= 4.6.0+dfsg), libopencv-imgproc406 (>= 4.6.0+dfsg), libstdc++6 (>= 11), python3-docopt, ros-noetic-cv-bridge, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-image-transport, ros-noetic-message-generation, ros-noetic-message-runtime, ros-noetic-nodelet, ros-noetic-roscpp, ros-noetic-rostest, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-tf, ros-noetic-tf2, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-ros, ros-noetic-visualization-msgs
 Filename: pool/main/arm64/ros-noetic-aruco-pose_0.25.0-0focal_arm64.deb
-Size: 244944
-MD5sum: a8b1660c7af81169f2c3f4d36814df06
-SHA1: 254c6ed2d83f69ab4fcd1488bdd114fec5b22c48
-SHA256: fd13cd216acf1d3b1b8d2c80b0359f4040504cca0da5b2f9f4374fb069297f7f
+Size: 237336
+MD5sum: ef68f0411176bc1b43c9b44a9b5e6a5e
+SHA1: e4773133e52124f24da651a5a1637c863eb0fb40
+SHA256: ec6544b3670b8dbbdb34c3180f2a791baa170113da468078185bced5805443d9
 Section: misc
 Priority: optional
 Description: Positioning with ArUco markers

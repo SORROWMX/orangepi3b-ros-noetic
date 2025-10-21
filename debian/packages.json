@@ -179,7 +179,7 @@
     {
       "name": "ros-noetic-aruco-pose_0.25.0-0focal_arm64.deb",
       "size": "0.23 MB",
-      "size_bytes": 244944,
+      "size_bytes": 237336,
       "category": "other",
       "description": "",
       "url": "ros-noetic-aruco-pose_0.25.0-0focal_arm64.deb"
@@ -1658,6 +1658,6 @@
     }
   ],
   "total_count": 207,
-  "generated_at": "2025-10-21T07:20:00Z",
+  "generated_at": "2025-10-21T14:41:42Z",
   "repository_url": "https://SORROWMX.github.io/orangepi3b-ros-noetic/debian/"
 }
