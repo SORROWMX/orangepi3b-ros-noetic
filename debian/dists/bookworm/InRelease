@@ -5,41 +5,41 @@ Acquire-By-Hash: yes
 Architectures: arm64
 Codename: bookworm
 Components: main
-Date: Tue, 27 Jan 2026 07:11:37 +0000
+Date: Wed, 28 Jan 2026 07:10:39 +0000
 Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
 Label: Orange Pi 3B ROS Noetic
 Origin: Orange Pi 3B ROS Noetic Repository
 Suite: bookworm
 Version: 12
 MD5Sum:
- e3b38b4a8381633a7d5f25f93f3e26dd              289 Release
+ 4f02ec4b32c0718c3a9bd52ce383fcbe              289 Release
  013c1a215852e2850196a6d4889698fc           162855 main/binary-arm64/Packages
  e82f65590b535c7eb9375f6f5c333ecb            44520 main/binary-arm64/Packages.gz
 SHA1:
- 3802ad3c9fd6a27ab1df53697f2f4ec89b3e8274              289 Release
+ 808238a6f2ecf6a552fe9def3dddc9c440fd6c23              289 Release
  7adf0fd2c637d382a825b2c748dde2aa9c14ea72           162855 main/binary-arm64/Packages
  455495e51d1e0e181476a4d77fce50ed0fe3ce13            44520 main/binary-arm64/Packages.gz
 SHA256:
- ac29a18309ceefdae47cb50b9b6cf0ca5ec5259b594626280d4f657df91f22f4              289 Release
+ 1b0d7b210ebba621b15896832f029649af1ba6c350520b42764225f7391ba4dd              289 Release
  f401e264d813f2bc5ec0a0c260f0a99737da68fac0b8f94108cddb87498acc81           162855 main/binary-arm64/Packages
  790806f60c054aa185388f03a9ace8514ac3333835f066db42a74ea570150142            44520 main/binary-arm64/Packages.gz
 SHA512:
- f72323f1cd73d75df54fda3e2c72693588176947c516fb2f977ecdcd069278517d6234a37ece4fe15395927b0ec68c4dc7d5710a5fc3a11e063563428c567127              289 Release
+ 1d2399fe48502c49304e761ef1c39a3d42c8628be87e5b5f05c8f0340afb64d80c961d83285c78eaca276dd985ad77fa41de845b0d1304682a8c7300bf3db330              289 Release
  fe10629d6a5144e57ea2f46b858834105f486cfea899aefe1b8569b5a8b9048212e991dc29b596e5b299bc7a0bccae9fd4c84fb9d7c8d1e772b6120fe5aab7e1           162855 main/binary-arm64/Packages
  ba2702d0fb597e4b796016943c5d977764ad37922c7d97cc8ad104fb7b0ebfc57fc9cea8b90ba68e1da8a1284f4602d37ebf4672b887c65514d1c7181aac7be4            44520 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEZdjwhMAWvwDptARQd6AJ/Dr/AAAFAml4ZSkACgkQd6AJ/Dr/
-AAAPYA//cmStNeXp2Xcc9/13VaSHkZqdwfx8eFOPkd7I2+PM0dsGbCGnBkSs0vBq
-Lv1CYu5Bf30NMExhzEwk5bONZEY6tZVnL3FKI80jD41AJD4OnDL5QnftYvfgAMgl
-G5S+SdVbQDjWMZw5W1w6S6GHjIiC3Ki569S9cT/xKcyAZBjXj3hKhyeFo3wGANH+
-xGGTXE2MOjUUF2TDadjP1paAJrYzfGD7iaxaQlplXwiY+XPyX6/0unidR36M3YMi
-6ECbrtBQENylYYKpczq4ZSRYOfwj6fmOBeoCLKcdpVcaOz/Ux0EZHyRz67u7hHhi
-Z7613JIP6yry8l4KHSbc7QOy/tDOr26UMZyY/ZhOoaMTnMzFSO+shGEDE6zsORBm
-hXXgNuPVC51zDb5SrEV66+x9gDDgBQ4BVtUyFS4rAm32egPp3sNjsIuVhDtvwOz2
-W817r6jqA9jJo3HNVFDm3BzOlka/6Rq+jpl9i1JcpK7+/2bGwd41LQbGaD9qN/5p
-9q1CCbsi+U2JmKG2KsSDyJj97AbTWmhCnvFBLBo5kUbEul4BdZQ5cY3Ax2wnKIbl
-h4zCheFnz7JjzA/9omxeqb6k/sDDkxLis3tWqdPRP+/da73J+Qtsgb1LIBizyYe1
-yvZIoAkKb1mWP1u5ufJlGOYTXio75VkKHbZE9JOWhSkMbzf0Cds=
-=lYAN
+iQIzBAEBCgAdFiEEZdjwhMAWvwDptARQd6AJ/Dr/AAAFAml5tm8ACgkQd6AJ/Dr/
+AAD4XQ/+PdvP6s3iQk4ymL4ZuwHvaD69iscLHdHWUmdslxeb+hVRmKgIGPqetjB9
+nIdW22Z0M1cMws4pPqRKI7m9hu8hMVGKBjDL9DiSbXe0Z/im4zA4dofbiQ2vidVq
+wIs5W5gc9sTqdu2l6AvC34hxf0sOIKNozwCHkQcEKiFgllqtUoK5jt38NvW4fiD2
+Mi1PgNhVRrbyztEDnORNqpob1NeBi/RUR5enJm9MHQsQp2JlwJNk0UawiwD53YTv
+2z/bNEvv+HOgdB6jEzdjdNQfytUx4X6npc4zz+ZazYMjU8RTox6jok2uvPiZNxyx
+3BYAgld4GDUPB/EGwEo8rFiUTqpxDhyGVTA4dTUbrzDNksGJaZhyaMDaGWqCQMpX
+Oo3uJs37qo7nqSZZvlDebeLWklsqhq8syT3kaGmLQtXJCqdsEKEGmxsWFv+qmkfo
+oqh4LcnNqvkYp0y+zhdJ3JxA6v+IbOdfiudRNWhLrfB6Cgl4kjVId0+naoLImc8v
+rfBek9fO6XXcutg1VivGgnVo3K5B0UoYL002h6BETMhPkSYCTFkZ+DdNM0Yt9E2+
+VuYGuKMEYxcar8PEHPFbRm/zdhnYJpf45K5BObN098YceHsYovH1w7zIaPSxFFUF
+YqVAQncudsxgn47zg9jPf1TVKsTO3ptUWhfpHicbEsobpLtUoFY=
+=hTtG
 -----END PGP SIGNATURE-----
