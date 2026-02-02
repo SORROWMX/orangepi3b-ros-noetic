@@ -2,25 +2,25 @@ Acquire-By-Hash: yes
 Architectures: arm64
 Codename: bookworm
 Components: main
-Date: Sun, 01 Feb 2026 07:18:35 +0000
+Date: Mon, 02 Feb 2026 07:25:27 +0000
 Description: Pre-compiled ROS Noetic packages for Orange Pi 3B (ARM64)
 Label: Orange Pi 3B ROS Noetic
 Origin: Orange Pi 3B ROS Noetic Repository
 Suite: bookworm
 Version: 12
 MD5Sum:
- e049a43d118e70af1e489719861f42ae              289 Release
+ 12fdb17bb3efc6e1fb3b6ff4c8be4758              289 Release
  013c1a215852e2850196a6d4889698fc           162855 main/binary-arm64/Packages
  e82f65590b535c7eb9375f6f5c333ecb            44520 main/binary-arm64/Packages.gz
 SHA1:
- d089181473a831c8b7083dc294fad6ccf3d8d1a0              289 Release
+ 921ffae56f0cecda9b10924b9ca5882379d91ef6              289 Release
  7adf0fd2c637d382a825b2c748dde2aa9c14ea72           162855 main/binary-arm64/Packages
  455495e51d1e0e181476a4d77fce50ed0fe3ce13            44520 main/binary-arm64/Packages.gz
 SHA256:
- 5c4b3971a082f792ff990430d2eabcc57d2c6bbc679d8fe1208d8b79d02bd14c              289 Release
+ 8bc7b20b9be1e83c6a1794c865bedd3ae2bf6cb7730b41baa851c31ac3be79d1              289 Release
  f401e264d813f2bc5ec0a0c260f0a99737da68fac0b8f94108cddb87498acc81           162855 main/binary-arm64/Packages
  790806f60c054aa185388f03a9ace8514ac3333835f066db42a74ea570150142            44520 main/binary-arm64/Packages.gz
 SHA512:
- 9ce8805490dbab16f0898830562a33d4db05c88010afa14d8899d8d48775a83563028fe73c440700ff20269f285b5f3cd5443b8f40fa99e29c6beb8a921f4579              289 Release
+ 9c17fb142b8224298dafe83783a8ca6461a8344a603df312dfa72f881ba6aa332afd95a262261121bbbba66092572f9d3c3be1df759d9046d782e748eaaf784f              289 Release
  fe10629d6a5144e57ea2f46b858834105f486cfea899aefe1b8569b5a8b9048212e991dc29b596e5b299bc7a0bccae9fd4c84fb9d7c8d1e772b6120fe5aab7e1           162855 main/binary-arm64/Packages
  ba2702d0fb597e4b796016943c5d977764ad37922c7d97cc8ad104fb7b0ebfc57fc9cea8b90ba68e1da8a1284f4602d37ebf4672b887c65514d1c7181aac7be4            44520 main/binary-arm64/Packages.gz
